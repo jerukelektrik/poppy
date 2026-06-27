@@ -1,0 +1,14 @@
+{
+  "name": "poppy-theme",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Classic native WordPress theme for LKP Airlangga.",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/theme.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./assets/css/theme.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}

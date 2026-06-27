@@ -1,0 +1,383 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --poppy-ink: #132039;       /* Deep slate navy */
+  --poppy-paper: #FFF1EE;     /* Soft peach background */
+  --poppy-muted: #5C6479;     /* Soft gray for body text */
+  --poppy-line: #E2E8F0;
+  --poppy-card: #FFFFFF;
+  --poppy-terracotta: #BD4B3B;/* Brand Terracotta Red */
+
+  /* ==========================================================================
+     Typography System (CSS Variables for consistency and easy maintenance)
+     ========================================================================== */
+  
+  /* Font Families */
+  --font-family-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-headings: "Montserrat", sans-serif;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* Line Heights */
+  --line-height-tight: 1.15;
+  --line-height-snug: 1.3;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.05em;
+  --letter-spacing-widest: 0.1em;
+}
+
+html.dark {
+  --poppy-ink: #F1F5F9;
+  --poppy-paper: #0F172A;
+  --poppy-muted: #94A3B8;
+  --poppy-line: #334155;
+  --poppy-card: #1E293B;
+  --poppy-terracotta: #F43F5E;
+}
+
+@theme {
+  --font-sans: var(--font-family-body);
+  --font-serif: var(--font-family-headings);
+  --color-poppy-ink: var(--poppy-ink);
+  --color-poppy-paper: var(--poppy-paper);
+  --color-poppy-muted: var(--poppy-muted);
+  --color-poppy-line: var(--poppy-line);
+  --color-poppy-accent: var(--poppy-terracotta);
+  --color-poppy-card: var(--poppy-card);
+
+  /* Assign values directly to avoid self-referential variable lookup loops */
+  --text-hero: clamp(1.5rem, 5vw, 2.25rem);                                  /* H1 & H2: 24px -> 36px */
+  --text-section-title: clamp(1.5rem, 5vw, 2.25rem);                         /* H1 & H2: 24px -> 36px */
+  --text-section-subtitle: clamp(0.875rem, 1.5vw, 1rem);  /* Section Subtitle / Description: 14px -> 16px */
+  --text-card-title: clamp(1rem, 2vw, 1.1875rem);         /* H3 & H4: 16px -> 19px */
+  --text-card-body: clamp(0.75rem, 1.5vw, 0.875rem);      /* Card Body / Paragraphs: 12px -> 14px */
+  --text-pricing: clamp(1.25rem, 2.5vw, 1.5rem);          /* Pricing / Big Numbers: 20px -> 24px */
+  --text-button: clamp(0.75rem, 1.2vw, 0.875rem);         /* Button Text: 12px -> 14px */
+  --text-nav: clamp(0.75rem, 1.2vw, 0.875rem);            /* Navigation Menu: 12px -> 14px */
+  --text-testimonial: clamp(0.875rem, 1.5vw, 1rem);       /* Testimonial / Blockquotes: 14px -> 16px */
+  --text-footer: clamp(0.75rem, 1.2vw, 0.8125rem);        /* Footer Copyright / Meta: 12px -> 13px */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-poppy-paper font-sans text-poppy-ink antialiased overflow-x-hidden;
+    font-family: var(--font-family-body);
+    line-height: var(--line-height-relaxed);
+    letter-spacing: var(--letter-spacing-normal);
+  }
+
+  /* Global Semantic & Class-based Typography System Overrides */
+
+  /* 1. Hero Title */
+  h1, .entry-title {
+    font-family: var(--font-family-headings) !important;
+    font-size: var(--text-section-title) !important;
+    font-weight: var(--font-weight-black) !important;
+    line-height: var(--line-height-tight) !important;
+    letter-spacing: var(--letter-spacing-tight) !important;
+  }
+
+  .single-post .entry-header h1 {
+    font-size: 2rem !important;
+  }
+
+  @media (min-width: 40rem) {
+    .single-post .entry-header h1 {
+      font-size: 2.25rem !important;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .single-post .entry-header h1 {
+      font-size: 3rem !important;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .single-post .entry-header h1 {
+      font-size: 52px !important;
+    }
+  }
+
+  /* 2. Section Title */
+  h2 {
+    font-family: var(--font-family-headings) !important;
+    font-size: var(--text-section-title) !important;
+    font-weight: var(--font-weight-black) !important;
+    line-height: var(--line-height-snug) !important;
+    letter-spacing: var(--letter-spacing-tight) !important;
+  }
+
+  /* Utility to reset h2 to original responsive size overrides */
+  .h2-responsive {
+    font-size: var(--text-2xl) !important;
+  }
+  @media (min-width: 40rem) {
+    .h2-responsive {
+      font-size: var(--text-3xl) !important;
+    }
+  }
+  @media (min-width: 48rem) {
+    .h2-responsive {
+      font-size: var(--text-4xl) !important;
+    }
+  }
+
+  /* 3. Section Subtitle / Description */
+  .front-page-content p,
+  .english-kids-template p,
+  .pengembangan-diri-template p,
+  .poppy-section p:not(.poppy-card p, .price-card p, [class*="card"] p, .site-footer p) {
+    font-family: var(--font-family-body) !important;
+    font-size: var(--text-section-subtitle) !important;
+    font-weight: var(--font-weight-medium) !important;
+    line-height: var(--line-height-relaxed) !important;
+    color: var(--poppy-muted);
+  }
+
+  /* 4. Card & Minor Headings (H3 & H4) */
+  h3, h4 {
+    font-family: var(--font-family-headings) !important;
+    font-size: var(--text-card-title) !important;
+    font-weight: var(--font-weight-black) !important;
+    line-height: var(--line-height-snug) !important;
+    letter-spacing: var(--letter-spacing-tight) !important;
+  }
+
+  .single-post-template aside h4 {
+    font-family: var(--font-family-body) !important;
+    font-weight: var(--font-weight-regular) !important;
+    letter-spacing: var(--letter-spacing-normal) !important;
+  }
+
+  .feature-title {
+    font-size: 0.875rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .cta-title {
+    font-size: 1.3125rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .cta-description {
+    font-size: 0.6875rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .whatsapp-floating-action {
+    min-height: 4.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 2rem 2rem 0 0;
+    background: var(--poppy-terracotta);
+    box-shadow: 0 -8px 24px rgb(19 32 57 / 0.16);
+  }
+
+  .whatsapp-floating-action:hover {
+    background: #a83f32;
+  }
+
+  @media (min-width: 48rem) {
+    .feature-title {
+      font-size: 1rem !important;
+      line-height: var(--line-height-snug) !important;
+    }
+
+    .cta-title {
+      font-size: 2.375rem !important;
+    }
+
+    .cta-description {
+      font-size: 1rem !important;
+      line-height: var(--line-height-relaxed) !important;
+    }
+
+    .whatsapp-floating-action,
+    .whatsapp-floating-action:hover {
+      padding: 0;
+      min-height: 0;
+      border-radius: 0;
+      background: transparent !important;
+      box-shadow: none;
+    }
+  }
+
+  /* 5. Card Body Text */
+  .poppy-card p,
+  .bg-white.rounded-\[32px\] p {
+    font-family: var(--font-family-body) !important;
+    font-size: var(--text-card-body) !important;
+    font-weight: var(--font-weight-medium) !important;
+    line-height: var(--line-height-relaxed) !important;
+    color: var(--poppy-muted);
+  }
+
+  /* 6. Pricing Text */
+  .price-text,
+  .font-serif.text-poppy-ink {
+    font-family: var(--font-family-headings) !important;
+    font-size: var(--text-pricing) !important;
+    font-weight: var(--font-weight-black) !important;
+    letter-spacing: var(--letter-spacing-tight) !important;
+    line-height: var(--line-height-tight) !important;
+  }
+
+  /* 7. Button Text */
+  a[class*="bg-poppy-"],
+  button[class*="bg-poppy-"],
+  .poppy-button,
+  .program-tab-btn {
+    font-family: var(--font-family-body) !important;
+    font-size: var(--text-button) !important;
+    font-weight: var(--font-weight-bold) !important;
+    letter-spacing: var(--letter-spacing-wide) !important;
+  }
+
+  /* 8. Navigation Menu */
+  .main-navigation a,
+  .menu-item a {
+    font-family: var(--font-family-body) !important;
+    font-size: var(--text-nav) !important;
+    font-weight: var(--font-weight-bold) !important;
+    letter-spacing: var(--letter-spacing-normal) !important;
+  }
+
+  /* 9. Testimonial Text */
+  .testimonials-section p {
+    font-family: var(--font-family-body) !important;
+    font-size: var(--text-testimonial) !important;
+    font-weight: var(--font-weight-medium) !important;
+    line-height: var(--line-height-relaxed) !important;
+  }
+
+  /* 10. Footer Text */
+  .site-footer {
+    font-family: var(--font-family-body) !important;
+    font-size: var(--text-footer) !important;
+  }
+  .site-footer h4 {
+    font-family: var(--font-family-headings) !important;
+    font-size: var(--text-card-title) !important;
+    font-weight: var(--font-weight-black) !important;
+    letter-spacing: var(--letter-spacing-wide) !important;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+
+  img {
+    @apply max-w-full;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-4 outline-poppy-accent;
+  }
+}
+
+@layer components {
+  .poppy-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .poppy-section {
+    @apply py-10 sm:py-14 lg:py-16;
+  }
+
+  .poppy-eyebrow {
+    @apply text-xs font-black uppercase tracking-[0.18em] text-poppy-accent;
+  }
+
+  .poppy-card {
+    @apply overflow-hidden border border-poppy-line bg-poppy-card shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md;
+  }
+
+  .poppy-button {
+    @apply inline-flex items-center justify-center rounded-full bg-poppy-ink px-5 py-2.5 text-sm font-extrabold text-white hover:bg-poppy-accent;
+  }
+
+  .poppy-prose {
+    @apply mx-auto max-w-3xl text-lg leading-8 text-poppy-ink;
+  }
+
+  /* Navigation Menu Styles */
+  .nav-menu {
+    display: none;
+  }
+
+  @media (min-width: 48rem) {
+    .nav-menu {
+      display: flex !important;
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .nav-menu {
+      display: flex !important;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 1rem;
+      right: 1rem;
+      background: var(--poppy-card, #ffffff);
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      gap: 1rem;
+      box-shadow: 0 10px 25px -5px rgba(19, 32, 57, 0.15);
+      border: 1px solid var(--poppy-line, rgba(19, 32, 57, 0.05));
+      z-index: 9999;
+      
+      /* Smooth fade & slide transition */
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease-in-out;
+      pointer-events: none;
+    }
+
+    .nav-menu.toggled {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: translateY(0) !important;
+      pointer-events: auto !important;
+    }
+
+    .nav-menu li {
+      width: 100%;
+    }
+
+    .nav-menu a {
+      display: block;
+      padding: 0.5rem 0;
+      color: var(--poppy-ink) !important;
+      font-weight: 700 !important;
+      font-size: 0.9375rem !important;
+      border-bottom: 1px solid var(--poppy-line, rgba(19, 32, 57, 0.05));
+      transition: color 0.2s ease;
+    }
+
+    .nav-menu a:hover {
+      color: var(--poppy-terracotta) !important;
+    }
+
+    .nav-menu li:last-child a {
+      border-bottom: none;
+    }
+  }
+}
