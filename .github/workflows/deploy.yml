@@ -1,0 +1,36 @@
+name: Deploy Theme to DomaiNesia
+
+on:
+  push:
+    branches:
+      - main  # Memicu deploy otomatis setiap push ke branch main
+
+jobs:
+  web-deploy:
+    name: Deploy Poppy Theme
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Dapatkan Kode Terbaru
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: 📂 Unggah File ke Hosting DomaiNesia via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        # Kita hanya mengupload file tema saja karena akun FTP sudah diarahkan ke folder tema
+        local-dir: ./
+        server-dir: ./
+        # Daftar file yang tidak perlu diupload ke server hosting
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/src/**
+          **/tailwind.config.js
+          **/package.json
+          **/package-lock.json
+          **/README.md
