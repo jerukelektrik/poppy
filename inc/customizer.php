@@ -173,37 +173,30 @@ function poppy_whatsapp_floating_button(): void {
 		$flex_row_class = 'flex-row-reverse';
 	}
 	?>
-	<!-- Floating WhatsApp Button -->
-	<!-- Mobile Version (Bottom Bar Layout) -->
-	<div class="md:hidden fixed bottom-0 left-0 right-0 z-[9999] bg-poppy-accent px-5 py-2.5 flex items-center justify-between shadow-[0_-8px_24px_rgba(19,32,57,0.16)] rounded-t-2xl select-none pointer-events-auto">
-		<span class="text-xs sm:text-sm font-extrabold text-white whitespace-nowrap">Tanya Airlangga via WhatsApp</span>
-		<a href="<?php echo esc_url( $url ); ?>" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white flex items-center justify-center shadow-md hover:scale-105 transition duration-300 focus:outline-none">
-			<!-- WhatsApp SVG Icon (Terracotta color on white circle) -->
-			<svg class="w-5 h-5 fill-current text-poppy-accent" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-				<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.705 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-			</svg>
-		</a>
-	</div>
-
-	<!-- Desktop Version (Circular Floating Button Layout) -->
-	<div class="hidden md:flex fixed bottom-6 <?php echo esc_attr( $position_class ); ?> z-[9999] items-center gap-3 group pointer-events-auto select-none">
+	<!-- Floating WhatsApp Button — Unified for all screen sizes -->
+	<div class="fixed bottom-6 <?php echo esc_attr( $position_class ); ?> z-[9999] flex items-center gap-3 group pointer-events-auto select-none">
 		<?php if ( ! empty( $tooltip ) ) : ?>
-			<!-- Tooltip Text -->
-			<span class="bg-white text-poppy-ink shadow-lg rounded-xl px-4 py-2 text-xs font-bold border border-slate-100/80 opacity-0 transform translate-y-2 scale-95 transition-all duration-300 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 <?php echo 'bottom_left' === $position ? 'order-2' : ''; ?>">
+			<!-- Tooltip Text (hidden on mobile, visible on desktop hover) -->
+			<span class="hidden md:inline-flex bg-white text-poppy-ink shadow-lg rounded-xl px-4 py-2 text-xs font-bold border border-slate-100/80 opacity-0 transform translate-y-2 scale-95 transition-all duration-300 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 <?php echo 'bottom_left' === $position ? 'order-2' : ''; ?>">
 				<?php echo esc_html( $tooltip ); ?>
 			</span>
 		<?php endif; ?>
 
-		<a href="<?php echo esc_url( $url ); ?>" target="_blank" rel="noopener noreferrer" style="background-color: #25D366;" class="w-14 h-14 hover:bg-[#20BA5A] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition duration-300 focus:outline-none relative <?php echo 'bottom_left' === $position ? 'order-1' : ''; ?>">
-			<!-- WhatsApp SVG Icon -->
-			<svg class="w-7 h-7 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+		<a href="<?php echo esc_url( $url ); ?>" target="_blank" rel="noopener noreferrer"
+			class="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition duration-300 focus:outline-none relative <?php echo 'bottom_left' === $position ? 'order-1' : ''; ?>"
+			style="background-color: #BD4B3B;"
+			onmouseover="this.style.backgroundColor='#A33D2F'"
+			onmouseout="this.style.backgroundColor='#BD4B3B'"
+		>
+			<!-- WhatsApp SVG Icon (White on Terracotta) -->
+			<svg class="w-6 h-6 md:w-7 md:h-7 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 				<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.705 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
 			</svg>
-			
+
 			<!-- Ping attention dot -->
-			<span class="absolute top-0 right-0 h-3.5 w-3.5 translate-x-1/4 -translate-y-1/4 z-10">
+			<span class="absolute top-0 right-0 h-3 w-3 md:h-3.5 md:w-3.5 translate-x-1/4 -translate-y-1/4 z-10">
 				<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-				<span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-red-500"></span>
+				<span class="relative inline-flex rounded-full h-3 w-3 md:h-3.5 md:w-3.5 bg-red-500"></span>
 			</span>
 		</a>
 	</div>
