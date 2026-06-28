@@ -228,7 +228,7 @@ get_header();
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="flex items-center justify-between">
 									<span class="text-xl sm:text-[22px] font-black text-poppy-ink font-serif">Rp 2.050.000</span>
-									<a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
+									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
 										Pilih Paket
 									</a>
 								</div>
@@ -266,7 +266,7 @@ get_header();
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="flex items-center justify-between">
 									<span class="text-xl sm:text-[22px] font-black text-poppy-ink font-serif">Rp 2.900.000</span>
-									<a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
+									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
 										Pilih Paket
 									</a>
 								</div>
@@ -309,7 +309,7 @@ get_header();
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="flex items-center justify-between">
 									<span class="text-xl sm:text-[22px] font-black text-poppy-ink font-serif">Rp 2.500.000</span>
-									<a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
+									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
 										Pilih Paket
 									</a>
 								</div>
@@ -347,7 +347,7 @@ get_header();
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="flex items-center justify-between">
 									<span class="text-xl sm:text-[22px] font-black text-poppy-ink font-serif">Rp 3.050.000</span>
-									<a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
+									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
 										Pilih Paket
 									</a>
 								</div>
@@ -392,7 +392,7 @@ get_header();
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="flex items-center justify-between">
 									<span class="text-xl sm:text-[22px] font-black text-poppy-ink font-serif">Rp 2.900.000</span>
-									<a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
+									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
 										Pilih Paket
 									</a>
 								</div>
@@ -432,7 +432,7 @@ get_header();
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="flex items-center justify-between">
 									<span class="text-xl sm:text-[22px] font-black text-poppy-ink font-serif">Rp 3.200.000</span>
-									<a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
+									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
 										Pilih Paket
 									</a>
 								</div>
@@ -477,7 +477,7 @@ get_header();
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="flex items-center justify-between">
 									<span class="text-xl sm:text-[22px] font-black text-poppy-ink font-serif">Rp 3.200.000</span>
-									<a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
+									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm">
 										Pilih Paket
 									</a>
 								</div>
