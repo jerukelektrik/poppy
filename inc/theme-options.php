@@ -83,42 +83,45 @@ function poppy_theme_options_page() {
 			echo '<div class="notice notice-error"><p>' . esc_html__( 'Security check failed. Settings not saved.', 'poppy' ) . '</p></div>';
 		} else {
 			$options = poppy_get_theme_options();
+			$active_tab = isset( $_POST['active_tab'] ) ? sanitize_key( $_POST['active_tab'] ) : 'social';
 			
-			// Sanitize Social Media inputs
-			$options['facebook_url']          = esc_url_raw( $_POST['facebook_url'] );
-			$options['youtube_url']           = esc_url_raw( $_POST['youtube_url'] );
-			$options['instagram_url']         = esc_url_raw( $_POST['instagram_url'] );
-			$options['threads_url']           = esc_url_raw( $_POST['threads_url'] );
-			$options['tiktok_url']            = esc_url_raw( $_POST['tiktok_url'] );
-			$options['linkedin_url']          = esc_url_raw( $_POST['linkedin_url'] );
-			$options['whatsapp_number']       = sanitize_text_field( $_POST['whatsapp_number'] );
+			if ( 'social' === $active_tab ) {
+				// Sanitize Social Media inputs
+				$options['facebook_url']          = esc_url_raw( $_POST['facebook_url'] );
+				$options['youtube_url']           = esc_url_raw( $_POST['youtube_url'] );
+				$options['instagram_url']         = esc_url_raw( $_POST['instagram_url'] );
+				$options['threads_url']           = esc_url_raw( $_POST['threads_url'] );
+				$options['tiktok_url']            = esc_url_raw( $_POST['tiktok_url'] );
+				$options['linkedin_url']          = esc_url_raw( $_POST['linkedin_url'] );
+				$options['whatsapp_number']       = sanitize_text_field( $_POST['whatsapp_number'] );
 
-			$options['enable_og_title']       = isset( $_POST['enable_og_title'] ) ? 1 : 0;
-			$options['enable_og_desc']        = isset( $_POST['enable_og_desc'] ) ? 1 : 0;
-			$options['social_fallback_image'] = esc_url_raw( $_POST['social_fallback_image'] );
-			$options['enable_social_preview'] = isset( $_POST['enable_social_preview'] ) ? 1 : 0;
-			$options['enable_twitter_card']   = isset( $_POST['enable_twitter_card'] ) ? 1 : 0;
+				$options['enable_og_title']       = isset( $_POST['enable_og_title'] ) ? 1 : 0;
+				$options['enable_og_desc']        = isset( $_POST['enable_og_desc'] ) ? 1 : 0;
+				$options['social_fallback_image'] = esc_url_raw( $_POST['social_fallback_image'] );
+				$options['enable_social_preview'] = isset( $_POST['enable_social_preview'] ) ? 1 : 0;
+				$options['enable_twitter_card']   = isset( $_POST['enable_twitter_card'] ) ? 1 : 0;
+			} elseif ( 'seo' === $active_tab ) {
+				// Sanitize SEO inputs
+				$options['home_seo_title']        = sanitize_text_field( $_POST['home_seo_title'] );
+				$options['home_seo_desc']         = sanitize_textarea_field( $_POST['home_seo_desc'] );
 
-			// Sanitize SEO inputs
-			$options['home_seo_title']        = sanitize_text_field( $_POST['home_seo_title'] );
-			$options['home_seo_desc']         = sanitize_textarea_field( $_POST['home_seo_desc'] );
+				$options['noindex_category']      = isset( $_POST['noindex_category'] ) ? 1 : 0;
+				$options['noindex_tag']           = isset( $_POST['noindex_tag'] ) ? 1 : 0;
+				$options['noindex_search']        = isset( $_POST['noindex_search'] ) ? 1 : 0;
+				$options['noindex_author']        = isset( $_POST['noindex_author'] ) ? 1 : 0;
+				$options['noindex_date']          = isset( $_POST['noindex_date'] ) ? 1 : 0;
 
-			$options['noindex_category']      = isset( $_POST['noindex_category'] ) ? 1 : 0;
-			$options['noindex_tag']           = isset( $_POST['noindex_tag'] ) ? 1 : 0;
-			$options['noindex_search']          = isset( $_POST['noindex_search'] ) ? 1 : 0;
-			$options['noindex_author']          = isset( $_POST['noindex_author'] ) ? 1 : 0;
-			$options['noindex_date']            = isset( $_POST['noindex_date'] ) ? 1 : 0;
+				$options['enable_schema_org']         = isset( $_POST['enable_schema_org'] ) ? 1 : 0;
+				$options['enable_schema_local']       = isset( $_POST['enable_schema_local'] ) ? 1 : 0;
+				$options['enable_schema_article']     = isset( $_POST['enable_schema_article'] ) ? 1 : 0;
+				$options['enable_schema_breadcrumbs'] = isset( $_POST['enable_schema_breadcrumbs'] ) ? 1 : 0;
 
-			$options['enable_schema_org']         = isset( $_POST['enable_schema_org'] ) ? 1 : 0;
-			$options['enable_schema_local']       = isset( $_POST['enable_schema_local'] ) ? 1 : 0;
-			$options['enable_schema_article']     = isset( $_POST['enable_schema_article'] ) ? 1 : 0;
-			$options['enable_schema_breadcrumbs'] = isset( $_POST['enable_schema_breadcrumbs'] ) ? 1 : 0;
-
-			$options['enable_breadcrumbs_frontend'] = isset( $_POST['enable_breadcrumbs_frontend'] ) ? 1 : 0;
-
-			// Sanitize Third-party Integrations
-			$options['gtm_id']                = sanitize_text_field( $_POST['gtm_id'] );
-			$options['meta_pixel_id']         = sanitize_text_field( $_POST['meta_pixel_id'] );
+				$options['enable_breadcrumbs_frontend'] = isset( $_POST['enable_breadcrumbs_frontend'] ) ? 1 : 0;
+			} elseif ( 'integrations' === $active_tab ) {
+				// Sanitize Third-party Integrations
+				$options['gtm_id']                = sanitize_text_field( $_POST['gtm_id'] );
+				$options['meta_pixel_id']         = sanitize_text_field( $_POST['meta_pixel_id'] );
+			}
 
 			update_option( 'poppy_theme_options', $options );
 			echo '<div class="notice notice-success is-dismissible"><p>' . esc_html__( 'Settings saved successfully!', 'poppy' ) . '</p></div>';
@@ -145,6 +148,7 @@ function poppy_theme_options_page() {
 
 		<form method="post" action="" style="background: #fff; padding: 25px 35px; border: 1px solid #ccd0d4; border-top: none; max-width: 900px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
 			<?php wp_nonce_field( 'poppy_theme_options_save', 'poppy_theme_options_nonce' ); ?>
+			<input type="hidden" name="active_tab" value="<?php echo esc_attr( $current_tab ); ?>" />
 
 			<?php if ( $current_tab === 'social' ) : ?>
 				<!-- SOCIAL MEDIA TAB -->
