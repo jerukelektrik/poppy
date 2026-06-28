@@ -183,7 +183,7 @@ html.dark {
 
   .whatsapp-floating-action {
     min-height: 4.5rem;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem 1.5rem 0.75rem 2rem;
     border-radius: 2rem 2rem 0 0;
     background: var(--poppy-terracotta);
     box-shadow: 0 -8px 24px rgb(19 32 57 / 0.16);
@@ -191,6 +191,10 @@ html.dark {
 
   .whatsapp-floating-action:hover {
     background: #a83f32;
+  }
+
+  .whatsapp-floating-icon {
+    fill: var(--poppy-terracotta);
   }
 
   @media (min-width: 48rem) {
@@ -213,8 +217,16 @@ html.dark {
       padding: 0;
       min-height: 0;
       border-radius: 0;
-      background: transparent !important;
+      background: #25D366 !important;
       box-shadow: none;
+    }
+
+    .whatsapp-floating-action:hover {
+      background: #20BA5A !important;
+    }
+
+    .whatsapp-floating-icon {
+      fill: #ffff;
     }
   }
 
