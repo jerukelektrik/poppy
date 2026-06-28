@@ -44,9 +44,7 @@ function poppy_get_theme_options() {
 		'social_fallback_image'      => '',
 		'enable_social_preview'      => 0,
 		'enable_twitter_card'        => 0,
-		// SEO Homepage Metadata
-		'home_seo_title'             => '',
-		'home_seo_desc'              => '',
+		// Social Metadata Toggles
 		// SEO Indexing
 		'noindex_category'           => 0,
 		'noindex_tag'                => 0,
@@ -101,10 +99,6 @@ function poppy_theme_options_page() {
 				$options['enable_social_preview'] = isset( $_POST['enable_social_preview'] ) ? 1 : 0;
 				$options['enable_twitter_card']   = isset( $_POST['enable_twitter_card'] ) ? 1 : 0;
 			} elseif ( 'seo' === $active_tab ) {
-				// Sanitize SEO inputs
-				$options['home_seo_title']        = sanitize_text_field( $_POST['home_seo_title'] );
-				$options['home_seo_desc']         = sanitize_textarea_field( $_POST['home_seo_desc'] );
-
 				$options['noindex_category']      = isset( $_POST['noindex_category'] ) ? 1 : 0;
 				$options['noindex_tag']           = isset( $_POST['noindex_tag'] ) ? 1 : 0;
 				$options['noindex_search']        = isset( $_POST['noindex_search'] ) ? 1 : 0;
@@ -248,25 +242,7 @@ function poppy_theme_options_page() {
 
 			<?php elseif ( $current_tab === 'seo' ) : ?>
 				<!-- SEO TAB -->
-				<h2 style="border-bottom: 1px solid #eee; padding-bottom: 10px; font-weight: 700; margin-top: 0;"><?php esc_html_e( 'Homepage Metadata', 'poppy' ); ?></h2>
-				<table class="form-table">
-					<tr>
-						<th scope="row"><label for="home_seo_title"><?php esc_html_e( 'Home Meta Title', 'poppy' ); ?></label></th>
-						<td>
-							<input type="text" id="home_seo_title" name="home_seo_title" value="<?php echo esc_attr( $options['home_seo_title'] ); ?>" class="large-text" placeholder="Custom homepage title..." />
-							<p class="description"><?php esc_html_e( 'Custom title displayed specifically on the homepage.', 'poppy' ); ?></p>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row"><label for="home_seo_desc"><?php esc_html_e( 'Home Meta Description', 'poppy' ); ?></label></th>
-						<td>
-							<textarea id="home_seo_desc" name="home_seo_desc" rows="4" class="large-text" placeholder="Homepage search engine description..."><?php echo esc_textarea( $options['home_seo_desc'] ); ?></textarea>
-							<p class="description"><?php esc_html_e( 'Custom description displayed specifically on the homepage.', 'poppy' ); ?></p>
-						</td>
-					</tr>
-				</table>
-
-				<h2 style="border-bottom: 1px solid #eee; padding-bottom: 10px; font-weight: 700; margin-top: 30px;"><?php esc_html_e( 'Indexing Controls (Add Noindex)', 'poppy' ); ?></h2>
+				<h2 style="border-bottom: 1px solid #eee; padding-bottom: 10px; font-weight: 700; margin-top: 0;"><?php esc_html_e( 'Indexing Controls (Add Noindex)', 'poppy' ); ?></h2>
 				<p class="description" style="margin-bottom: 15px;"><?php esc_html_e( 'Select the sections that should be set to noindex, follow to keep them out of search results:', 'poppy' ); ?></p>
 				<table class="form-table">
 					<tr>
@@ -398,19 +374,7 @@ function poppy_theme_options_page() {
 	<?php
 }
 
-/**
- * Hook into document_title_parts to override front page title.
- */
-function poppy_theme_options_document_title_parts( $title_parts ) {
-	if ( is_front_page() || is_home() ) {
-		$options = poppy_get_theme_options();
-		if ( ! empty( $options['home_seo_title'] ) ) {
-			$title_parts['title'] = $options['home_seo_title'];
-		}
-	}
-	return $title_parts;
-}
-add_filter( 'document_title_parts', 'poppy_theme_options_document_title_parts' );
+
 
 /**
  * Output SEO meta description tags on the front page and noindex tags where specified.
@@ -418,10 +382,7 @@ add_filter( 'document_title_parts', 'poppy_theme_options_document_title_parts' )
 function poppy_theme_options_seo_meta_tags() {
 	$options = poppy_get_theme_options();
 
-	// Front page meta description
-	if ( ( is_front_page() || is_home() ) && ! empty( $options['home_seo_desc'] ) ) {
-		echo "\t" . '<meta name="description" content="' . esc_attr( $options['home_seo_desc'] ) . '">' . "\n";
-	}
+
 
 	// Indexing Controls (noindex tags)
 	$noindex = false;
