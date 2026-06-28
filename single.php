@@ -239,101 +239,83 @@ get_header();
 			<!-- Divider line and Related Posts Section -->
 			<hr class="border-t border-slate-100 my-12" />
 
-			<!-- Related Posts Section -->
-			<div class="related-posts-section mb-10">
-				<h2 class="h2-responsive font-black text-poppy-ink mb-6 font-serif">
-					Artikel Terkait Lainnya
-				</h2>
+			<?php
+			// Fetch categories of the current post
+			$categories_related = wp_get_post_categories( get_the_ID() );
+			$related_posts = array();
 
-				<?php
-				// Fetch categories of the current post
-				$categories_related = wp_get_post_categories( get_the_ID() );
-				$related_posts = array();
+			if ( ! empty( $categories_related ) ) {
+				$related_query = new WP_Query( array(
+					'category__in'   => $categories_related,
+					'post__not_in'   => array( get_the_ID() ),
+					'posts_per_page' => 12,
+					'post_status'    => 'publish',
+				) );
 
-				if ( ! empty( $categories_related ) ) {
-					$related_query = new WP_Query( array(
-						'category__in'   => $categories_related,
-						'post__not_in'   => array( get_the_ID() ),
-						'posts_per_page' => 12,
-						'post_status'    => 'publish',
-					) );
-
-					if ( $related_query->have_posts() ) {
-						while ( $related_query->have_posts() ) {
-							$related_query->the_post();
-							$img_url = get_the_post_thumbnail_url( get_the_ID(), 'large' );
-							if ( ! $img_url ) {
-								$img_url = 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80';
-							}
-							$related_posts[] = array(
-								'title'     => get_the_title(),
-								'permalink' => get_permalink(),
-								'image'     => $img_url,
-							);
+				if ( $related_query->have_posts() ) {
+					while ( $related_query->have_posts() ) {
+						$related_query->the_post();
+						$img_url = get_the_post_thumbnail_url( get_the_ID(), 'large' );
+						if ( ! $img_url ) {
+							$img_url = 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80';
 						}
-						wp_reset_postdata();
+						$related_posts[] = array(
+							'title'     => get_the_title(),
+							'permalink' => get_permalink(),
+							'image'     => $img_url,
+						);
 					}
+					wp_reset_postdata();
 				}
+			}
 
-				// Backfill with mock posts if fewer than 12
-				$placeholders = array(
-					'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80',
-					'https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80',
-					'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=600&q=80',
-				);
-
-				$current_count_related = count( $related_posts );
-				for ( $j = $current_count_related; $j < 12; $j ++ ) {
-					$img_placeholder = $placeholders[ $j % 3 ];
-					$related_posts[] = array(
-						'title'     => 'Lorem ipsum dolor sit amet  consectetur',
-						'permalink' => '#',
-						'image'     => $img_placeholder,
-					);
-				}
-				
+			if ( ! empty( $related_posts ) ) :
 				$slider_id = 'related-slider';
 				?>
+				<!-- Related Posts Section -->
+				<div class="related-posts-section mb-10">
+					<h2 class="h2-responsive font-black text-poppy-ink mb-6 font-serif">
+						Artikel Terkait Lainnya
+					</h2>
 
-				<!-- Related Slider Scroll Container -->
-				<div id="<?php echo esc_attr( $slider_id ); ?>" class="related-slider flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-none pb-4">
-					<?php foreach ( $related_posts as $post_item ) : ?>
-						<div class="related-slide w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0 snap-start flex flex-col justify-start">
-							<!-- Rounded Card Image -->
-							<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100/50">
-								<img src="<?php echo esc_url( $post_item['image'] ); ?>" alt="<?php echo esc_attr( $post_item['title'] ); ?>" class="w-full h-full object-cover transition hover:scale-105 duration-300 select-none pointer-events-none" />
-							</div>
-							
-							<!-- Title -->
-							<div class="text-sm sm:text-base md:text-lg font-bold text-poppy-ink leading-snug font-serif line-clamp-2">
-								<?php if ( $post_item['permalink'] !== '#' ) : ?>
-									<a href="<?php echo esc_url( $post_item['permalink'] ); ?>" class="hover:text-poppy-accent transition">
+					<!-- Related Slider Scroll Container -->
+					<div id="<?php echo esc_attr( $slider_id ); ?>" class="related-slider flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-none pb-4">
+						<?php foreach ( $related_posts as $post_item ) : ?>
+							<div class="related-slide w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0 snap-start flex flex-col justify-start">
+								<!-- Rounded Card Image -->
+								<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-4 relative shadow-sm border border-slate-100/50">
+									<img src="<?php echo esc_url( $post_item['image'] ); ?>" alt="<?php echo esc_attr( $post_item['title'] ); ?>" class="w-full h-full object-cover transition hover:scale-105 duration-300 select-none pointer-events-none" />
+								</div>
+								
+								<!-- Title -->
+								<div class="text-sm sm:text-base md:text-lg font-bold text-poppy-ink leading-snug font-serif line-clamp-2">
+									<?php if ( $post_item['permalink'] !== '#' ) : ?>
+										<a href="<?php echo esc_url( $post_item['permalink'] ); ?>" class="hover:text-poppy-accent transition">
+											<?php echo esc_html( $post_item['title'] ); ?>
+										</a>
+									<?php else : ?>
 										<?php echo esc_html( $post_item['title'] ); ?>
-									</a>
-								<?php else : ?>
-									<?php echo esc_html( $post_item['title'] ); ?>
-								<?php endif; ?>
+									<?php endif; ?>
+								</div>
 							</div>
-						</div>
-					<?php endforeach; ?>
-				</div>
+						<?php endforeach; ?>
+					</div>
 
-				<!-- Related Slider Navigation Dots (4 dots) -->
-				<div class="related-slider-dots flex justify-center items-center gap-2 mt-6" data-target="<?php echo esc_attr( $slider_id ); ?>">
-					<div class="slider-dot active cursor-pointer w-4 h-4 rounded-full border border-poppy-accent flex items-center justify-center transition">
-						<div class="inner-dot w-2 h-2 rounded-full bg-poppy-accent transition-all"></div>
-					</div>
-					<div class="slider-dot cursor-pointer w-4 h-4 rounded-full border border-transparent flex items-center justify-center transition">
-						<div class="inner-dot w-2 h-2 rounded-full bg-slate-200 hover:bg-slate-300 transition-all"></div>
-					</div>
-					<div class="slider-dot cursor-pointer w-4 h-4 rounded-full border border-transparent flex items-center justify-center transition">
-						<div class="inner-dot w-2 h-2 rounded-full bg-slate-200 hover:bg-slate-300 transition-all"></div>
-					</div>
-					<div class="slider-dot cursor-pointer w-4 h-4 rounded-full border border-transparent flex items-center justify-center transition">
-						<div class="inner-dot w-2 h-2 rounded-full bg-slate-200 hover:bg-slate-300 transition-all"></div>
-					</div>
+					<!-- Related Slider Navigation Dots (Dynamic) -->
+					<?php
+					$num_dots_related = ceil( count( $related_posts ) / 3 );
+					if ( $num_dots_related > 1 ) :
+						?>
+						<div class="related-slider-dots flex justify-center items-center gap-2 mt-6" data-target="<?php echo esc_attr( $slider_id ); ?>">
+							<?php for ( $d = 0; $d < $num_dots_related; $d ++ ) : ?>
+								<div class="slider-dot <?php echo $d === 0 ? 'active border-poppy-accent' : 'border-transparent'; ?> cursor-pointer w-4 h-4 rounded-full border flex items-center justify-center transition">
+									<div class="inner-dot w-2 h-2 rounded-full <?php echo $d === 0 ? 'bg-poppy-accent' : 'bg-slate-200 hover:bg-slate-300'; ?> transition-all"></div>
+								</div>
+							<?php endfor; ?>
+						</div>
+					<?php endif; ?>
 				</div>
-			</div>
+			<?php endif; ?>
 		</div>
 	</section>
 </main>
@@ -395,8 +377,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		const maxScroll = scrollWidth - clientWidth;
 		if (maxScroll <= 0) return;
 		
-		// Map progress ratio to dot index (0, 1, 2, or 3)
-		const activeIndex = Math.min(3, Math.round((scrollLeft / maxScroll) * 3));
+		// Map progress ratio to dot index (0 to dots.length - 1)
+		const activeIndex = Math.min(dots.length - 1, Math.round((scrollLeft / maxScroll) * (dots.length - 1)));
 		
 		dots.forEach((dot, index) => {
 			if (index === activeIndex) {

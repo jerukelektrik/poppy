@@ -45,24 +45,21 @@ get_header();
 	<section class="poppy-section bg-white relative z-20">
 		<div class="poppy-container">
 			<?php
-			// Query up to 3 categories
+			<?php
+			// Query categories that have posts
 			$categories = get_categories( array(
-				'orderby' => 'name',
-				'order'   => 'ASC',
-				'number'  => 3,
+				'orderby'    => 'name',
+				'order'      => 'ASC',
+				'hide_empty' => true,
 			) );
 
-			for ( $i = 0; $i < 3; $i ++ ) :
-				$cat_name = '';
-				$cat_id = 0;
-				$posts_data = array();
-				
-				// Check if category exists
-				if ( isset( $categories[ $i ] ) ) {
-					$cat_name = $categories[ $i ]->name;
-					$cat_id   = $categories[ $i ]->term_id;
+			if ( ! empty( $categories ) ) :
+				foreach ( $categories as $i => $category ) :
+					$cat_name = $category->name;
+					$cat_id   = $category->term_id;
+					$posts_data = array();
 					
-					// Query actual posts
+					// Query actual posts in this category
 					$query = new WP_Query( array(
 						'post_type'      => 'post',
 						'posts_per_page' => 9,
@@ -88,103 +85,91 @@ get_header();
 						}
 						wp_reset_postdata();
 					}
-				}
-				
-				// Set fallback Category name if empty
-				if ( empty( $cat_name ) ) {
-					$cat_name = 'Rubrik ' . ( $i + 1 );
-				}
-				
-				// Backfill with mock posts if fewer than 9
-				$placeholders = array(
-					'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80',
-					'https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80',
-					'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=600&q=80',
-				);
-				
-				$current_count = count( $posts_data );
-				for ( $j = $current_count; $j < 9; $j ++ ) {
-					$img_placeholder = $placeholders[ $j % 3 ];
-					$posts_data[] = array(
-						'title'     => 'Articles ' . ( $j + 1 ),
-						'permalink' => '#',
-						'image'     => $img_placeholder,
-						'excerpt'   => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis...',
-						'date'      => '26 Januari 2026',
-						'author'    => 'Content Writer 1',
-					);
-				}
-				
-				$slider_id = 'blog-slider-' . $i;
-				?>
-				<div class="mb-20 last:mb-0">
-					<!-- Rubrik Header with Horizontal Line -->
-					<div class="flex items-center gap-4 mb-8">
-						<h3 class="text-sm sm:text-base font-black text-poppy-accent shrink-0 font-serif uppercase tracking-wide">
-							<?php echo esc_html( $cat_name ); ?>
-						</h3>
-						<div class="h-px bg-poppy-accent/25 flex-grow"></div>
-					</div>
 					
-					<!-- Slider Scroll Container -->
-					<div id="<?php echo esc_attr( $slider_id ); ?>" class="blog-slider flex gap-6 lg:gap-12 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-none pb-4">
-						<?php foreach ( $posts_data as $post_item ) : ?>
-							<div class="blog-slide w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-32px)] shrink-0 snap-start flex flex-col justify-between">
-								<div>
-									<!-- Rounded Card Image -->
-									<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative shadow-sm border border-slate-100/50">
-										<img src="<?php echo esc_url( $post_item['image'] ); ?>" alt="<?php echo esc_attr( $post_item['title'] ); ?>" class="w-full h-full object-cover transition hover:scale-105 duration-300 select-none pointer-events-none" />
-									</div>
-									
-									<!-- Short divider line under image -->
-									<div class="w-16 h-px bg-slate-200/60 my-4"></div>
-									
-									<!-- Title -->
-									<div class="text-sm sm:text-base font-black text-poppy-ink mb-3 leading-snug font-serif">
-										<?php if ( $post_item['permalink'] !== '#' ) : ?>
-											<a href="<?php echo esc_url( $post_item['permalink'] ); ?>" class="hover:text-poppy-accent transition">
+					if ( empty( $posts_data ) ) {
+						continue;
+					}
+					
+					$slider_id = 'blog-slider-' . $i;
+					?>
+					<div class="mb-20 last:mb-0">
+						<!-- Rubrik Header with Horizontal Line -->
+						<div class="flex items-center gap-4 mb-8">
+							<h3 class="text-sm sm:text-base font-black text-poppy-accent shrink-0 font-serif uppercase tracking-wide">
+								<?php echo esc_html( $cat_name ); ?>
+							</h3>
+							<div class="h-px bg-poppy-accent/25 flex-grow"></div>
+						</div>
+						
+						<!-- Slider Scroll Container -->
+						<div id="<?php echo esc_attr( $slider_id ); ?>" class="blog-slider flex gap-6 lg:gap-12 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-none pb-4">
+							<?php foreach ( $posts_data as $post_item ) : ?>
+								<div class="blog-slide w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-32px)] shrink-0 snap-start flex flex-col justify-between">
+									<div>
+										<!-- Rounded Card Image -->
+										<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative shadow-sm border border-slate-100/50">
+											<img src="<?php echo esc_url( $post_item['image'] ); ?>" alt="<?php echo esc_attr( $post_item['title'] ); ?>" class="w-full h-full object-cover transition hover:scale-105 duration-300 select-none pointer-events-none" />
+										</div>
+										
+										<!-- Short divider line under image -->
+										<div class="w-16 h-px bg-slate-200/60 my-4"></div>
+										
+										<!-- Title -->
+										<div class="text-sm sm:text-base font-black text-poppy-ink mb-3 leading-snug font-serif">
+											<?php if ( $post_item['permalink'] !== '#' ) : ?>
+												<a href="<?php echo esc_url( $post_item['permalink'] ); ?>" class="hover:text-poppy-accent transition">
+													<?php echo esc_html( $post_item['title'] ); ?>
+												</a>
+											<?php else : ?>
 												<?php echo esc_html( $post_item['title'] ); ?>
-											</a>
-										<?php else : ?>
-											<?php echo esc_html( $post_item['title'] ); ?>
-										<?php endif; ?>
+											<?php endif; ?>
+										</div>
+										
+										<!-- Excerpt -->
+										<p class="text-xs sm:text-sm text-poppy-muted mb-6 leading-relaxed font-semibold line-clamp-3">
+											<?php echo esc_html( $post_item['excerpt'] ); ?>
+										</p>
 									</div>
 									
-									<!-- Excerpt -->
-									<p class="text-xs sm:text-sm text-poppy-muted mb-6 leading-relaxed font-semibold line-clamp-3">
-										<?php echo esc_html( $post_item['excerpt'] ); ?>
-									</p>
-								</div>
-								
-								<div>
-									<!-- Metadata -->
-									<div class="text-[10px] sm:text-xs text-poppy-muted/50 font-semibold mb-6 select-none">
-										<?php echo esc_html( $post_item['date'] ); ?> - by <?php echo esc_html( $post_item['author'] ); ?>
+									<div>
+										<!-- Metadata -->
+										<div class="text-[10px] sm:text-xs text-poppy-muted/50 font-semibold mb-6 select-none">
+											<?php echo esc_html( $post_item['date'] ); ?> - by <?php echo esc_html( $post_item['author'] ); ?>
+										</div>
+										
+										<!-- Button -->
+										<a href="<?php echo esc_url( $post_item['permalink'] ); ?>" class="inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-[10px] sm:text-xs px-4 py-2.5 rounded-lg transition shadow-sm">
+											Baca Selengkapnya
+										</a>
 									</div>
-									
-									<!-- Button -->
-									<a href="<?php echo esc_url( $post_item['permalink'] ); ?>" class="inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-[10px] sm:text-xs px-4 py-2.5 rounded-lg transition shadow-sm">
-										Baca Selengkapnya
-									</a>
 								</div>
+							<?php endforeach; ?>
+						</div>
+						
+						<!-- Slider Navigation Dots -->
+						<?php
+						$num_dots = ceil( count( $posts_data ) / 3 );
+						if ( $num_dots > 1 ) :
+							?>
+							<div class="blog-slider-dots flex justify-center items-center gap-2 mt-6" data-target="<?php echo esc_attr( $slider_id ); ?>">
+								<?php for ( $d = 0; $d < $num_dots; $d ++ ) : ?>
+									<div class="slider-dot <?php echo $d === 0 ? 'active border-poppy-accent' : 'border-transparent'; ?> cursor-pointer w-4 h-4 rounded-full border flex items-center justify-center transition">
+										<div class="inner-dot w-2 h-2 rounded-full <?php echo $d === 0 ? 'bg-poppy-accent' : 'bg-slate-200 hover:bg-slate-300'; ?> transition-all"></div>
+									</div>
+								<?php endfor; ?>
 							</div>
-						<?php endforeach; ?>
+						<?php endif; ?>
 					</div>
-					
-					<!-- Slider Navigation Dots -->
-					<div class="blog-slider-dots flex justify-center items-center gap-2 mt-6" data-target="<?php echo esc_attr( $slider_id ); ?>">
-						<div class="slider-dot active cursor-pointer w-4 h-4 rounded-full border border-poppy-accent flex items-center justify-center transition">
-							<div class="inner-dot w-2 h-2 rounded-full bg-poppy-accent transition-all"></div>
-						</div>
-						<div class="slider-dot cursor-pointer w-4 h-4 rounded-full border border-transparent flex items-center justify-center transition">
-							<div class="inner-dot w-2 h-2 rounded-full bg-slate-200 hover:bg-slate-300 transition-all"></div>
-						</div>
-						<div class="slider-dot cursor-pointer w-4 h-4 rounded-full border border-transparent flex items-center justify-center transition">
-							<div class="inner-dot w-2 h-2 rounded-full bg-slate-200 hover:bg-slate-300 transition-all"></div>
-						</div>
-					</div>
+				<?php
+				endforeach;
+			else :
+				?>
+				<div class="text-center py-20">
+					<h3 class="text-sm font-bold text-poppy-muted font-sans">Belum ada kategori atau artikel yang dipublikasikan.</h3>
 				</div>
-			<?php endfor; ?>
+			<?php
+			endif;
+			?>
 		</div>
 	</section>
 </main>
@@ -244,8 +229,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			const maxScroll = scrollWidth - clientWidth;
 			if (maxScroll <= 0) return;
 			
-			// Map progress ratio to dot index (0, 1, or 2)
-			const activeIndex = Math.min(2, Math.round((scrollLeft / maxScroll) * 2));
+			// Map progress ratio to dot index (0 to dots.length - 1)
+			const activeIndex = Math.min(dots.length - 1, Math.round((scrollLeft / maxScroll) * (dots.length - 1)));
 			
 			dots.forEach((dot, index) => {
 				if (index === activeIndex) {
