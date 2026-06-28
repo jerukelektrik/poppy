@@ -51,6 +51,8 @@ function poppy_get_theme_options() {
 		'noindex_search'             => 0,
 		'noindex_author'             => 0,
 		'noindex_date'               => 0,
+		// SEO Canonical
+		'enable_canonical_url'       => 1,
 		// SEO Schema Toggles
 		'enable_schema_org'          => 0,
 		'enable_schema_local'        => 0,
@@ -106,6 +108,8 @@ function poppy_theme_options_page() {
 				$options['noindex_search']        = isset( $_POST['noindex_search'] ) ? 1 : 0;
 				$options['noindex_author']        = isset( $_POST['noindex_author'] ) ? 1 : 0;
 				$options['noindex_date']          = isset( $_POST['noindex_date'] ) ? 1 : 0;
+
+				$options['enable_canonical_url']  = isset( $_POST['enable_canonical_url'] ) ? 1 : 0;
 
 				$options['enable_schema_org']         = isset( $_POST['enable_schema_org'] ) ? 1 : 0;
 				$options['enable_schema_local']       = isset( $_POST['enable_schema_local'] ) ? 1 : 0;
@@ -299,6 +303,20 @@ function poppy_theme_options_page() {
 					</tr>
 				</table>
 
+				<h2 style="border-bottom: 1px solid #eee; padding-bottom: 10px; font-weight: 700; margin-top: 30px;"><?php esc_html_e( 'Canonical URLs', 'poppy' ); ?></h2>
+				<table class="form-table">
+					<tr>
+						<th scope="row"><?php esc_html_e( 'Enable Canonical URL', 'poppy' ); ?></th>
+						<td>
+							<label>
+								<input type="checkbox" name="enable_canonical_url" value="1" <?php checked( $options['enable_canonical_url'], 1 ); ?> />
+								<?php esc_html_e( 'Output canonical URL tags for indexable pages, posts, and archives.', 'poppy' ); ?>
+							</label>
+							<p class="description"><?php esc_html_e( 'Recommended for avoiding duplicate URL signals from parameters, pagination, and alternate URL forms.', 'poppy' ); ?></p>
+						</td>
+					</tr>
+				</table>
+
 				<h2 style="border-bottom: 1px solid #eee; padding-bottom: 10px; font-weight: 700; margin-top: 30px;"><?php esc_html_e( 'Schema Integrations (JSON-LD)', 'poppy' ); ?></h2>
 				<table class="form-table">
 					<tr>
@@ -432,6 +450,90 @@ function poppy_theme_options_seo_meta_tags() {
 	}
 }
 add_action( 'wp_head', 'poppy_theme_options_seo_meta_tags', 2 );
+
+/**
+ * Disable WordPress core canonical output when theme canonical URLs are enabled.
+ */
+function poppy_theme_options_maybe_disable_core_canonical() {
+	$options = poppy_get_theme_options();
+
+	if ( ! empty( $options['enable_canonical_url'] ) ) {
+		remove_action( 'wp_head', 'rel_canonical' );
+	}
+}
+add_action( 'wp', 'poppy_theme_options_maybe_disable_core_canonical' );
+
+/**
+ * Resolve the canonical URL for the current request.
+ *
+ * @return string
+ */
+function poppy_theme_options_get_canonical_url() {
+	if ( is_search() || is_404() ) {
+		return '';
+	}
+
+	if ( is_front_page() ) {
+		return home_url( '/' );
+	}
+
+	if ( is_home() ) {
+		$posts_page_id = (int) get_option( 'page_for_posts' );
+		return $posts_page_id ? get_permalink( $posts_page_id ) : get_post_type_archive_link( 'post' );
+	}
+
+	if ( is_singular() ) {
+		return get_permalink();
+	}
+
+	if ( is_category() || is_tag() || is_tax() ) {
+		$term = get_queried_object();
+		if ( $term && ! is_wp_error( $term ) ) {
+			return get_term_link( $term );
+		}
+	}
+
+	if ( is_post_type_archive() ) {
+		$post_type = get_query_var( 'post_type' );
+		if ( is_array( $post_type ) ) {
+			$post_type = reset( $post_type );
+		}
+		return get_post_type_archive_link( $post_type );
+	}
+
+	if ( is_author() ) {
+		return get_author_posts_url( get_queried_object_id() );
+	}
+
+	if ( is_date() ) {
+		return get_pagenum_link( max( 1, get_query_var( 'paged' ) ) );
+	}
+
+	if ( is_archive() ) {
+		return get_pagenum_link( max( 1, get_query_var( 'paged' ) ) );
+	}
+
+	return '';
+}
+
+/**
+ * Output canonical URL tag.
+ */
+function poppy_theme_options_canonical_tag() {
+	$options = poppy_get_theme_options();
+
+	if ( empty( $options['enable_canonical_url'] ) ) {
+		return;
+	}
+
+	$canonical_url = poppy_theme_options_get_canonical_url();
+	if ( empty( $canonical_url ) || is_wp_error( $canonical_url ) ) {
+		return;
+	}
+
+	echo "\t" . '<link rel="canonical" href="' . esc_url( $canonical_url ) . '">' . "\n";
+}
+add_action( 'wp_head', 'poppy_theme_options_canonical_tag', 2 );
 
 /**
  * Register the native XML sitemap route.
