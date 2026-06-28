@@ -42,6 +42,11 @@ $footer_z_index = $exclude_cta ? 30 : 10;
 					<div class="hidden md:block w-px h-16 bg-white/20 self-center"></div>
 				</div>
 
+				<!-- Address -->
+				<p class="text-xs sm:text-sm text-white/70 leading-relaxed font-semibold max-w-xs">
+					JL. AR. Prawiranegara No.32, Metro, Kec. Metro Pusat, Kota Metro, Lampung 34111
+				</p>
+
 				<!-- Social Media Icons -->
 				<?php
 				$options = poppy_get_theme_options();
