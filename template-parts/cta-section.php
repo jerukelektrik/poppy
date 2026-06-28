@@ -38,7 +38,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</p>
 					<div>
 						<a 
-							href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" 
+							href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" 
+							target="_blank" 
+							rel="noopener noreferrer"
 							class="inline-flex items-center justify-center bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-4 py-2.5 md:px-8 md:py-3.5 rounded-lg transition shadow-md shadow-poppy-ink/15"
 						>
 							Daftar Sekarang
