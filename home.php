@@ -45,7 +45,6 @@ get_header();
 	<section class="poppy-section bg-white relative z-20">
 		<div class="poppy-container">
 			<?php
-			<?php
 			// Query categories that have posts
 			$categories = get_categories( array(
 				'orderby'    => 'name',
