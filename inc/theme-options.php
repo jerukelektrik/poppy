@@ -58,6 +58,8 @@ function poppy_get_theme_options() {
 		'enable_schema_breadcrumbs'  => 0,
 		// SEO Breadcrumbs
 		'enable_breadcrumbs_frontend' => 0,
+		// XML Sitemap
+		'enable_xml_sitemap'        => 1,
 		// Third-party Integrations
 		'gtm_id'                     => '',
 		'meta_pixel_id'              => '',
@@ -111,6 +113,8 @@ function poppy_theme_options_page() {
 				$options['enable_schema_breadcrumbs'] = isset( $_POST['enable_schema_breadcrumbs'] ) ? 1 : 0;
 
 				$options['enable_breadcrumbs_frontend'] = isset( $_POST['enable_breadcrumbs_frontend'] ) ? 1 : 0;
+
+				$options['enable_xml_sitemap'] = isset( $_POST['enable_xml_sitemap'] ) ? 1 : 0;
 			} elseif ( 'integrations' === $active_tab ) {
 				// Sanitize Third-party Integrations
 				$options['gtm_id']                = sanitize_text_field( $_POST['gtm_id'] );
@@ -118,6 +122,9 @@ function poppy_theme_options_page() {
 			}
 
 			update_option( 'poppy_theme_options', $options );
+			if ( 'seo' === $active_tab ) {
+				flush_rewrite_rules( false );
+			}
 			echo '<div class="notice notice-success is-dismissible"><p>' . esc_html__( 'Settings saved successfully!', 'poppy' ) . '</p></div>';
 		}
 	}
@@ -345,6 +352,28 @@ function poppy_theme_options_page() {
 					</tr>
 				</table>
 
+				<h2 style="border-bottom: 1px solid #eee; padding-bottom: 10px; font-weight: 700; margin-top: 30px;"><?php esc_html_e( 'XML Sitemap', 'poppy' ); ?></h2>
+				<table class="form-table">
+					<tr>
+						<th scope="row"><?php esc_html_e( 'Enable XML Sitemap', 'poppy' ); ?></th>
+						<td>
+							<label>
+								<input type="checkbox" name="enable_xml_sitemap" value="1" <?php checked( $options['enable_xml_sitemap'], 1 ); ?> />
+								<?php esc_html_e( 'Generate a native theme sitemap at /sitemap.xml.', 'poppy' ); ?>
+							</label>
+							<p class="description">
+								<?php
+								printf(
+									wp_kses_post( __( 'Sitemap URL: <a href="%s" target="_blank" rel="noopener noreferrer">%s</a>. Disable this if another SEO plugin already generates sitemap.xml.', 'poppy' ) ),
+									esc_url( home_url( '/sitemap.xml' ) ),
+									esc_html( home_url( '/sitemap.xml' ) )
+								);
+								?>
+							</p>
+						</td>
+					</tr>
+				</table>
+
 			<?php elseif ( $current_tab === 'integrations' ) : ?>
 				<!-- INTEGRATION TAB -->
 				<h2 style="border-bottom: 1px solid #eee; padding-bottom: 10px; font-weight: 700; margin-top: 0;"><?php esc_html_e( 'Third-Party Analytics & Scripts', 'poppy' ); ?></h2>
@@ -403,6 +432,224 @@ function poppy_theme_options_seo_meta_tags() {
 	}
 }
 add_action( 'wp_head', 'poppy_theme_options_seo_meta_tags', 2 );
+
+/**
+ * Register the native XML sitemap route.
+ */
+function poppy_theme_options_sitemap_rewrite_rule() {
+	add_rewrite_rule( '^sitemap\.xml$', 'index.php?poppy_sitemap=1', 'top' );
+}
+add_action( 'init', 'poppy_theme_options_sitemap_rewrite_rule' );
+
+/**
+ * Allow the sitemap query var.
+ *
+ * @param array $vars Public query variables.
+ * @return array
+ */
+function poppy_theme_options_sitemap_query_vars( $vars ) {
+	$vars[] = 'poppy_sitemap';
+	return $vars;
+}
+add_filter( 'query_vars', 'poppy_theme_options_sitemap_query_vars' );
+
+/**
+ * Flush rewrite rules when the theme is activated.
+ */
+function poppy_theme_options_sitemap_flush_rewrites() {
+	poppy_theme_options_sitemap_rewrite_rule();
+	flush_rewrite_rules( false );
+}
+add_action( 'after_switch_theme', 'poppy_theme_options_sitemap_flush_rewrites' );
+
+/**
+ * Determine whether the current request targets the XML sitemap.
+ *
+ * @return bool
+ */
+function poppy_theme_options_is_sitemap_request() {
+	if ( '1' === get_query_var( 'poppy_sitemap' ) ) {
+		return true;
+	}
+
+	$request_uri = isset( $_SERVER['REQUEST_URI'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '';
+	$request_path = wp_parse_url( $request_uri, PHP_URL_PATH );
+
+	return 'sitemap.xml' === trim( (string) $request_path, '/' );
+}
+
+/**
+ * Build a single XML sitemap entry.
+ *
+ * @param string $loc URL.
+ * @param string $lastmod Last modified date in W3C format.
+ * @param string $changefreq Change frequency.
+ * @param string $priority Priority.
+ * @return array
+ */
+function poppy_theme_options_sitemap_entry( $loc, $lastmod = '', $changefreq = 'monthly', $priority = '0.5' ) {
+	return array(
+		'loc'        => $loc,
+		'lastmod'    => $lastmod,
+		'changefreq' => $changefreq,
+		'priority'   => $priority,
+	);
+}
+
+/**
+ * Collect sitemap entries from public site content.
+ *
+ * @return array
+ */
+function poppy_theme_options_get_sitemap_entries() {
+	$options = poppy_get_theme_options();
+	$entries = array();
+
+	$latest_modified = get_lastpostmodified( 'gmt' );
+	$home_lastmod = $latest_modified ? mysql2date( 'c', $latest_modified, false ) : '';
+	$entries[] = poppy_theme_options_sitemap_entry( home_url( '/' ), $home_lastmod, 'weekly', '1.0' );
+
+	$pages = get_posts( array(
+		'post_type'              => 'page',
+		'post_status'            => 'publish',
+		'posts_per_page'         => -1,
+		'orderby'                => 'modified',
+		'order'                  => 'DESC',
+		'no_found_rows'          => true,
+		'update_post_meta_cache' => false,
+		'update_post_term_cache' => false,
+	) );
+
+	foreach ( $pages as $page ) {
+		$entries[] = poppy_theme_options_sitemap_entry(
+			get_permalink( $page ),
+			get_post_modified_time( 'c', true, $page ),
+			'monthly',
+			(int) get_option( 'page_on_front' ) === (int) $page->ID ? '1.0' : '0.8'
+		);
+	}
+
+	$posts = get_posts( array(
+		'post_type'              => 'post',
+		'post_status'            => 'publish',
+		'posts_per_page'         => -1,
+		'orderby'                => 'modified',
+		'order'                  => 'DESC',
+		'no_found_rows'          => true,
+		'update_post_meta_cache' => false,
+		'update_post_term_cache' => false,
+	) );
+
+	foreach ( $posts as $post ) {
+		$entries[] = poppy_theme_options_sitemap_entry(
+			get_permalink( $post ),
+			get_post_modified_time( 'c', true, $post ),
+			'weekly',
+			'0.7'
+		);
+	}
+
+	if ( empty( $options['noindex_category'] ) ) {
+		$categories = get_categories( array(
+			'hide_empty' => true,
+		) );
+
+		foreach ( $categories as $category ) {
+			$entries[] = poppy_theme_options_sitemap_entry(
+				get_category_link( $category ),
+				'',
+				'weekly',
+				'0.5'
+			);
+		}
+	}
+
+	if ( empty( $options['noindex_tag'] ) ) {
+		$tags = get_tags( array(
+			'hide_empty' => true,
+		) );
+
+		foreach ( $tags as $tag ) {
+			$entries[] = poppy_theme_options_sitemap_entry(
+				get_tag_link( $tag ),
+				'',
+				'weekly',
+				'0.4'
+			);
+		}
+	}
+
+	$unique_entries = array();
+	foreach ( $entries as $entry ) {
+		if ( empty( $entry['loc'] ) ) {
+			continue;
+		}
+		$unique_entries[ trailingslashit( $entry['loc'] ) ] = $entry;
+	}
+
+	return array_values( $unique_entries );
+}
+
+/**
+ * Output XML sitemap at /sitemap.xml.
+ */
+function poppy_theme_options_render_sitemap() {
+	if ( ! poppy_theme_options_is_sitemap_request() ) {
+		return;
+	}
+
+	$options = poppy_get_theme_options();
+	if ( empty( $options['enable_xml_sitemap'] ) ) {
+		status_header( 404 );
+		nocache_headers();
+		exit;
+	}
+
+	status_header( 200 );
+	header( 'Content-Type: application/xml; charset=' . get_bloginfo( 'charset' ), true );
+	nocache_headers();
+
+	echo '<?xml version="1.0" encoding="' . esc_attr( get_bloginfo( 'charset' ) ) . "\"?>\n";
+	echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
+
+	foreach ( poppy_theme_options_get_sitemap_entries() as $entry ) {
+		echo "\t<url>\n";
+		echo "\t\t<loc>" . esc_xml( $entry['loc'] ) . "</loc>\n";
+		if ( ! empty( $entry['lastmod'] ) ) {
+			echo "\t\t<lastmod>" . esc_xml( $entry['lastmod'] ) . "</lastmod>\n";
+		}
+		if ( ! empty( $entry['changefreq'] ) ) {
+			echo "\t\t<changefreq>" . esc_xml( $entry['changefreq'] ) . "</changefreq>\n";
+		}
+		if ( ! empty( $entry['priority'] ) ) {
+			echo "\t\t<priority>" . esc_xml( $entry['priority'] ) . "</priority>\n";
+		}
+		echo "\t</url>\n";
+	}
+
+	echo '</urlset>';
+	exit;
+}
+add_action( 'template_redirect', 'poppy_theme_options_render_sitemap', 0 );
+
+/**
+ * Advertise the sitemap in WordPress' virtual robots.txt output.
+ *
+ * @param string $output Robots.txt content.
+ * @param bool   $public Whether the site discourages search engines.
+ * @return string
+ */
+function poppy_theme_options_add_sitemap_to_robots( $output, $public ) {
+	$options = poppy_get_theme_options();
+
+	if ( ! $public || empty( $options['enable_xml_sitemap'] ) ) {
+		return $output;
+	}
+
+	$output .= "\nSitemap: " . home_url( '/sitemap.xml' ) . "\n";
+	return $output;
+}
+add_filter( 'robots_txt', 'poppy_theme_options_add_sitemap_to_robots', 10, 2 );
 
 /**
  * Output Google Tag Manager & Meta Pixel head scripts.
@@ -709,4 +956,3 @@ function poppy_breadcrumbs( $color_class = 'text-white/70 justify-center', $acti
 
 	echo '</nav>';
 }
-
