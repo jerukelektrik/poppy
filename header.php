@@ -65,7 +65,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				<!-- Right Side CTA & Mobile Toggle -->
 				<div class="flex items-center gap-3">
-					<a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="hidden md:inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition shadow-sm">
+					<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition shadow-sm">
 						Konsultasi
 					</a>
 					<button class="menu-toggle md:hidden p-2 text-poppy-ink hover:text-poppy-accent transition focus:outline-none" aria-controls="primary-menu" aria-expanded="false">
