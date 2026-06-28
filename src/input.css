@@ -93,6 +93,21 @@ html.dark {
     letter-spacing: var(--letter-spacing-tight) !important;
   }
 
+  .seo-heading {
+    font-family: var(--font-family-body) !important;
+    font-size: var(--text-xs) !important;
+    font-weight: 800 !important;
+    line-height: var(--text-xs--line-height) !important;
+    letter-spacing: 0.025em !important;
+  }
+
+  @media (min-width: 40rem) {
+    .seo-heading {
+      font-size: var(--text-sm) !important;
+      line-height: var(--text-sm--line-height) !important;
+    }
+  }
+
   .single-post .entry-header h1 {
     font-size: 2rem !important;
   }

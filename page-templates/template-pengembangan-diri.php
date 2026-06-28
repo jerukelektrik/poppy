@@ -20,13 +20,13 @@ get_header();
 			<!-- Left Column: Hero Text Content -->
 			<div class="lg:col-span-7 flex flex-col justify-center text-left">
 				<?php poppy_breadcrumbs( 'text-poppy-ink/70 justify-start', 'text-poppy-ink', 'text-poppy-ink/40' ); ?>
-				<span class="text-xs sm:text-sm font-extrabold uppercase tracking-wide text-poppy-ink mb-3 sm:mb-4 block">
+				<h1 class="seo-heading text-xs sm:text-sm font-extrabold uppercase tracking-wide text-poppy-ink mb-3 sm:mb-4 block">
 					Pengembangan Diri
-				</span>
-				
-				<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-black leading-[1.15] mb-6 text-poppy-ink">
-					Kembangkan Potensi Terbaik Dirimu untuk Raih Masa Depan Cemerlang
 				</h1>
+				
+				<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-black leading-[1.15] mb-6 text-poppy-ink">
+					Kembangkan Potensi Terbaik Dirimu untuk Raih Masa Depan Cemerlang
+				</h2>
 				
 				<p class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed max-w-xl mb-8 sm:mb-10 font-medium">
 					Layanan konsultasi, coaching, dan pelatihan profesional untuk membantu individu serta institusi tumbuh, berkembang, dan mencapai performa maksimal dengan metode terukur.

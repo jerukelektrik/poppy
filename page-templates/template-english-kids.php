@@ -20,13 +20,13 @@ get_header();
 			<!-- Left Column: Hero Text Content -->
 			<div class="lg:col-span-7 flex flex-col justify-center text-left">
 				<?php poppy_breadcrumbs( 'text-poppy-ink/70 justify-start', 'text-poppy-ink', 'text-poppy-ink/40' ); ?>
-				<span class="text-xs sm:text-sm font-extrabold uppercase tracking-wide text-poppy-ink mb-3 sm:mb-4 block">
+				<h1 class="seo-heading text-xs sm:text-sm font-extrabold uppercase tracking-wide text-poppy-ink mb-3 sm:mb-4 block">
 					Kursus Bahasa Inggris Anak #1 di Metro Lampung
-				</span>
-				
-				<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-black leading-[1.15] mb-6 text-poppy-ink">
-					Bikin Si Kecil Jago Bahasa Inggris Lewat Metode Bermain yang Super Seru
 				</h1>
+				
+				<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-black leading-[1.15] mb-6 text-poppy-ink">
+					Bikin Si Kecil Jago Bahasa Inggris Lewat Metode Bermain yang Super Seru
+				</h2>
 				
 				<p class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed max-w-xl mb-8 sm:mb-10 font-medium">
 					Ubah waktu belajar menjadi waktu favorit si kecil. Dengan metode belajar yang menyenangkan, kami memastikan si Kecil memahami bahasa Inggris secara natural tanpa beban hafalan. Bekali masa depan mereka dengan kemampuan komunikasi global yang dimulai dari keceriaan di ruang kelas kami.

@@ -32,15 +32,15 @@ get_header();
 			
 			<!-- Left Column: Hero Text Content -->
 			<div class="lg:col-span-7 flex flex-col justify-center text-left">
-				<span class="text-xs sm:text-sm font-extrabold uppercase tracking-wide text-poppy-ink mb-3 sm:mb-4 block">
+				<h1 class="seo-heading text-xs sm:text-sm font-extrabold uppercase tracking-wide text-poppy-ink mb-3 sm:mb-4 block">
 					Bimbel SD, SMP, SMA Terbaik di Metro Lampung
-				</span>
+				</h1>
 				
-				<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-black leading-[1.15] mb-6">
+				<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-black leading-[1.15] mb-6">
 					<span class="text-poppy-accent block mb-1">Belajar Jadi Lebih Seru,</span>
 					<span class="block mb-1">Sekolah & Kampus Impian</span>
 					<span class="text-poppy-accent block">Jadi Milikmu</span>
-				</h1>
+				</h2>
 				
 				<p class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed max-w-xl mb-8 sm:mb-10 font-medium">
 					Wujudkan impianmu masuk sekolah & kampus favorit bersama LKP Airlangga. Kami menggabungkan metode belajar adaptif dengan pengajar profesional untuk memastikan kamu paham setiap materi tanpa beban. Yuk, jadi bagian dari ribuan siswa berprestasi di seluruh Indonesia.
