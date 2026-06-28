@@ -532,9 +532,9 @@ get_header();
 	<?php get_template_part( 'template-parts/promo-section', null, array( 'show_on' => 'home' ) ); ?>
 
 	<!-- Unified Sections Wrapper with Left Pattern -->
-	<div class="relative bg-white z-20" style="position: relative; z-index: 20;">
+	<div class="relative bg-white z-20 overflow-hidden" style="position: relative; z-index: 20;">
 		<!-- Large continuous background pattern on the left -->
-		<div class="absolute top-0 left-0 w-[55%] sm:w-[45%] lg:w-[35%] max-w-[600px] h-full pointer-events-none select-none z-0">
+		<div class="hidden md:block absolute top-0 left-0 md:w-[45%] lg:w-[35%] max-w-[600px] h-full pointer-events-none select-none z-0 overflow-hidden">
 			<img 
 				src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pattern2.webp' ); ?>" 
 				alt="" 
