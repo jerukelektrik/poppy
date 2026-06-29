@@ -145,7 +145,7 @@ get_header();
 									<div class="text-[10px] sm:text-xs text-poppy-muted/50 italic font-semibold mb-1">
 										<?php echo esc_html( $rec_post['date'] ); ?>
 									</div>
-									<h4 class="text-xs sm:text-sm font-normal text-poppy-ink leading-snug hover:text-poppy-accent transition">
+									<p class="text-xs sm:text-sm font-normal text-poppy-ink leading-snug hover:text-poppy-accent transition">
 										<?php if ( $rec_post['permalink'] !== '#' ) : ?>
 											<a href="<?php echo esc_url( $rec_post['permalink'] ); ?>">
 												<?php echo esc_html( $rec_post['title'] ); ?>
@@ -153,7 +153,7 @@ get_header();
 										<?php else : ?>
 											<?php echo esc_html( $rec_post['title'] ); ?>
 										<?php endif; ?>
-									</h4>
+									</p>
 								</li>
 							<?php endforeach; ?>
 						</ul>
@@ -208,7 +208,7 @@ get_header();
 									<div class="text-[10px] sm:text-xs text-poppy-muted/50 italic font-semibold mb-1">
 										<?php echo esc_html( $sim_post['date'] ); ?>
 									</div>
-									<h4 class="text-xs sm:text-sm font-normal text-poppy-ink leading-snug hover:text-poppy-accent transition">
+									<p class="text-xs sm:text-sm font-normal text-poppy-ink leading-snug hover:text-poppy-accent transition">
 										<?php if ( $sim_post['permalink'] !== '#' ) : ?>
 											<a href="<?php echo esc_url( $sim_post['permalink'] ); ?>">
 												<?php echo esc_html( $sim_post['title'] ); ?>
@@ -216,7 +216,7 @@ get_header();
 										<?php else : ?>
 											<?php echo esc_html( $sim_post['title'] ); ?>
 										<?php endif; ?>
-									</h4>
+									</p>
 								</li>
 							<?php endforeach; ?>
 						</ul>

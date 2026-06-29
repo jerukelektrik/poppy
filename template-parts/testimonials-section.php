@@ -96,7 +96,7 @@ if ( $testimonials_query->have_posts() ) :
 							<!-- Alumnus Info -->
 							<div class="mt-auto">
 								<hr class="border-poppy-line/30 mb-4" />
-								<h4 class="text-sm sm:text-base font-black text-poppy-ink mb-1"><?php the_title(); ?></h4>
+								<p class="text-sm sm:text-base font-black text-poppy-ink mb-1"><?php the_title(); ?></p>
 								<p class="text-[10px] sm:text-xs text-poppy-muted font-semibold mb-3 leading-none"><?php echo esc_html( $major ); ?></p>
 								
 								<!-- Stars -->

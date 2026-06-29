@@ -106,7 +106,7 @@ $footer_z_index = $exclude_cta ? 30 : 10;
 				
 				<!-- Column 1 -->
 				<div>
-					<h4 class="text-sm font-black text-white font-serif tracking-wider mb-4">Program</h4>
+					<p class="text-sm font-black text-white font-serif tracking-wider mb-4">Program</p>
 					<ul class="space-y-2 text-xs font-semibold text-white/60">
 						<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="hover:text-white transition">Home</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/english-for-kids' ) ); ?>" class="hover:text-white transition">English for Kids</a></li>
@@ -116,7 +116,7 @@ $footer_z_index = $exclude_cta ? 30 : 10;
 
 				<!-- Column 2 -->
 				<div>
-					<h4 class="text-sm font-black text-white font-serif tracking-wider mb-4">Paket Belajar</h4>
+					<p class="text-sm font-black text-white font-serif tracking-wider mb-4">Paket Belajar</p>
 					<ul class="space-y-2 text-xs font-semibold text-white/60">
 						<li><a href="<?php echo esc_url( home_url( '/#programs' ) ); ?>" class="hover:text-white transition">Paket SD</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/#programs' ) ); ?>" class="hover:text-white transition">Paket SMP</a></li>
@@ -127,7 +127,7 @@ $footer_z_index = $exclude_cta ? 30 : 10;
 
 				<!-- Column 3 -->
 				<div>
-					<h4 class="text-sm font-black text-white font-serif tracking-wider mb-4">LKP Airlangga</h4>
+					<p class="text-sm font-black text-white font-serif tracking-wider mb-4">LKP Airlangga</p>
 					<ul class="space-y-2 text-xs font-semibold text-white/60">
 						<li><a href="<?php echo esc_url( home_url( '/about-us' ) ); ?>" class="hover:text-white transition">About Us</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="hover:text-white transition">Contact Us</a></li>

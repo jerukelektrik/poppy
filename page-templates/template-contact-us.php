@@ -46,7 +46,7 @@ get_header();
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/iconphone.webp" alt="Telepon" class="w-6 h-6 object-contain">
 						</div>
 						<div class="flex flex-col justify-center">
-							<h4 style="font-size: 19px !important;" class="text-sm font-bold text-poppy-ink mb-1 font-serif">Telepon</h4>
+							<p style="font-size: 19px !important;" class="text-sm font-bold text-poppy-ink mb-1 font-serif">Telepon</p>
 							<p class="text-xs sm:text-sm text-poppy-muted font-semibold leading-relaxed">
 								(0725) 43165
 							</p>
@@ -59,7 +59,7 @@ get_header();
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/iconpath.webp" alt="Alamat" class="w-6 h-6 object-contain">
 						</div>
 						<div class="flex flex-col justify-center max-w-md">
-							<h4 style="font-size: 19px !important;" class="text-sm font-bold text-poppy-ink mb-1 font-serif">Alamat</h4>
+							<p style="font-size: 19px !important;" class="text-sm font-bold text-poppy-ink mb-1 font-serif">Alamat</p>
 							<p class="text-xs sm:text-sm text-poppy-muted font-semibold leading-relaxed">
 								JL. AR. Prawiranegara No.32, Metro, Kec. Metro Pusat, Kota Metro, Lampung 34111
 							</p>
@@ -72,7 +72,7 @@ get_header();
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/iconsocial.webp" alt="Social Media" class="w-6 h-6 object-contain">
 						</div>
 						<div class="flex flex-col justify-center">
-							<h4 style="font-size: 19px !important;" class="text-sm font-bold text-poppy-ink mb-1 font-serif">Social Media</h4>
+							<p style="font-size: 19px !important;" class="text-sm font-bold text-poppy-ink mb-1 font-serif">Social Media</p>
 							<?php
 							$options = poppy_get_theme_options();
 							$social_links = array();
@@ -137,7 +137,7 @@ get_header();
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/iconmail.webp" alt="Email" class="w-6 h-6 object-contain">
 						</div>
 						<div class="flex flex-col justify-center">
-							<h4 style="font-size: 19px !important;" class="text-sm font-bold text-poppy-ink mb-1 font-serif">Email</h4>
+							<p style="font-size: 19px !important;" class="text-sm font-bold text-poppy-ink mb-1 font-serif">Email</p>
 							<a href="mailto:lkpairlangga@gmail.com" class="text-xs sm:text-sm text-poppy-muted font-semibold leading-relaxed hover:text-poppy-accent transition">
 								lkpairlangga@gmail.com
 							</a>
