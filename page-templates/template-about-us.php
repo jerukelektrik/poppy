@@ -106,9 +106,15 @@ get_header();
 				
 				<!-- Value 1: Profesional -->
 				<div class="bg-white rounded-[24px] p-6 sm:p-8 text-left shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100/50 flex flex-col justify-start">
-					<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink mb-3 sm:mb-4">
-						Profesional
-					</h3>
+					<div class="flex items-center gap-3 mb-3 sm:mb-4">
+						<!-- Briefcase Icon -->
+						<svg class="w-6 h-6 sm:w-7 sm:h-7 text-poppy-accent flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 .621-.504 1.125-1.125 1.125H4.875A1.125 1.125 0 013.75 18.4V14.15m16.5 0c0-1.205-.812-2.285-1.96-2.505l-3.31-.635a12.078 12.078 0 01-4.73 0l-3.31.635a2.53 2.53 0 00-1.96 2.505m16.5 0v-1.65a1.875 1.875 0 00-1.875-1.875H5.625A1.875 1.875 0 003.75 12v2.15M9 5.25h6m-6 0v-1.5A1.125 1.125 0 0110.125 2.625h3.75A1.125 1.125 0 0115 3.75v1.5m-6 0h6"></path>
+						</svg>
+						<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink">
+							Profesional
+						</h3>
+					</div>
 					<p class="text-xs sm:text-sm text-poppy-muted font-medium leading-relaxed">
 						Kami berkomitmen untuk selalu bekerja dengan standar terbaik, menjaga kualitas dan integritas di setiap hasil karya.
 					</p>
@@ -116,9 +122,15 @@ get_header();
 
 				<!-- Value 2: Trusted -->
 				<div class="bg-white rounded-[24px] p-6 sm:p-8 text-left shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100/50 flex flex-col justify-start">
-					<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink mb-3 sm:mb-4">
-						Trusted
-					</h3>
+					<div class="flex items-center gap-3 mb-3 sm:mb-4">
+						<!-- Shield Check Icon -->
+						<svg class="w-6 h-6 sm:w-7 sm:h-7 text-poppy-accent flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path>
+						</svg>
+						<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink">
+							Trusted
+						</h3>
+					</div>
 					<p class="text-xs sm:text-sm text-poppy-muted font-medium leading-relaxed">
 						Kepercayaan adalah aset terbesar kami. Karena itu, kami menjunjung tinggi sikap amanah dalam setiap hubungan dan tanggung jawab.
 					</p>
@@ -126,9 +138,15 @@ get_header();
 
 				<!-- Value 3: Innovative -->
 				<div class="bg-white rounded-[24px] p-6 sm:p-8 text-left shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100/50 flex flex-col justify-start">
-					<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink mb-3 sm:mb-4">
-						Innovative
-					</h3>
+					<div class="flex items-center gap-3 mb-3 sm:mb-4">
+						<!-- Lightbulb Icon -->
+						<svg class="w-6 h-6 sm:w-7 sm:h-7 text-poppy-accent flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m11.314 11.314l.707-.707M12 7a5 5 0 00-5 5c0 1.956 1.119 3.65 2.764 4.502.26.136.417.382.417.67v.828c0 .552.448 1 1 1h1.636c.552 0 1-.448 1-1v-.829c0-.287.158-.533.418-.669A5.001 5.001 0 0017 12a5 5 0 00-5-5z"></path>
+						</svg>
+						<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink">
+							Innovative
+						</h3>
+					</div>
 					<p class="text-xs sm:text-sm text-poppy-muted font-medium leading-relaxed">
 						Kami menumbuhkan budaya berpikir kritis dan solutif, menghadirkan ide-ide baru yang relevan dengan tantangan zaman.
 					</p>
@@ -136,9 +154,15 @@ get_header();
 
 				<!-- Value 4: Care -->
 				<div class="bg-white rounded-[24px] p-6 sm:p-8 text-left shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100/50 flex flex-col justify-start">
-					<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink mb-3 sm:mb-4">
-						Care
-					</h3>
+					<div class="flex items-center gap-3 mb-3 sm:mb-4">
+						<!-- Heart Icon -->
+						<svg class="w-6 h-6 sm:w-7 sm:h-7 text-poppy-accent flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+						</svg>
+						<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink">
+							Care
+						</h3>
+					</div>
 					<p class="text-xs sm:text-sm text-poppy-muted font-medium leading-relaxed">
 						Dengan kepedulian tulus, kami hadir untuk saling memahami, mendukung, dan memberi makna lebih pada setiap interaksi.
 					</p>
@@ -146,9 +170,15 @@ get_header();
 
 				<!-- Value 5: Togetherness -->
 				<div class="bg-white rounded-[24px] p-6 sm:p-8 text-left shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100/50 flex flex-col justify-start">
-					<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink mb-3 sm:mb-4">
-						Togetherness
-					</h3>
+					<div class="flex items-center gap-3 mb-3 sm:mb-4">
+						<!-- Togetherness Icon -->
+						<svg class="w-6 h-6 sm:w-7 sm:h-7 text-poppy-accent flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path>
+						</svg>
+						<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink">
+							Togetherness
+						</h3>
+					</div>
 					<p class="text-xs sm:text-sm text-poppy-muted font-medium leading-relaxed">
 						Kami membangun suasana kekeluargaan yang hangat, karena kami yakin kebersamaan melahirkan kekuatan.
 					</p>
@@ -156,9 +186,15 @@ get_header();
 
 				<!-- Value 6: Friendly -->
 				<div class="bg-white rounded-[24px] p-6 sm:p-8 text-left shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100/50 flex flex-col justify-start">
-					<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink mb-3 sm:mb-4">
-						Friendly
-					</h3>
+					<div class="flex items-center gap-3 mb-3 sm:mb-4">
+						<!-- Smiley Icon -->
+						<svg class="w-6 h-6 sm:w-7 sm:h-7 text-poppy-accent flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"></path>
+						</svg>
+						<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink">
+							Friendly
+						</h3>
+					</div>
 					<p class="text-xs sm:text-sm text-poppy-muted font-medium leading-relaxed">
 						Dengan keramahan dan sikap bersahabat, kami ingin setiap orang merasa nyaman berinteraksi dengan Airlangga.
 					</p>
