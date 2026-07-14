@@ -166,18 +166,21 @@ get_header();
 				
 				<!-- Section Header -->
 				<div class="text-center max-w-3xl mx-auto mb-12">
-					<h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-poppy-ink inline-block relative">
-						Pilih Program Unggulan untuk
+					<h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-poppy-ink inline-block relative mb-4">
+						Program Unggulan
 						<span class="relative inline-block">
-							Masa Depanmu
+							Bimbel Airlangga
 							<!-- Decorative curved line under the highlighted phrase (Terracotta) -->
-							<span class="absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full">
+							<span class="absolute left-1/2 top-full mt-1.5 transform -translate-x-1/2 w-full">
 								<svg viewBox="0 0 178 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
 									<path d="M2 10C35 4 143 4 176 10" stroke="#BD4B3B" stroke-width="4" stroke-linecap="round"/>
 								</svg>
 							</span>
 						</span>
 					</h2>
+					<p class="text-xs sm:text-sm text-poppy-muted font-semibold leading-relaxed mt-6">
+						Temukan paket belajar terbaik untuk mendukung prestasi dan persiapan jenjang berikutnya.
+					</p>
 				</div>
 
 				<!-- Program Tabs -->
