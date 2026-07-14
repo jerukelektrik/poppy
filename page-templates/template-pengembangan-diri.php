@@ -219,7 +219,7 @@ get_header();
 							<!-- Body -->
 							<div class="p-6 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+									Kenali potensi, kemampuan, dan karakter secara menyeluruh melalui asesmen psikologi yang valid dan profesional. Cocok untuk seleksi, pengembangan individu, pendidikan, maupun kebutuhan organisasi dalam mengambil keputusan yang lebih tepat.
 								</p>
 							</div>
 						</div>
@@ -243,7 +243,7 @@ get_header();
 							<!-- Body -->
 							<div class="p-6 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+									Temukan potensi yang menjadi kekuatan utama Anda. Talent DNA membantu mengenali kecenderungan berpikir, bekerja, dan berinteraksi sehingga pengembangan diri, karier, pendidikan maupun kehidupan menjadi lebih terarah.
 								</p>
 							</div>
 						</div>
@@ -267,7 +267,7 @@ get_header();
 							<!-- Body -->
 							<div class="p-6 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+									Tes Kesiapan Masuk SD membantu mengukur kesiapan anak sebelum memasuki jenjang sekolah dasar. Asesmen meliputi aspek kognitif, bahasa, motorik, sosial-emosional, serta kemampuan mengikuti instruksi sehingga orang tua dan sekolah memperoleh gambaran objektif mengenai kesiapan belajar anak.
 								</p>
 							</div>
 						</div>
@@ -291,7 +291,7 @@ get_header();
 							<!-- Body -->
 							<div class="p-6 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+									Petakan potensi, kompetensi, dan karakter setiap individu untuk membangun tim yang lebih produktif. Solusi tepat bagi sekolah, perusahaan, maupun organisasi dalam rekrutmen, promosi, pengembangan, dan penempatan SDM.
 								</p>
 							</div>
 						</div>
