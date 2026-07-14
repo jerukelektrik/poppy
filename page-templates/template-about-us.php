@@ -58,7 +58,19 @@ get_header();
 			</div>
 
 			<!-- Three-Column Cards Grid (Visi | Misi | Our Goals) -->
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+			<style>
+				.brand-three-cols {
+					display: grid;
+					grid-template-columns: repeat(1, minmax(0, 1fr));
+					gap: 1.5rem;
+				}
+				@media (min-width: 768px) {
+					.brand-three-cols {
+						grid-template-columns: repeat(3, minmax(0, 1fr));
+					}
+				}
+			</style>
+			<div class="brand-three-cols items-stretch mt-10">
 				
 				<!-- Column 1: Visi -->
 				<div class="bg-[#F8F9FA] border border-slate-100 rounded-[32px] p-6 sm:p-8 text-left shadow-sm flex flex-col justify-start">
