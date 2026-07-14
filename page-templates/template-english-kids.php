@@ -179,11 +179,8 @@ get_header();
 						</div>
 						<!-- Footer/Price -->
 						<div class="px-6 pb-6 text-left">
-							<div class="text-lg font-black text-poppy-ink mb-4">
-								Rp 2.050.000
-							</div>
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#3B6DBF] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition">
-								Pilih Paket
+							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3B6DBF] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+								Konsultasi Sekarang
 							</a>
 						</div>
 					</div>
@@ -206,11 +203,8 @@ get_header();
 						</div>
 						<!-- Footer/Price -->
 						<div class="px-6 pb-6 text-left">
-							<div class="text-lg font-black text-poppy-ink mb-4">
-								Rp 2.050.000
-							</div>
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#3A96B7] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition">
-								Pilih Paket
+							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3A96B7] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+								Konsultasi Sekarang
 							</a>
 						</div>
 					</div>
@@ -233,11 +227,8 @@ get_header();
 						</div>
 						<!-- Footer/Price -->
 						<div class="px-6 pb-6 text-left">
-							<div class="text-lg font-black text-poppy-ink mb-4">
-								Rp 2.050.000
-							</div>
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#3BA7AA] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition">
-								Pilih Paket
+							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3BA7AA] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+								Konsultasi Sekarang
 							</a>
 						</div>
 					</div>
@@ -260,11 +251,8 @@ get_header();
 						</div>
 						<!-- Footer/Price -->
 						<div class="px-6 pb-6 text-left">
-							<div class="text-lg font-black text-poppy-ink mb-4">
-								Rp 2.050.000
-							</div>
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#3CA986] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition">
-								Pilih Paket
+							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3CA986] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+								Konsultasi Sekarang
 							</a>
 						</div>
 					</div>

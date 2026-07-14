@@ -99,12 +99,12 @@ if ( 'english-kids' === $show_on ) {
 					<!-- Card Footer -->
 					<div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0">
 						<hr class="border-poppy-line/50 mb-6" />
-						<div class="text-left">
+						<div class="text-left w-full">
 							<a 
 								href="<?php echo esc_url( $card['url'] ); ?>" 
-								class="inline-flex items-center justify-center <?php echo esc_attr( $card['button_class'] ); ?> text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm"
+								class="w-full inline-flex items-center justify-center <?php echo esc_attr( $card['button_class'] ); ?> text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center"
 							>
-								Pilih Paket
+								Konsultasi Sekarang
 							</a>
 						</div>
 					</div>
