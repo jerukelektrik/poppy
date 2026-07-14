@@ -110,7 +110,7 @@ $footer_z_index = $exclude_cta ? 30 : 10;
 					<ul class="space-y-2 text-xs font-semibold text-white/60">
 						<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="hover:text-white transition">Home</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/english-for-kids' ) ); ?>" class="hover:text-white transition">English for Kids</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/pengembangan-diri' ) ); ?>" class="hover:text-white transition">Pengembangan Diri</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/pengembangan-diri' ) ); ?>" class="hover:text-white transition">Airlangga Consulting</a></li>
 					</ul>
 				</div>
 

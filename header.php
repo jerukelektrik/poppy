@@ -57,7 +57,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<ul class="nav-menu flex items-center gap-6 lg:gap-8 text-sm font-extrabold text-poppy-ink/80">
 						<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="hover:text-poppy-accent transition">Home</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/english-for-kids' ) ); ?>" class="hover:text-poppy-accent transition">English for Kids</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/pengembangan-diri' ) ); ?>" class="hover:text-poppy-accent transition">Pengembangan Diri</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/pengembangan-diri' ) ); ?>" class="hover:text-poppy-accent transition">Airlangga Consulting</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/about-us' ) ); ?>" class="hover:text-poppy-accent transition">About Us</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="hover:text-poppy-accent transition">Contact Us</a></li>
 					</ul>

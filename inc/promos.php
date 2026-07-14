@@ -90,7 +90,7 @@ function poppy_promo_metabox_callback( $post ): void {
 		</label><br />
 		<label>
 			<input type="checkbox" name="poppy_promo_show_on[]" value="pengembangan-diri" <?php checked( in_array( 'pengembangan-diri', $show_on_array, true ) ); ?> />
-			<?php esc_html_e( 'Pengembangan Diri', 'poppy' ); ?>
+			<?php esc_html_e( 'Airlangga Consulting', 'poppy' ); ?>
 		</label>
 	</p>
 	<?php
