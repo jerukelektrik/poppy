@@ -305,24 +305,57 @@ get_header();
 
 				</div>
 
-				<!-- Tab 2 Grid: Pengembangan Diri (Coming Soon Placeholder) -->
-				<div id="tab-grid-pengembangan" class="hidden grid-cols-1 max-w-xl mx-auto relative z-10 transition-all duration-300">
-					<div class="bg-white rounded-3xl p-10 text-center border border-slate-100 shadow-md">
-						<div class="w-20 h-20 mx-auto flex items-center justify-center mb-6 bg-[#FFF6E0] rounded-full">
-							<svg class="w-10 h-10 text-[#F5A623]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
-							</svg>
+				<!-- Tab 2 Grid: Pengembangan Diri (Airlangga Consulting Packages) -->
+				<div id="tab-grid-pengembangan" class="hidden grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto relative z-10 transition-all duration-300">
+					
+					<!-- Card 1: Coaching Karier -->
+					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
+						<div>
+							<!-- Header -->
+							<div class="bg-[#3B6DBF] py-4 px-6 text-left">
+								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
+									Coaching Karier
+								</h3>
+							</div>
+							<!-- Body -->
+							<div class="p-6 text-left">
+								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
+									Pendampingan untuk membantu menentukan arah pendidikan dan karier berdasarkan potensi, minat, dan tujuan hidup.
+								</p>
+							</div>
 						</div>
-						<h3 class="text-xl font-black text-poppy-ink mb-3 uppercase">Segera Hadir</h3>
-						<p class="text-sm text-poppy-muted leading-relaxed font-medium">
-							Kami sedang mempersiapkan detail program & pricing terbaik untuk paket Pengembangan Diri. Silakan hubungi kami untuk konsultasi langsung terlebih dahulu.
-						</p>
-						<div class="mt-6">
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-poppy-ink hover:opacity-90 text-white font-extrabold text-xs sm:text-sm px-8 py-3 rounded-xl transition shadow-md">
-								Hubungi Kami
+						<!-- Footer -->
+						<div class="px-6 pb-6 text-left">
+							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3B6DBF] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+								Konsultasi Sekarang
 							</a>
 						</div>
 					</div>
+
+					<!-- Card 2: Konseling -->
+					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
+						<div>
+							<!-- Header -->
+							<div class="bg-[#3BA7AA] py-4 px-6 text-left">
+								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
+									Konseling
+								</h3>
+							</div>
+							<!-- Body -->
+							<div class="p-6 text-left">
+								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
+									Layanan profesional untuk membantu mengatasi tantangan pribadi, akademik, maupun pekerjaan sehingga mampu berkembang secara optimal.
+								</p>
+							</div>
+						</div>
+						<!-- Footer -->
+						<div class="px-6 pb-6 text-left">
+							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3BA7AA] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+								Konsultasi Sekarang
+							</a>
+						</div>
+					</div>
+
 				</div>
 
 			</div>
