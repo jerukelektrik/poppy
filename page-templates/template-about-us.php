@@ -28,10 +28,10 @@ get_header();
 
 	<!-- Details & Goals Section (Tentang Kami) -->
 	<section class="poppy-section bg-white relative z-20">
-		<div class="poppy-container grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+		<div class="poppy-container">
 			
-			<!-- Left Column: Tentang Kami Description -->
-			<div class="lg:col-span-6 flex flex-col items-start text-left">
+			<!-- Tentang Kami Header & Description -->
+			<div class="max-w-4xl text-left mb-12 sm:mb-16">
 				<h2 class="text-2xl sm:text-3xl md:text-[36px] font-black text-poppy-ink mb-10 tracking-tight font-serif inline-block relative">
 					Tentang Kami
 					<span class="absolute left-0 right-0 top-full mt-1.5 w-full">
@@ -57,44 +57,40 @@ get_header();
 				</div>
 			</div>
 
-			<!-- Right Column: Visi & Misi and Our Goals Cards (Sidebar) -->
-			<div class="lg:col-span-6 w-full flex flex-col gap-6">
-				<!-- Visi & Misi Card -->
-				<div class="bg-[#F8F9FA] border border-slate-100 rounded-[32px] p-8 sm:p-10 text-left shadow-sm">
-					
-					<!-- Visi Section -->
-					<div class="mb-8">
-						<h3 class="text-xl sm:text-2xl font-black font-serif text-poppy-ink mb-3 uppercase tracking-wide">
-							Visi
-						</h3>
-						<p class="text-xs sm:text-sm text-poppy-muted font-semibold leading-relaxed">
-							Menjadi Pusat Pendidikan & Lembaga Konsultan Pendidikan terbaik di Indonesia yang mampu mewujudkan generasi masa depan yang cerdas dan berkarakter.
-						</p>
-					</div>
-
-					<!-- Misi Section -->
-					<div>
-						<h3 class="text-xl sm:text-2xl font-black font-serif text-poppy-ink mb-4 uppercase tracking-wide">
-							Misi
-						</h3>
-						<ul class="list-disc list-outside pl-5 space-y-3.5 text-xs sm:text-sm font-medium leading-relaxed text-poppy-muted">
-							<li>Melayani pendidikan masyarakat untuk berprestasi, sukses meraih cita-cita.</li>
-							<li>Meningkatkan kualitas pendidikan dengan budaya; berkompetisi dan berprestasi dengan menghargai proses,</li>
-							<li>Memberikan pelayanan prima dengan komitmen tinggi and profesional,</li>
-							<li>Menjalin hubungan yang harmonis dengan mitra kerja baik eksternal maupun internal,</li>
-							<li>Membentuk kepribadian siswa yang cerdas, terampil, dan berkarakter dengan melaksanakan training motivasi dan spiritual secara berkala,</li>
-							<li>Menciptakan budaya belajar siswa,</li>
-							<li>Mengoptimalkan peran serta orang tua dalam pendampingan belajar,</li>
-							<li>Memberikan pendampingan konseling siswa dan konseling parenting orang tua siswa,</li>
-							<li>Memberikan pendampingan Karir & Pendidikan Studi lanjut dalam dan luar negeri.</li>
-						</ul>
-					</div>
-
+			<!-- Three-Column Cards Grid (Visi | Misi | Our Goals) -->
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+				
+				<!-- Column 1: Visi -->
+				<div class="bg-[#F8F9FA] border border-slate-100 rounded-[32px] p-6 sm:p-8 text-left shadow-sm flex flex-col justify-start">
+					<h3 class="text-xl sm:text-2xl font-black font-serif text-poppy-ink mb-4 uppercase tracking-wide">
+						Visi
+					</h3>
+					<p class="text-xs sm:text-sm text-poppy-muted font-semibold leading-relaxed">
+						Menjadi Pusat Pendidikan & Lembaga Konsultan Pendidikan terbaik di Indonesia yang mampu mewujudkan generasi masa depan yang cerdas dan berkarakter.
+					</p>
 				</div>
 
-				<!-- Our Goals Card -->
-				<div class="bg-poppy-accent rounded-[32px] p-8 sm:p-10 text-left text-white shadow-lg w-full">
-					<h3 class="text-xl sm:text-2xl font-black font-serif text-white mb-6 uppercase tracking-wide">
+				<!-- Column 2: Misi -->
+				<div class="bg-[#F8F9FA] border border-slate-100 rounded-[32px] p-6 sm:p-8 text-left shadow-sm flex flex-col justify-start">
+					<h3 class="text-xl sm:text-2xl font-black font-serif text-poppy-ink mb-4 uppercase tracking-wide">
+						Misi
+					</h3>
+					<ul class="list-disc list-outside pl-5 space-y-3.5 text-xs sm:text-sm font-medium leading-relaxed text-poppy-muted">
+						<li>Melayani pendidikan masyarakat untuk berprestasi, sukses meraih cita-cita.</li>
+						<li>Meningkatkan kualitas pendidikan dengan budaya; berkompetisi dan berprestasi dengan menghargai proses.</li>
+						<li>Memberikan pelayanan prima dengan komitmen tinggi and profesional.</li>
+						<li>Menjalin hubungan yang harmonis dengan mitra kerja baik eksternal maupun internal.</li>
+						<li>Membentuk kepribadian siswa yang cerdas, terampil, dan berkarakter dengan melaksanakan training motivasi dan spiritual secara berkala.</li>
+						<li>Menciptakan budaya belajar siswa.</li>
+						<li>Mengoptimalkan peran serta orang tua dalam pendampingan belajar.</li>
+						<li>Memberikan pendampingan konseling siswa dan konseling parenting orang tua siswa.</li>
+						<li>Memberikan pendampingan Karir & Pendidikan Studi lanjut dalam dan luar negeri.</li>
+					</ul>
+				</div>
+
+				<!-- Column 3: Our Goals -->
+				<div class="bg-poppy-accent border border-poppy-accent rounded-[32px] p-6 sm:p-8 text-left text-white shadow-lg flex flex-col justify-start">
+					<h3 class="text-xl sm:text-2xl font-black font-serif text-white mb-4 uppercase tracking-wide">
 						Our Goals
 					</h3>
 					<ul class="list-disc list-outside pl-5 space-y-4 text-xs sm:text-sm font-medium leading-relaxed text-white/95">
@@ -107,8 +103,11 @@ get_header();
 						<li>Membantu sekolah mitra dalam pengembangan dan meningkatkan mutu pendidikan.</li>
 					</ul>
 				</div>
+
 			</div>
-	</section>n>
+
+		</div>
+	</section>
 
 	<!-- Brand Values Section (Overlapping Footer) -->
 	<section class="poppy-section pt-0 pb-0 relative z-10 mb-[-80px] md:mb-[-140px]">
