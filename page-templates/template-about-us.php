@@ -55,26 +55,11 @@ get_header();
 						LKP Airlangga tumbuh bersama mereka yang ingin melangkah lebih jauh, menjadi cerdas juga berintegritas, tangguh, dan siap menghadapi dunia dengan nilai-nilai yang kuat.
 					</p>
 				</div>
-
-				<!-- Our Goals Card -->
-				<div class="bg-poppy-accent rounded-[32px] p-8 sm:p-10 text-left text-white shadow-lg mt-10 w-full">
-					<h3 class="text-xl sm:text-2xl font-black font-serif text-white mb-6 uppercase tracking-wide">
-						Our Goals
-					</h3>
-					<ul class="list-disc list-outside pl-5 space-y-4 text-xs sm:text-sm font-medium leading-relaxed text-white/95">
-						<li>Membantu peserta didik untuk belajar dengan metode yang lebih tepat sehingga mampu menguasai materi pelajaran dan keterampilan dengan lebih baik.</li>
-						<li>Mendorong peserta didik untuk berprestasi dengan motivasi berkompetisi dan menghargai proses.</li>
-						<li>Membantu orang tua didik dalam mengarahkan, mendorong dan memfasilitasi langkah-langkah untuk menuju prestasi anak.</li>
-						<li>Membantu siswa dalam menentukan studi lanjut dan membuat rencana karir yang sesuai minat siswa, bakat siswa, kompetensi siswa, dan kebutuhan masyarakat.</li>
-						<li>Ikut membantu mencerdaskan anak bangsa.</li>
-						<li>Ikut membantu mewujudkan Kota Metro sebagai Kota Pendidikan.</li>
-						<li>Membantu sekolah mitra dalam pengembangan dan meningkatkan mutu pendidikan.</li>
-					</ul>
-				</div>
 			</div>
 
-			<!-- Right Column: Visi & Misi Card -->
-			<div class="lg:col-span-6 w-full">
+			<!-- Right Column: Visi & Misi and Our Goals Cards (Sidebar) -->
+			<div class="lg:col-span-6 w-full flex flex-col gap-6">
+				<!-- Visi & Misi Card -->
 				<div class="bg-[#F8F9FA] border border-slate-100 rounded-[32px] p-8 sm:p-10 text-left shadow-sm">
 					
 					<!-- Visi Section -->
@@ -95,7 +80,7 @@ get_header();
 						<ul class="list-disc list-outside pl-5 space-y-3.5 text-xs sm:text-sm font-medium leading-relaxed text-poppy-muted">
 							<li>Melayani pendidikan masyarakat untuk berprestasi, sukses meraih cita-cita.</li>
 							<li>Meningkatkan kualitas pendidikan dengan budaya; berkompetisi dan berprestasi dengan menghargai proses,</li>
-							<li>Memberikan pelayanan prima dengan komitmen tinggi dan profesional,</li>
+							<li>Memberikan pelayanan prima dengan komitmen tinggi and profesional,</li>
 							<li>Menjalin hubungan yang harmonis dengan mitra kerja baik eksternal maupun internal,</li>
 							<li>Membentuk kepribadian siswa yang cerdas, terampil, dan berkarakter dengan melaksanakan training motivasi dan spiritual secara berkala,</li>
 							<li>Menciptakan budaya belajar siswa,</li>
@@ -106,9 +91,24 @@ get_header();
 					</div>
 
 				</div>
-			</div>
 
-	</section>
+				<!-- Our Goals Card -->
+				<div class="bg-poppy-accent rounded-[32px] p-8 sm:p-10 text-left text-white shadow-lg w-full">
+					<h3 class="text-xl sm:text-2xl font-black font-serif text-white mb-6 uppercase tracking-wide">
+						Our Goals
+					</h3>
+					<ul class="list-disc list-outside pl-5 space-y-4 text-xs sm:text-sm font-medium leading-relaxed text-white/95">
+						<li>Membantu peserta didik untuk belajar dengan metode yang lebih tepat sehingga mampu menguasai materi pelajaran dan keterampilan dengan lebih baik.</li>
+						<li>Mendorong peserta didik untuk berprestasi dengan motivasi berkompetisi dan menghargai proses.</li>
+						<li>Membantu orang tua didik dalam mengarahkan, mendorong dan memfasilitasi langkah-langkah untuk menuju prestasi anak.</li>
+						<li>Membantu siswa dalam menentukan studi lanjut dan membuat rencana karir yang sesuai minat siswa, bakat siswa, kompetensi siswa, dan kebutuhan masyarakat.</li>
+						<li>Ikut membantu mencerdaskan anak bangsa.</li>
+						<li>Ikut membantu mewujudkan Kota Metro sebagai Kota Pendidikan.</li>
+						<li>Membantu sekolah mitra dalam pengembangan dan meningkatkan mutu pendidikan.</li>
+					</ul>
+				</div>
+			</div>
+	</section>n>
 
 	<!-- Brand Values Section (Overlapping Footer) -->
 	<section class="poppy-section pt-0 pb-0 relative z-10 mb-[-80px] md:mb-[-140px]">
