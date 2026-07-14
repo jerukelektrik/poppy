@@ -146,16 +146,19 @@ get_header();
 				
 				<!-- Section Header -->
 				<div class="text-center max-w-3xl mx-auto mb-16">
-					<h2 class="text-2xl sm:text-3xl md:text-4xl font-black font-serif text-poppy-ink inline-block relative">
-						Pilih Program Unggulan untuk
+					<h2 class="text-2xl sm:text-3xl md:text-4xl font-black font-serif text-poppy-ink inline-block relative mb-4">
+						Pilih Program Kursus Bahasa Inggris Terbaik untuk
 						<span class="relative inline-block text-poppy-ink">
 							<!-- Decorative curved line under the highlighted phrase (red) -->
-							<span class="absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full">
+							<span class="absolute left-1/2 top-full mt-1.5 transform -translate-x-1/2 w-full">
 								<svg viewBox="0 0 178 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
 									<path d="M2 10C35 4 143 4 176 10" stroke="#BD4B3B" stroke-width="4" stroke-linecap="round"/>
 								</svg>
-							</span>Masa Depanmu</span>
+							</span>Anak</span>
 					</h2>
+					<p class="text-xs sm:text-sm text-poppy-muted font-semibold leading-relaxed mt-6">
+						Kurikulum yang dirancang untuk membantu anak mengembangkan kemampuan listening, speaking, reading, dan writing melalui pembelajaran yang aktif dan menyenangkan.
+					</p>
 				</div>
 
 				<!-- Grid of Pricing Cards -->
@@ -173,7 +176,7 @@ get_header();
 							<!-- Body -->
 							<div class="p-6 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+									Pengenalan Bahasa Inggris melalui lagu, permainan, cerita, dan aktivitas interaktif untuk membangun minat belajar serta kosakata dasar anak.
 								</p>
 							</div>
 						</div>
@@ -197,7 +200,7 @@ get_header();
 							<!-- Body -->
 							<div class="p-6 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+									Pengenalan Bahasa Inggris melalui lagu, permainan, cerita, dan aktivitas interaktif untuk membangun minat belajar serta kosakata dasar anak.
 								</p>
 							</div>
 						</div>
@@ -221,7 +224,7 @@ get_header();
 							<!-- Body -->
 							<div class="p-6 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+									Membantu anak memahami struktur kalimat, memperkaya kosakata, dan meningkatkan kepercayaan diri dalam menggunakan Bahasa Inggris.
 								</p>
 							</div>
 						</div>
@@ -245,7 +248,7 @@ get_header();
 							<!-- Body -->
 							<div class="p-6 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+									Fokus pada kemampuan berbicara melalui praktik percakapan sehari-hari, diskusi ringan, dan aktivitas komunikasi yang interaktif.
 								</p>
 							</div>
 						</div>
