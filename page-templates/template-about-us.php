@@ -55,6 +55,22 @@ get_header();
 						LKP Airlangga tumbuh bersama mereka yang ingin melangkah lebih jauh, menjadi cerdas juga berintegritas, tangguh, dan siap menghadapi dunia dengan nilai-nilai yang kuat.
 					</p>
 				</div>
+
+				<!-- Our Goals Card -->
+				<div class="bg-poppy-accent rounded-[32px] p-8 sm:p-10 text-left text-white shadow-lg mt-10 w-full">
+					<h3 class="text-xl sm:text-2xl font-black font-serif text-white mb-6 uppercase tracking-wide">
+						Our Goals
+					</h3>
+					<ul class="list-disc list-outside pl-5 space-y-4 text-xs sm:text-sm font-medium leading-relaxed text-white/95">
+						<li>Membantu peserta didik untuk belajar dengan metode yang lebih tepat sehingga mampu menguasai materi pelajaran dan keterampilan dengan lebih baik.</li>
+						<li>Mendorong peserta didik untuk berprestasi dengan motivasi berkompetisi dan menghargai proses.</li>
+						<li>Membantu orang tua didik dalam mengarahkan, mendorong dan memfasilitasi langkah-langkah untuk menuju prestasi anak.</li>
+						<li>Membantu siswa dalam menentukan studi lanjut dan membuat rencana karir yang sesuai minat siswa, bakat siswa, kompetensi siswa, dan kebutuhan masyarakat.</li>
+						<li>Ikut membantu mencerdaskan anak bangsa.</li>
+						<li>Ikut membantu mewujudkan Kota Metro sebagai Kota Pendidikan.</li>
+						<li>Membantu sekolah mitra dalam pengembangan dan meningkatkan mutu pendidikan.</li>
+					</ul>
+				</div>
 			</div>
 
 			<!-- Right Column: Visi & Misi Card -->

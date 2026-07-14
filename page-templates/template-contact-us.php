@@ -26,19 +26,19 @@ get_header();
 		</div>
 	</section>
 
-	<!-- Details & Goals Section -->
+	<!-- Details Section -->
 	<section class="poppy-section bg-white relative z-20">
-		<div class="poppy-container grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+		<div class="poppy-container max-w-2xl mx-auto">
 			
-			<!-- Left Column: Contact Info -->
-			<div class="lg:col-span-6 flex flex-col items-start text-left">
+			<!-- Centered Card Container -->
+			<div class="bg-[#F8F9FA] border border-slate-100 rounded-[32px] p-8 sm:p-12 shadow-sm flex flex-col items-center text-center">
 				<!-- Logo -->
 				<div class="mb-10 select-none">
-					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/Logo.webp" alt="<?php bloginfo( 'name' ); ?>" class="h-16 w-auto object-contain">
+					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/Logo.webp" alt="<?php bloginfo( 'name' ); ?>" class="h-16 w-auto object-contain mx-auto">
 				</div>
 
 				<!-- Contact Details List -->
-				<div class="flex flex-col gap-6 sm:gap-8 w-full">
+				<div class="flex flex-col gap-6 sm:gap-8 w-full max-w-md text-left">
 					
 					<!-- Detail Item 1: Telepon -->
 					<div class="flex items-start gap-4">
@@ -58,7 +58,7 @@ get_header();
 						<div class="w-12 h-12 rounded-full bg-poppy-accent flex items-center justify-center flex-shrink-0 shadow-sm">
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/iconpath.webp" alt="Alamat" class="w-6 h-6 object-contain">
 						</div>
-						<div class="flex flex-col justify-center max-w-md">
+						<div class="flex flex-col justify-center">
 							<p style="font-size: 19px !important;" class="text-sm font-bold text-poppy-ink mb-1 font-serif">Alamat</p>
 							<p class="text-xs sm:text-sm text-poppy-muted font-semibold leading-relaxed">
 								JL. AR. Prawiranegara No.32, Metro, Kec. Metro Pusat, Kota Metro, Lampung 34111
@@ -146,25 +146,6 @@ get_header();
 
 				</div>
 			</div>
-
-			<!-- Right Column: Our Goals Card -->
-			<div class="lg:col-span-6 w-full">
-				<div class="bg-poppy-accent rounded-[32px] p-8 sm:p-10 text-left text-white shadow-lg">
-					<h3 class="text-xl sm:text-2xl font-black font-serif text-white mb-6 uppercase tracking-wide">
-						Our Goals
-					</h3>
-					<ul class="list-disc list-outside pl-5 space-y-4 text-xs sm:text-sm font-medium leading-relaxed text-white/95">
-						<li>Membantu peserta didik untuk belajar dengan metode yang lebih tepat sehingga mampu menguasai materi pelajaran dan keterampilan dengan lebih baik.</li>
-						<li>Mendorong peserta didik untuk berprestasi dengan motivasi berkompetisi dan menghargai proses.</li>
-						<li>Membantu orang tua didik dalam mengarahkan, mendorong dan memfasilitasi langkah-langkah untuk menuju prestasi anak.</li>
-						<li>Membantu siswa dalam menentukan studi lanjut dan membuat rencana karir yang sesuai minat siswa, bakat siswa, kompetensi siswa, dan kebutuhan masyarakat.</li>
-						<li>Ikut membantu mencerdaskan anak bangsa.</li>
-						<li>Ikut membantu mewujudkan Kota Metro sebagai Kota Pendidikan.</li>
-						<li>Membantu sekolah mitra dalam pengembangan dan meningkatkan mutu pendidikan.</li>
-					</ul>
-				</div>
-			</div>
-
 		</div>
 	</section>
 
