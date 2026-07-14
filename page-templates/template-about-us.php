@@ -30,31 +30,45 @@ get_header();
 	<section class="poppy-section bg-white relative z-20">
 		<div class="poppy-container">
 			
-			<!-- Tentang Kami Header & Description -->
-			<div class="max-w-4xl text-left mb-12 sm:mb-16">
-				<h2 class="text-2xl sm:text-3xl md:text-[36px] font-black text-poppy-ink mb-10 tracking-tight font-serif inline-block relative">
-					Tentang Kami
-					<span class="absolute left-0 right-0 top-full mt-1.5 w-full">
-						<svg viewBox="0 0 178 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
-							<path d="M2 10C35 4 143 4 176 10" stroke="#BD4B3B" stroke-width="4" stroke-linecap="round"/>
-						</svg>
-					</span>
-				</h2>
+			<!-- Tentang Kami Grid (Text Left | Image Right) -->
+			<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-12 sm:mb-16">
+				
+				<!-- Left Column: Tentang Kami Description -->
+				<div class="lg:col-span-7 flex flex-col items-start text-left">
+					<h2 class="text-2xl sm:text-3xl md:text-[36px] font-black text-poppy-ink mb-10 tracking-tight font-serif inline-block relative">
+						Tentang Kami
+						<span class="absolute left-0 right-0 top-full mt-1.5 w-full">
+							<svg viewBox="0 0 178 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
+								<path d="M2 10C35 4 143 4 176 10" stroke="#BD4B3B" stroke-width="4" stroke-linecap="round"/>
+							</svg>
+						</span>
+					</h2>
 
-				<div class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed font-medium space-y-5">
-					<p>
-						LKP Airlangga adalah pusat dan konsultan pendidikan sejak 1996 yang berkomitmen mewujudkan generasi masa depan yang cerdas dan berkarakter. Berlandaskan filosofi <strong class="font-bold italic text-poppy-ink">"Empowering the Future with Intelligence and Integrity"</strong>, kami percaya bahwa pendidikan bukan hanya tentang nilai akademik, tetapi tentang membentuk manusia utuh yang berdaya pikir, berakhlak, dan siap berkontribusi untuk masa depan yang lebih baik.
-					</p>
-					<p>
-						Setiap program kami tumbuh dari pemahaman akan kebutuhan peserta didik dengan pendekatan yang humanis dan berorientasi pada nilai-nilai. Kami hadir untuk menanamkan semangat belajar yang membumi dan bermakna.
-					</p>
-					<p>
-						Tim Airlangga selalu bekerja secara kolaboratif, empatik, dan reflektif — memahami setiap latar belakang, tantangan, serta impian peserta didik, lalu menerjemahkannya menjadi proses pembelajaran yang berkualitas.
-					</p>
-					<p>
-						LKP Airlangga tumbuh bersama mereka yang ingin melangkah lebih jauh, menjadi cerdas juga berintegritas, tangguh, dan siap menghadapi dunia dengan nilai-nilai yang kuat.
-					</p>
+					<div class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed font-medium space-y-5">
+						<p>
+							LKP Airlangga adalah pusat dan konsultan pendidikan sejak 1996 yang berkomitmen mewujudkan generasi masa depan yang cerdas dan berkarakter. Berlandaskan filosofi <strong class="font-bold italic text-poppy-ink">"Empowering the Future with Intelligence and Integrity"</strong>, kami percaya bahwa pendidikan bukan hanya tentang nilai akademik, tetapi tentang membentuk manusia utuh yang berdaya pikir, berakhlak, dan siap berkontribusi untuk masa depan yang lebih baik.
+						</p>
+						<p>
+							Setiap program kami tumbuh dari pemahaman akan kebutuhan peserta didik dengan pendekatan yang humanis dan berorientasi pada nilai-nilai. Kami hadir untuk menanamkan semangat belajar yang membumi dan bermakna.
+						</p>
+						<p>
+							Tim Airlangga selalu bekerja secara kolaboratif, empatik, dan reflektif — memahami setiap latar belakang, tantangan, serta impian peserta didik, lalu menerjemahkannya menjadi proses pembelajaran yang berkualitas.
+						</p>
+						<p>
+							LKP Airlangga tumbuh bersama mereka yang ingin melangkah lebih jauh, menjadi cerdas juga berintegritas, tangguh, dan siap menghadapi dunia dengan nilai-nilai yang kuat.
+						</p>
+					</div>
 				</div>
+
+				<!-- Right Column: Image Card -->
+				<div class="lg:col-span-5 w-full">
+					<div class="bg-white rounded-[32px] p-4 shadow-[0_12px_36px_rgba(0,0,0,0.06)] border border-slate-100/80 overflow-hidden group">
+						<div class="overflow-hidden rounded-[24px]">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/gedung.jpg' ); ?>" alt="Gedung LKP Airlangga" class="w-full h-auto object-cover rounded-[24px] group-hover:scale-105 transition-transform duration-500 shadow-sm">
+						</div>
+					</div>
+				</div>
+
 			</div>
 
 			<!-- Three-Column Cards Grid (Visi | Misi | Our Goals) -->
