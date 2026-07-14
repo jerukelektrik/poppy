@@ -109,7 +109,8 @@ get_header();
 					<div class="flex items-center gap-3 mb-3 sm:mb-4">
 						<!-- Briefcase Icon -->
 						<svg class="w-6 h-6 sm:w-7 sm:h-7 text-poppy-accent flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 .621-.504 1.125-1.125 1.125H4.875A1.125 1.125 0 013.75 18.4V14.15m16.5 0c0-1.205-.812-2.285-1.96-2.505l-3.31-.635a12.078 12.078 0 01-4.73 0l-3.31.635a2.53 2.53 0 00-1.96 2.505m16.5 0v-1.65a1.875 1.875 0 00-1.875-1.875H5.625A1.875 1.875 0 003.75 12v2.15M9 5.25h6m-6 0v-1.5A1.125 1.125 0 0110.125 2.625h3.75A1.125 1.125 0 0115 3.75v1.5m-6 0h6"></path>
+							<rect x="2" y="7" width="20" height="13" rx="2" ry="2" />
+							<path d="M16 20V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v15M2 13h20" />
 						</svg>
 						<h3 class="text-lg sm:text-xl md:text-[22px] font-black font-serif text-poppy-ink">
 							Profesional
