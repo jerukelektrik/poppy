@@ -223,9 +223,8 @@ get_header();
 								</p>
 							</div>
 						</div>
-						<!-- Footer/Price -->
 						<div class="px-6 pb-6 text-left">
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3B6DBF] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+							<a href="https://wa.me/6282371966568?text=saya%20mau%20konsultasi%20bimbingan%20belajar%2C%20jadi%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20program%20asesmen%20psikologi." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3B6DBF] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
 						</div>
@@ -247,9 +246,8 @@ get_header();
 								</p>
 							</div>
 						</div>
-						<!-- Footer/Price -->
 						<div class="px-6 pb-6 text-left">
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3A96B7] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+							<a href="https://wa.me/6282371966568?text=saya%20mau%20konsultasi%20bimbingan%20belajar%2C%20jadi%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20program%20talent%20dna." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3A96B7] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
 						</div>
@@ -271,9 +269,8 @@ get_header();
 								</p>
 							</div>
 						</div>
-						<!-- Footer/Price -->
 						<div class="px-6 pb-6 text-left">
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3BA7AA] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+							<a href="https://wa.me/6282371966568?text=saya%20mau%20konsultasi%20bimbingan%20belajar%2C%20jadi%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20program%20tes%20kesiapan%20belajar." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3BA7AA] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
 						</div>
@@ -295,9 +292,8 @@ get_header();
 								</p>
 							</div>
 						</div>
-						<!-- Footer/Price -->
 						<div class="px-6 pb-6 text-left">
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3CA986] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+							<a href="https://wa.me/6282371966568?text=saya%20mau%20konsultasi%20bimbingan%20belajar%2C%20jadi%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20program%20pemetaan%20sdm." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3CA986] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
 						</div>
@@ -326,7 +322,7 @@ get_header();
 						</div>
 						<!-- Footer -->
 						<div class="px-6 pb-6 text-left">
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3B6DBF] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+							<a href="https://wa.me/6282371966568?text=saya%20mau%20konsultasi%20bimbingan%20belajar%2C%20jadi%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20program%20coaching%20karier." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3B6DBF] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
 						</div>
@@ -350,7 +346,7 @@ get_header();
 						</div>
 						<!-- Footer -->
 						<div class="px-6 pb-6 text-left">
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3BA7AA] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+							<a href="https://wa.me/6282371966568?text=saya%20mau%20konsultasi%20bimbingan%20belajar%2C%20jadi%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20program%20konseling." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3BA7AA] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
 						</div>
