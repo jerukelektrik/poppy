@@ -28,36 +28,42 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<!-- Client Logos Grid / Scrollable Container -->
 		<div class="w-full max-w-5xl mx-auto mt-12 overflow-hidden">
-			<div class="flex items-center justify-between gap-6 md:gap-8 py-4 overflow-x-auto scrollbar-none snap-x snap-mandatory">
+			<div class="flex items-center justify-start lg:justify-center gap-8 md:gap-12 py-6 overflow-x-auto scrollbar-none snap-x snap-mandatory">
 				
-				<?php for ( $i = 0; $i < 5; $i++ ) : ?>
+				<?php 
+				$mitra_images = array(
+					'mitra-1.png',
+					'mitra-2.png',
+					'mitra-3.png',
+					'mitra-4.png',
+					'mitra-6.png',
+					'mitra-7.png',
+					'mitra-8.png',
+					'mitra-9.png',
+					'mitra-10.png',
+					'mitra-11.png',
+					'mitra-12.png',
+					'mitra-13.png',
+				);
+				foreach ( $mitra_images as $image ) : 
+				?>
 					<!-- Client Logo Box -->
-					<div class="flex-shrink-0 snap-center flex items-center justify-center w-[160px] sm:w-[180px] md:w-[200px] h-20 opacity-90 select-none">
-						<!-- Custom SVG logo placeholder matching the spectacles specs logo + AIRLANGGA text -->
-						<div class="flex items-center gap-2">
-							<svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<polygon points="25,4 42,10 25,16 8,10" fill="#132039" />
-								<path d="M16,12.7 V16.5 C16,19 20,20.5 25,20.5 C30,20.5 34,19 34,16.5 V12.7" fill="#132039" />
-								<path d="M37,11 V18.5 L39,19.5 V11 Z" fill="#132039" />
-								<circle cx="39" cy="19.5" r="1.2" fill="#132039" />
-								<path d="M16.5,22 C11.8,22 8,25.8 8,30.5 C8,35.2 11.8,39 16.5,39 C20.3,39 23.5,36.5 24.6,33 C25.5,36.5 28.7,39 32.5,39 C37.2,39 41,35.2 41,30.5 C41,25.8 37.2,22 32.5,22 C28.7,22 25.5,24.5 24.6,28 C23.5,24.5 20.3,22 16.5,22 Z M16.5,26.5 C18.7,26.5 20.5,28.3 20.5,30.5 C20.5,32.7 18.7,34.5 16.5,34.5 C14.3,34.5 12.5,32.7 12.5,30.5 C12.5,28.3 14.3,26.5 16.5,26.5 Z M32.5,26.5 C34.7,26.5 36.5,28.3 36.5,30.5 C36.5,32.7 34.7,34.5 32.5,34.5 C30.3,34.5 28.5,32.7 28.5,30.5 C28.5,28.3 30.3,26.5 32.5,26.5 Z" fill="#BD4B3B" />
-							</svg>
-							<div class="flex flex-col text-left">
-								<span class="text-xs font-black tracking-wider text-poppy-accent leading-none font-serif">AIRLANGGA</span>
-								<span class="text-[5.5px] font-bold text-poppy-ink tracking-tight uppercase leading-none mt-0.5">LKP</span>
-							</div>
-						</div>
+					<div class="flex-shrink-0 snap-center flex items-center justify-center w-[140px] sm:w-[160px] md:w-[180px] h-20 opacity-85 hover:opacity-100 transition-opacity duration-300 select-none">
+						<img 
+							src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $image ); ?>" 
+							alt="Mitra LKP Airlangga" 
+							class="max-h-12 max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300 filter"
+						/>
 					</div>
-				<?php endfor; ?>
+				<?php endforeach; ?>
 
 			</div>
 
-			<!-- Pagination Indicator Dots (Mockup match) -->
-			<div class="flex items-center justify-center gap-2 mt-4">
-				<button class="w-3 h-3 rounded-full bg-poppy-accent scale-110 cursor-pointer focus:outline-none" aria-label="Go to client slide 1"></button>
-				<button class="w-3 h-3 rounded-full bg-gray-300 transition duration-300 cursor-pointer focus:outline-none" aria-label="Go to client slide 2"></button>
-				<button class="w-3 h-3 rounded-full bg-gray-300 transition duration-300 cursor-pointer focus:outline-none" aria-label="Go to client slide 3"></button>
-				<button class="w-3 h-3 rounded-full bg-gray-300 transition duration-300 cursor-pointer focus:outline-none" aria-label="Go to client slide 4"></button>
+			<!-- Pagination Indicator Dots (Mockup match, hidden on desktop if too many items) -->
+			<div class="flex sm:hidden items-center justify-center gap-2 mt-4">
+				<button class="w-2.5 h-2.5 rounded-full bg-poppy-accent scale-110 cursor-pointer focus:outline-none" aria-label="Go to client slide 1"></button>
+				<button class="w-2.5 h-2.5 rounded-full bg-gray-300 transition duration-300 cursor-pointer focus:outline-none" aria-label="Go to client slide 2"></button>
+				<button class="w-2.5 h-2.5 rounded-full bg-gray-300 transition duration-300 cursor-pointer focus:outline-none" aria-label="Go to client slide 3"></button>
 			</div>
 
 		</div>
