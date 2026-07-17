@@ -26,46 +26,78 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</h2>
 		</div>
 
-		<!-- Client Logos Grid / Scrollable Container -->
-		<div class="w-full max-w-5xl mx-auto mt-12 overflow-hidden">
-			<div class="flex items-center justify-start lg:justify-center gap-8 md:gap-12 py-6 overflow-x-auto scrollbar-none snap-x snap-mandatory">
-				
-				<?php 
-				$mitra_images = array(
-					'mitra-1.png',
-					'mitra-2.png',
-					'mitra-3.png',
-					'mitra-4.png',
-					'mitra-6.png',
-					'mitra-7.png',
-					'mitra-8.png',
-					'mitra-9.png',
-					'mitra-10.png',
-					'mitra-11.png',
-					'mitra-12.png',
-					'mitra-13.png',
-				);
-				foreach ( $mitra_images as $image ) : 
-				?>
-					<!-- Client Logo Box -->
-					<div class="flex-shrink-0 snap-center flex items-center justify-center w-[140px] sm:w-[160px] md:w-[180px] h-20 opacity-85 hover:opacity-100 transition-opacity duration-300 select-none">
-						<img 
-							src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $image ); ?>" 
-							alt="Mitra LKP Airlangga" 
-							class="max-h-12 max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300 filter"
-						/>
-					</div>
-				<?php endforeach; ?>
+		<!-- Infinite Auto-scrolling Marquee -->
+		<style>
+			@keyframes marquee-scroll {
+				0% { transform: translateX(0); }
+				100% { transform: translateX(-50%); }
+			}
+			.marquee-container {
+				display: flex;
+				overflow: hidden;
+				width: 100%;
+				/* Gradient mask for smooth fade effect at edges */
+				mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+				-webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+			}
+			.marquee-content {
+				display: flex;
+				gap: 4rem; /* Spacing between logos */
+				animation: marquee-scroll 45s linear infinite;
+				width: max-content;
+			}
+			.marquee-content:hover {
+				animation-play-state: paused;
+			}
+			.mitra-logo {
+				max-height: 48px;
+				width: auto;
+				object-fit: contain;
+				filter: grayscale(100%) contrast(110%);
+				opacity: 0.65;
+				transition: all 0.3s ease;
+			}
+			.mitra-logo:hover {
+				filter: grayscale(0%) contrast(100%);
+				opacity: 1;
+			}
+		</style>
 
+		<div class="w-full max-w-6xl mx-auto mt-16 overflow-hidden">
+			<div class="marquee-container py-4">
+				<div class="marquee-content">
+					<?php 
+					$mitra_images = array(
+						'mitra-1.png',
+						'mitra-2.png',
+						'mitra-3.png',
+						'mitra-4.png',
+						'mitra-6.png',
+						'mitra-7.png',
+						'mitra-8.png',
+						'mitra-9.png',
+						'mitra-10.png',
+						'mitra-11.png',
+						'mitra-12.png',
+						'mitra-13.png',
+					);
+					// Render twice to build a seamless loop
+					for ( $loop = 0; $loop < 2; $loop++ ) {
+						foreach ( $mitra_images as $image ) {
+							?>
+							<div class="flex-shrink-0 flex items-center justify-center w-[120px] sm:w-[150px] h-16 select-none">
+								<img 
+									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $image ); ?>" 
+									alt="Mitra LKP Airlangga" 
+									class="mitra-logo"
+								/>
+							</div>
+							<?php
+						}
+					}
+					?>
+				</div>
 			</div>
-
-			<!-- Pagination Indicator Dots (Mockup match, hidden on desktop if too many items) -->
-			<div class="flex sm:hidden items-center justify-center gap-2 mt-4">
-				<button class="w-2.5 h-2.5 rounded-full bg-poppy-accent scale-110 cursor-pointer focus:outline-none" aria-label="Go to client slide 1"></button>
-				<button class="w-2.5 h-2.5 rounded-full bg-gray-300 transition duration-300 cursor-pointer focus:outline-none" aria-label="Go to client slide 2"></button>
-				<button class="w-2.5 h-2.5 rounded-full bg-gray-300 transition duration-300 cursor-pointer focus:outline-none" aria-label="Go to client slide 3"></button>
-			</div>
-
 		</div>
 	</div>
 </section>
