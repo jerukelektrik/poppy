@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				animation-play-state: paused;
 			}
 			.mitra-logo {
-				max-height: 64px;
+				max-height: 80px;
 				width: auto;
 				object-fit: contain;
 				opacity: 0.75;
@@ -84,7 +84,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					for ( $loop = 0; $loop < 2; $loop++ ) {
 						foreach ( $mitra_images as $image ) {
 							?>
-							<div class="flex-shrink-0 flex items-center justify-center w-[150px] sm:w-[200px] h-24 select-none">
+							<div class="flex-shrink-0 flex items-center justify-center w-[180px] sm:w-[240px] h-32 select-none">
 								<img 
 									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $image ); ?>" 
 									alt="Mitra LKP Airlangga" 
