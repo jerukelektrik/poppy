@@ -9,28 +9,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<section class="poppy-section bg-white pt-20 pb-16 relative z-20 border-t border-slate-100/60">
+<section class="poppy-section bg-transparent pt-16 pb-10 relative z-20">
 
 	<div class="poppy-container relative z-10">
 		
-		<!-- Section Header (Revamped to match the clean mockup design) -->
-		<div class="text-center max-w-4xl mx-auto mb-16 flex flex-col items-center">
-			
-			<!-- Blue Badge -->
-			<span class="inline-flex items-center justify-center bg-[#3B6DBF] text-white font-extrabold text-[10px] sm:text-xs px-4 py-1.5 rounded-md uppercase tracking-wider mb-4 shadow-sm">
-				Our Partners
-			</span>
-			
-			<!-- Title -->
-			<h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-black text-poppy-ink tracking-tight mb-4">
+		<!-- Section Header -->
+		<div class="text-center max-w-3xl mx-auto mb-12">
+			<h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-poppy-ink inline-block relative">
 				Dipercaya oleh 100+ Instansi & Institusi
+				<!-- Decorative curved line under title (Terracotta) -->
+				<span class="absolute left-1/2 bottom-[-16px] transform -translate-x-1/2 w-64">
+					<svg viewBox="0 0 178 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
+						<path d="M2 10C35 4 143 4 176 10" stroke="#BD4B3B" stroke-width="6" stroke-linecap="round"/>
+					</svg>
+				</span>
 			</h2>
-			
-			<!-- Subtitle / Description -->
-			<p class="text-xs sm:text-sm text-poppy-muted font-medium max-w-2xl mx-auto leading-relaxed">
-				Kami bekerja sama dengan berbagai sekolah, universitas, perusahaan, dan instansi untuk menyelenggarakan asesmen psikologi, coaching karier, serta bimbingan belajar terbaik.
-			</p>
-			
 		</div>
 
 		<!-- Infinite Auto-scrolling Marquee -->
