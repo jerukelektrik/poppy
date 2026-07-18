@@ -79,6 +79,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 						'mitra-11.png',
 						'mitra-12.png',
 						'mitra-13.png',
+						'mitra-14.webp',
+						'mitra-15.png',
+						'mitra-16.jpg',
+						'mitra-17.jpg',
 					);
 					// Render twice to build a seamless loop
 					for ( $loop = 0; $loop < 2; $loop++ ) {
