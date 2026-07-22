@@ -48,28 +48,28 @@ get_header();
 					Wujudkan impianmu masuk sekolah & kampus favorit bersama LKP Airlangga. Kami menggabungkan metode belajar adaptif dengan pengajar profesional untuk memastikan kamu paham setiap materi tanpa beban. Yuk, jadi bagian dari ribuan siswa berprestasi di seluruh Indonesia.
 				</p>
 
-				<!-- Hero Stats Cards -->
-				<div class="grid grid-cols-3 gap-3 sm:gap-4 max-w-lg mb-8 sm:mb-10">
+				<!-- Hero Stats Cards (Compact Left-Aligned Flex Layout) -->
+				<div class="flex flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-10">
 					
 					<!-- Card 1: Alumni -->
-					<div class="bg-white/80 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-slate-100/50 shadow-sm flex flex-col items-center justify-center">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/icon-hero-1.webp' ); ?>" alt="5000+ Alumni" class="w-10 h-10 sm:w-12 sm:h-12 object-contain mb-3 select-none pointer-events-none" />
-						<span class="text-base sm:text-lg font-black text-[#BD4B3B] leading-none mb-1">5000+</span>
-						<span class="text-[10px] sm:text-xs font-bold text-poppy-muted">Alumni</span>
+					<div class="bg-white rounded-2xl p-2.5 w-[76px] sm:w-[88px] h-[92px] sm:h-[104px] border border-slate-100/70 shadow-[0_4px_12px_rgba(0,0,0,0.03)] flex flex-col items-center justify-center select-none">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/icon-hero-1.webp' ); ?>" alt="5000+ Alumni" class="w-6 h-6 sm:w-7 sm:h-7 object-contain mb-2 pointer-events-none" />
+						<span class="text-xs sm:text-sm font-black text-[#BD4B3B] leading-none mb-0.5">5000+</span>
+						<span class="text-[9px] sm:text-[10px] font-extrabold text-poppy-muted leading-tight">Alumni</span>
 					</div>
 
 					<!-- Card 2: Mitra -->
-					<div class="bg-white/80 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-slate-100/50 shadow-sm flex flex-col items-center justify-center">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/icon-hero-2.webp' ); ?>" alt="17+ Mitra" class="w-10 h-10 sm:w-12 sm:h-12 object-contain mb-3 select-none pointer-events-none" />
-						<span class="text-base sm:text-lg font-black text-[#3CA986] leading-none mb-1">17+</span>
-						<span class="text-[10px] sm:text-xs font-bold text-poppy-muted">Mitra</span>
+					<div class="bg-white rounded-2xl p-2.5 w-[76px] sm:w-[88px] h-[92px] sm:h-[104px] border border-slate-100/70 shadow-[0_4px_12px_rgba(0,0,0,0.03)] flex flex-col items-center justify-center select-none">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/icon-hero-2.webp' ); ?>" alt="17+ Mitra" class="w-6 h-6 sm:w-7 sm:h-7 object-contain mb-2 pointer-events-none" />
+						<span class="text-xs sm:text-sm font-black text-[#3CA986] leading-none mb-0.5">17+</span>
+						<span class="text-[9px] sm:text-[10px] font-extrabold text-poppy-muted leading-tight">Mitra</span>
 					</div>
 
 					<!-- Card 3: Pengajar -->
-					<div class="bg-white/80 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-slate-100/50 shadow-sm flex flex-col items-center justify-center">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/icon-hero-3.webp' ); ?>" alt="10+ Pengajar" class="w-10 h-10 sm:w-12 sm:h-12 object-contain mb-3 select-none pointer-events-none" />
-						<span class="text-base sm:text-lg font-black text-[#3B6DBF] leading-none mb-1">10+</span>
-						<span class="text-[10px] sm:text-xs font-bold text-poppy-muted leading-tight">Pengajar<br class="hidden sm:inline"/>Profesional</span>
+					<div class="bg-white rounded-2xl p-2.5 w-[76px] sm:w-[88px] h-[92px] sm:h-[104px] border border-slate-100/70 shadow-[0_4px_12px_rgba(0,0,0,0.03)] flex flex-col items-center justify-center select-none">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/icon-hero-3.webp' ); ?>" alt="10+ Pengajar" class="w-6 h-6 sm:w-7 sm:h-7 object-contain mb-2 pointer-events-none" />
+						<span class="text-xs sm:text-sm font-black text-[#3B6DBF] leading-none mb-0.5">10+</span>
+						<span class="text-[9px] sm:text-[10px] font-extrabold text-poppy-muted leading-none text-center">Pengajar<br/>Profesional</span>
 					</div>
 
 				</div>
