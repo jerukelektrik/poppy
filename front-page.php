@@ -34,8 +34,8 @@ get_header();
 			<div class="lg:col-span-7 flex flex-col justify-center text-left relative z-10">
 				<!-- Pill Badge -->
 				<div class="mb-4">
-					<span class="inline-flex items-center gap-3 bg-[#FFF2EE] border border-[#FFDEC8] text-poppy-accent font-extrabold text-[11px] sm:text-xs px-6 py-2 rounded-full select-none">
-						<span class="text-[13px] sm:text-[15px] leading-none">★</span> Bimbel SD, SMP, SMA Terbaik di Metro Lampung
+					<span class="inline-flex items-center gap-2 bg-[#FFF2EE] border border-[#FFDEC8] text-poppy-accent font-extrabold text-[9px] sm:text-xs px-4 sm:px-6 py-1.5 sm:py-2 rounded-full select-none whitespace-nowrap">
+						<span class="text-[11px] sm:text-[15px] leading-none">★</span> Bimbel SD, SMP, SMA Terbaik di Metro Lampung
 					</span>
 				</div>
 				
