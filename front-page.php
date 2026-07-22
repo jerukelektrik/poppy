@@ -81,8 +81,8 @@ get_header();
 			<div class="lg:col-span-5 relative h-auto sm:h-[460px] lg:h-[460px] flex items-end justify-center lg:justify-end">
 				<!-- Large Hero Image (Students) -->
 				<style>
-					/* High specificity rules to override theme constraints on hero pill badge */
-					h1.hero-pill-badge, .hero-pill-badge {
+					html body main.site-main h1.hero-pill-badge,
+					html body main.site-main .hero-pill-badge {
 						font-family: var(--font-family-body) !important;
 						font-weight: 800 !important;
 						line-height: 1 !important;
@@ -93,16 +93,19 @@ get_header();
 						display: inline-flex !important;
 						align-items: center !important;
 					}
-					h1.hero-pill-badge .star-icon, .hero-pill-badge .star-icon {
+					html body main.site-main h1.hero-pill-badge .star-icon,
+					html body main.site-main .hero-pill-badge .star-icon {
 						font-size: 9.5px !important;
 						margin-right: 4px !important;
 					}
 					@media (min-width: 640px) {
-						h1.hero-pill-badge, .hero-pill-badge {
+						html body main.site-main h1.hero-pill-badge,
+						html body main.site-main .hero-pill-badge {
 							font-size: 12px !important;
 							padding: 8px 24px !important;
 						}
-						h1.hero-pill-badge .star-icon, .hero-pill-badge .star-icon {
+						html body main.site-main h1.hero-pill-badge .star-icon,
+						html body main.site-main .hero-pill-badge .star-icon {
 							font-size: 15px !important;
 							margin-right: 8px !important;
 						}
