@@ -58,17 +58,12 @@ get_header();
 			
 			<!-- Right Column: Hero Image -->
 			<div class="lg:col-span-5 relative h-auto sm:h-[460px] lg:h-[460px] flex items-end justify-center lg:justify-end">
-				<!-- Large Hero Image (Students) — Responsive Picture Tag -->
-				<picture class="relative z-10 w-full h-auto max-w-[420px] sm:max-w-[500px] lg:max-w-none lg:w-[620px] xl:w-[700px] lg:absolute lg:bottom-0 lg:right-[-40px] transform sm:translate-y-12 lg:translate-y-32 block select-none pointer-events-none">
-					<!-- Mobile optimized image (< 768px) -->
-					<source media="(max-width: 767px)" srcset="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hero%20image-mobile.webp' ); ?>">
-					<!-- Desktop/Fallback image -->
-					<img 
-						src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hero%20image.webp' ); ?>" 
-						alt="Siswa Berprestasi LKP Airlangga" 
-						class="w-full h-auto"
-					/>
-				</picture>
+				<!-- Large Hero Image (Students) -->
+				<img 
+					src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hero%20image.webp' ); ?>" 
+					alt="Siswa Berprestasi LKP Airlangga" 
+					class="relative z-10 w-full h-auto max-w-[420px] sm:max-w-[500px] lg:max-w-none lg:w-[620px] xl:w-[700px] lg:absolute lg:bottom-0 lg:right-[-40px] transform sm:translate-y-12 lg:translate-y-32 block select-none pointer-events-none"
+				/>
 			</div>
 			
 		</div>
