@@ -34,7 +34,7 @@ get_header();
 			<div class="lg:col-span-7 flex flex-col justify-center text-left relative z-10">
 				<!-- Pill Badge -->
 				<div class="mb-4">
-					<span class="inline-flex items-center gap-1.5 bg-[#FFF2EE] border border-[#FFDEC8] text-poppy-accent font-extrabold text-[11px] sm:text-xs px-3.5 py-1.5 rounded-full select-none">
+					<span class="inline-flex items-center gap-2.5 bg-[#FFF2EE] border border-[#FFDEC8] text-poppy-accent font-extrabold text-[11px] sm:text-xs px-6 py-2 rounded-full select-none">
 						<span class="text-[10px]">★</span> Bimbel SD, SMP, SMA Terbaik di Metro Lampung
 					</span>
 				</div>
