@@ -81,25 +81,34 @@ get_header();
 			<div class="lg:col-span-5 relative h-auto sm:h-[460px] lg:h-[460px] flex items-end justify-center lg:justify-end">
 				<!-- Large Hero Image (Students) -->
 				<style>
-					.hero-student-image {
+					/* High specificity rules to override theme-wide img max-width constraints */
+					main.site-main img.hero-student-image {
+						width: 320px !important;
 						max-width: none !important;
 						transform: translateY(60px) !important;
 					}
 					@media (min-width: 640px) {
-						.hero-student-image {
+						main.site-main img.hero-student-image {
+							width: 500px !important;
 							transform: translateY(100px) !important;
 						}
 					}
 					@media (min-width: 1024px) {
-						.hero-student-image {
+						main.site-main img.hero-student-image {
+							width: 700px !important;
 							transform: translateY(175px) !important;
+						}
+					}
+					@media (min-width: 1280px) {
+						main.site-main img.hero-student-image {
+							width: 780px !important;
 						}
 					}
 				</style>
 				<img 
 					src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hero%20image.webp' ); ?>" 
 					alt="Siswa Berprestasi LKP Airlangga" 
-					class="hero-student-image relative z-10 w-full h-auto max-w-[460px] sm:max-w-[550px] lg:max-w-none lg:w-[700px] xl:w-[780px] lg:absolute lg:bottom-0 lg:right-[-40px] block select-none pointer-events-none"
+					class="hero-student-image relative z-10 h-auto lg:absolute lg:bottom-0 lg:right-[-40px] block select-none pointer-events-none"
 				/>
 			</div>
 			
