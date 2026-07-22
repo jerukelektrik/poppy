@@ -34,9 +34,9 @@ get_header();
 			<div class="lg:col-span-7 flex flex-col justify-center text-left relative z-10">
 				<!-- Pill Badge -->
 				<div class="mb-4">
-					<span class="hero-pill-badge bg-[#FFF2EE] border border-[#FFDEC8] text-poppy-accent font-extrabold rounded-full select-none">
+					<h1 class="hero-pill-badge bg-[#FFF2EE] border border-[#FFDEC8] text-poppy-accent font-extrabold rounded-full select-none">
 						<span class="star-icon leading-none">★</span>Bimbel SD, SMP, SMA Terbaik di Metro Lampung
-					</span>
+					</h1>
 				</div>
 				
 				<h2 class="text-[49px] sm:text-[61px] md:text-[69px] lg:text-[73px] xl:text-[81px] font-black leading-[1.15] mb-6 text-poppy-ink">
@@ -82,23 +82,27 @@ get_header();
 				<!-- Large Hero Image (Students) -->
 				<style>
 					/* High specificity rules to override theme constraints on hero pill badge */
-					main.site-main .hero-pill-badge {
+					main.site-main h1.hero-pill-badge {
+						font-family: var(--font-family-body) !important;
+						font-weight: 800 !important;
+						line-height: 1 !important;
+						letter-spacing: 0.025em !important;
 						font-size: 8.5px !important;
 						padding: 4px 10px !important;
 						white-space: nowrap !important;
 						display: inline-flex !important;
 						align-items: center !important;
 					}
-					main.site-main .hero-pill-badge .star-icon {
+					main.site-main h1.hero-pill-badge .star-icon {
 						font-size: 9.5px !important;
 						margin-right: 4px !important;
 					}
 					@media (min-width: 640px) {
-						main.site-main .hero-pill-badge {
+						main.site-main h1.hero-pill-badge {
 							font-size: 12px !important;
 							padding: 8px 24px !important;
 						}
-						main.site-main .hero-pill-badge .star-icon {
+						main.site-main h1.hero-pill-badge .star-icon {
 							font-size: 15px !important;
 							margin-right: 8px !important;
 						}
