@@ -17,7 +17,7 @@ get_header();
 <main id="primary" class="site-main front-page-content">
 
 	<!-- Hero Section -->
-	<section class="relative overflow-hidden bg-poppy-paper pt-24 pb-0 md:pt-36 md:pb-24 lg:pt-40 lg:pb-32 rounded-b-[32px] md:rounded-b-[48px] lg:rounded-b-[60px]">
+	<section class="relative overflow-hidden bg-poppy-paper pt-20 pb-0 md:pt-28 md:pb-12 lg:pt-32 lg:pb-16 rounded-b-[32px] md:rounded-b-[48px] lg:rounded-b-[60px]">
 		
 		<!-- Large watermark pattern positioned absolute to the section (top-right) -->
 		<div class="absolute top-0 right-0 w-[75%] sm:w-[60%] lg:w-[50%] max-w-[850px] h-[110%] opacity-85 pointer-events-none select-none z-0">
@@ -90,13 +90,13 @@ get_header();
 					@media (min-width: 640px) {
 						main.site-main img.hero-student-image {
 							width: 500px !important;
-							transform: translateY(100px) !important;
+							transform: translateY(150px) !important;
 						}
 					}
 					@media (min-width: 1024px) {
 						main.site-main img.hero-student-image {
 							width: 700px !important;
-							transform: translateY(175px) !important;
+							transform: translateY(240px) !important;
 						}
 					}
 					@media (min-width: 1280px) {
