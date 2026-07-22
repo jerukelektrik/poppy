@@ -40,10 +40,11 @@ get_header();
 					</div>
 				</div>
 				
-				<div class="w-full max-w-[495px] sm:max-w-[630px] md:max-w-[722px] lg:max-w-[760px] xl:max-w-[840px]">
-					<h2 class="text-[49px] sm:text-[61px] md:text-[69px] lg:text-[73px] xl:text-[81px] font-black leading-[1.15] mb-6 text-poppy-ink">
-						Belajar Lebih Seru, <br />
-						Raih <span class="text-poppy-accent">Sekolah & <br />Kampus Impian</span>
+				<div class="hero-text-wrapper w-full">
+					<h2 class="hero-heading font-black mb-6 text-poppy-ink">
+						<span class="block">Belajar Lebih Seru,</span>
+						<span class="block">Raih <span class="text-poppy-accent">Sekolah &</span></span>
+						<span class="block text-poppy-accent">Kampus Impian</span>
 					</h2>
 					
 					<p class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed mb-8 font-medium w-full">
@@ -84,6 +85,7 @@ get_header();
 			<div class="lg:col-span-5 relative h-auto sm:h-[460px] lg:h-[460px] flex items-end justify-center lg:justify-end">
 				<!-- Large Hero Image (Students) -->
 				<style>
+					/* High specificity rules to override theme constraints on hero pill badge */
 					html body main.site-main h1.hero-pill-badge,
 					html body main.site-main .hero-pill-badge {
 						font-family: var(--font-family-body) !important;
@@ -111,6 +113,61 @@ get_header();
 						html body main.site-main .hero-pill-badge .star-icon {
 							font-size: 15px !important;
 							margin-right: 8px !important;
+						}
+					}
+
+					/* Custom width limits for aligned hero text block wrapper */
+					main.site-main .hero-text-wrapper {
+						width: 100% !important;
+						max-width: 100% !important;
+					}
+					@media (min-width: 640px) {
+						main.site-main .hero-text-wrapper {
+							max-width: 540px !important;
+						}
+					}
+					@media (min-width: 768px) {
+						main.site-main .hero-text-wrapper {
+							max-width: 600px !important;
+						}
+					}
+					@media (min-width: 1024px) {
+						main.site-main .hero-text-wrapper {
+							max-width: 640px !important;
+						}
+					}
+					@media (min-width: 1280px) {
+						main.site-main .hero-text-wrapper {
+							max-width: 680px !important;
+						}
+					}
+
+					/* Custom typography sizing and line-height for main heading */
+					main.site-main .hero-heading {
+						font-size: 42px !important;
+						line-height: 1.09 !important;
+					}
+					main.site-main .hero-heading .block {
+						display: block !important;
+					}
+					@media (min-width: 640px) {
+						main.site-main .hero-heading {
+							font-size: 50px !important;
+						}
+					}
+					@media (min-width: 768px) {
+						main.site-main .hero-heading {
+							font-size: 56px !important;
+						}
+					}
+					@media (min-width: 1024px) {
+						main.site-main .hero-heading {
+							font-size: 62px !important;
+						}
+					}
+					@media (min-width: 1280px) {
+						main.site-main .hero-heading {
+							font-size: 68px !important;
 						}
 					}
 
