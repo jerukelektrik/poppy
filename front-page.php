@@ -96,7 +96,7 @@ get_header();
 					@media (min-width: 1024px) {
 						main.site-main img.hero-student-image {
 							width: 700px !important;
-							transform: translateY(170px) !important;
+							transform: translateY(150px) !important;
 						}
 					}
 					@media (min-width: 1280px) {
