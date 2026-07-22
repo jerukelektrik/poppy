@@ -40,14 +40,16 @@ get_header();
 					</div>
 				</div>
 				
-				<h2 class="text-[49px] sm:text-[61px] md:text-[69px] lg:text-[73px] xl:text-[81px] font-black leading-[1.15] mb-6 text-poppy-ink">
-					Belajar Lebih Seru, <br />
-					Raih <span class="text-poppy-accent">Sekolah & <br />Kampus Impian</span>
-				</h2>
-				
-				<p class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed max-w-xl mb-8 font-medium">
-					Wujudkan impianmu masuk sekolah & kampus favorit bersama LKP Airlangga. Kami menggabungkan metode belajar adaptif dengan pengajar profesional untuk memastikan kamu paham setiap materi tanpa beban. Yuk, jadi bagian dari ribuan siswa berprestasi di seluruh Indonesia.
-				</p>
+				<div class="w-full max-w-[495px] sm:max-w-[630px] md:max-w-[722px] lg:max-w-[760px] xl:max-w-[840px]">
+					<h2 class="text-[49px] sm:text-[61px] md:text-[69px] lg:text-[73px] xl:text-[81px] font-black leading-[1.15] mb-6 text-poppy-ink">
+						Belajar Lebih Seru, <br />
+						Raih <span class="text-poppy-accent">Sekolah & <br />Kampus Impian</span>
+					</h2>
+					
+					<p class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed mb-8 font-medium w-full">
+						Wujudkan impianmu masuk sekolah & kampus favorit bersama LKP Airlangga. Kami menggabungkan metode belajar adaptif dengan pengajar profesional untuk memastikan kamu paham setiap materi tanpa beban. Yuk, jadi bagian dari ribuan siswa berprestasi di seluruh Indonesia.
+					</p>
+				</div>
 
 				<!-- Hero Stats Cards (Direct Image Assets) -->
 				<div class="flex flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-10">
