@@ -34,9 +34,10 @@ get_header();
 			<div class="lg:col-span-7 flex flex-col justify-center text-left relative z-10">
 				<!-- Pill Badge -->
 				<div class="mb-4">
-					<h1 class="hero-pill-badge bg-[#FFF2EE] border border-[#FFDEC8] text-poppy-accent font-extrabold rounded-full select-none" style="font-size: clamp(8.5px, 1vw, 12px) !important; padding: clamp(4px, 0.8vw, 8px) clamp(10px, 1.8vw, 24px) !important; display: inline-flex !important; align-items: center !important; font-family: var(--font-family-body) !important; font-weight: 800 !important; line-height: 1 !important; letter-spacing: 0.025em !important; white-space: nowrap !important; text-transform: none !important;">
-						<span class="star-icon leading-none" style="font-size: clamp(9.5px, 1.2vw, 15px) !important; margin-right: clamp(4px, 0.8vw, 8px) !important;">★</span>Bimbel SD, SMP, SMA Terbaik di Metro Lampung
-					</h1>
+					<div class="hero-pill-badge bg-[#FFF2EE] border border-[#FFDEC8] text-poppy-accent font-extrabold rounded-full select-none" style="padding: clamp(4px, 0.8vw, 8px) clamp(10px, 1.8vw, 24px) !important; display: inline-flex !important; align-items: center !important; white-space: nowrap !important;">
+						<span class="star-icon leading-none" style="font-size: clamp(9.5px, 1.2vw, 15px) !important; margin-right: clamp(4px, 0.8vw, 8px) !important;">★</span>
+						<h1 style="font-size: clamp(8.5px, 1vw, 12px) !important; font-family: var(--font-family-body) !important; font-weight: 800 !important; line-height: 1 !important; letter-spacing: 0.025em !important; text-transform: none !important; margin: 0 !important; display: inline !important;">Bimbel SD, SMP, SMA Terbaik di Metro Lampung</h1>
+					</div>
 				</div>
 				
 				<h2 class="text-[49px] sm:text-[61px] md:text-[69px] lg:text-[73px] xl:text-[81px] font-black leading-[1.15] mb-6 text-poppy-ink">
