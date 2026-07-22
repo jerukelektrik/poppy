@@ -98,7 +98,7 @@ get_header();
 				<img 
 					src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hero%20image.webp' ); ?>" 
 					alt="Siswa Berprestasi LKP Airlangga" 
-					class="hero-student-image relative z-10 w-full h-auto max-w-[420px] sm:max-w-[500px] lg:max-w-none lg:w-[620px] xl:w-[700px] lg:absolute lg:bottom-0 lg:right-[-40px] block select-none pointer-events-none"
+					class="hero-student-image relative z-10 w-full h-auto max-w-[460px] sm:max-w-[550px] lg:max-w-none lg:w-[700px] xl:w-[780px] lg:absolute lg:bottom-0 lg:right-[-60px] block select-none pointer-events-none"
 				/>
 			</div>
 			
