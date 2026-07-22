@@ -85,18 +85,18 @@ get_header();
 					main.site-main img.hero-student-image {
 						width: 320px !important;
 						max-width: none !important;
-						transform: translateY(60px) !important;
+						transform: translateY(45px) !important;
 					}
 					@media (min-width: 640px) {
 						main.site-main img.hero-student-image {
 							width: 500px !important;
-							transform: translateY(130px) !important;
+							transform: translateY(115px) !important;
 						}
 					}
 					@media (min-width: 1024px) {
 						main.site-main img.hero-student-image {
 							width: 700px !important;
-							transform: translateY(210px) !important;
+							transform: translateY(190px) !important;
 						}
 					}
 					@media (min-width: 1280px) {
