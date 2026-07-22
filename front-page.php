@@ -80,10 +80,25 @@ get_header();
 			<!-- Right Column: Hero Image -->
 			<div class="lg:col-span-5 relative h-auto sm:h-[460px] lg:h-[460px] flex items-end justify-center lg:justify-end">
 				<!-- Large Hero Image (Students) -->
+				<style>
+					.hero-student-image {
+						transform: translateY(80px) !important;
+					}
+					@media (min-width: 640px) {
+						.hero-student-image {
+							transform: translateY(130px) !important;
+						}
+					}
+					@media (min-width: 1024px) {
+						.hero-student-image {
+							transform: translateY(240px) !important;
+						}
+					}
+				</style>
 				<img 
 					src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hero%20image.webp' ); ?>" 
 					alt="Siswa Berprestasi LKP Airlangga" 
-					class="relative z-10 w-full h-auto max-w-[420px] sm:max-w-[500px] lg:max-w-none lg:w-[620px] xl:w-[700px] lg:absolute lg:bottom-0 lg:right-[-40px] transform sm:translate-y-[130px] lg:translate-y-[240px] block select-none pointer-events-none"
+					class="hero-student-image relative z-10 w-full h-auto max-w-[420px] sm:max-w-[500px] lg:max-w-none lg:w-[620px] xl:w-[700px] lg:absolute lg:bottom-0 lg:right-[-40px] block select-none pointer-events-none"
 				/>
 			</div>
 			
