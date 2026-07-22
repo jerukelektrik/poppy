@@ -40,8 +40,8 @@ get_header();
 				</div>
 				
 				<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] xl:text-[52px] font-black leading-[1.2] mb-6 text-poppy-ink">
-					Belajar Lebih Seru, <br class="hidden sm:inline" />
-					Raih <span class="text-poppy-accent">Sekolah & <br class="hidden sm:inline" />Kampus Impian</span>
+					Belajar Lebih Seru, <br />
+					Raih <span class="text-poppy-accent">Sekolah & <br />Kampus Impian</span>
 				</h2>
 				
 				<p class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed max-w-xl mb-8 font-medium">
