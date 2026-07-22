@@ -39,7 +39,7 @@ get_header();
 					</span>
 				</div>
 				
-				<h2 class="text-[41px] sm:text-[53px] md:text-[61px] lg:text-[65px] xl:text-[73px] font-black leading-[1.15] mb-6 text-poppy-ink">
+				<h2 class="text-[45px] sm:text-[57px] md:text-[65px] lg:text-[69px] xl:text-[77px] font-black leading-[1.15] mb-6 text-poppy-ink">
 					Belajar Lebih Seru, <br />
 					Raih <span class="text-poppy-accent">Sekolah & <br />Kampus Impian</span>
 				</h2>
