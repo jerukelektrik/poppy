@@ -31,20 +31,48 @@ get_header();
 		<div class="poppy-container relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-12 lg:gap-8 items-center">
 			
 			<!-- Left Column: Hero Text Content -->
-			<div class="lg:col-span-7 flex flex-col justify-center text-left">
-				<h1 class="seo-heading text-xs sm:text-sm font-extrabold uppercase tracking-wide text-poppy-ink mb-3 sm:mb-4 block">
-					Bimbel SD, SMP, SMA Terbaik di Metro Lampung
-				</h1>
+			<div class="lg:col-span-7 flex flex-col justify-center text-left relative z-10">
+				<!-- Pill Badge -->
+				<div class="mb-4">
+					<span class="inline-flex items-center gap-1.5 bg-[#FFF2EE] border border-[#FFDEC8] text-poppy-accent font-extrabold text-[11px] sm:text-xs px-3.5 py-1.5 rounded-full select-none">
+						<span class="text-[10px]">★</span> Bimbel SD, SMP, SMA Terbaik di Metro Lampung
+					</span>
+				</div>
 				
-				<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-black leading-[1.15] mb-6">
-					<span class="text-poppy-accent block mb-1">Belajar Jadi Lebih Seru,</span>
-					<span class="block mb-1">Sekolah & Kampus Impian</span>
-					<span class="text-poppy-accent block">Jadi Milikmu</span>
+				<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] xl:text-[52px] font-black leading-[1.2] mb-6 text-poppy-ink">
+					Belajar Lebih Seru, <br class="hidden sm:inline" />
+					Raih <span class="text-poppy-accent">Sekolah & <br class="hidden sm:inline" />Kampus Impian</span>
 				</h2>
 				
-				<p class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed max-w-xl mb-8 sm:mb-10 font-medium">
+				<p class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed max-w-xl mb-8 font-medium">
 					Wujudkan impianmu masuk sekolah & kampus favorit bersama LKP Airlangga. Kami menggabungkan metode belajar adaptif dengan pengajar profesional untuk memastikan kamu paham setiap materi tanpa beban. Yuk, jadi bagian dari ribuan siswa berprestasi di seluruh Indonesia.
 				</p>
+
+				<!-- Hero Stats Cards -->
+				<div class="grid grid-cols-3 gap-3 sm:gap-4 max-w-lg mb-8 sm:mb-10">
+					
+					<!-- Card 1: Alumni -->
+					<div class="bg-white/80 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-slate-100/50 shadow-sm flex flex-col items-center justify-center">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/icon-hero-1.webp' ); ?>" alt="5000+ Alumni" class="w-10 h-10 sm:w-12 sm:h-12 object-contain mb-3 select-none pointer-events-none" />
+						<span class="text-base sm:text-lg font-black text-[#BD4B3B] leading-none mb-1">5000+</span>
+						<span class="text-[10px] sm:text-xs font-bold text-poppy-muted">Alumni</span>
+					</div>
+
+					<!-- Card 2: Mitra -->
+					<div class="bg-white/80 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-slate-100/50 shadow-sm flex flex-col items-center justify-center">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/icon-hero-2.webp' ); ?>" alt="17+ Mitra" class="w-10 h-10 sm:w-12 sm:h-12 object-contain mb-3 select-none pointer-events-none" />
+						<span class="text-base sm:text-lg font-black text-[#3CA986] leading-none mb-1">17+</span>
+						<span class="text-[10px] sm:text-xs font-bold text-poppy-muted">Mitra</span>
+					</div>
+
+					<!-- Card 3: Pengajar -->
+					<div class="bg-white/80 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-slate-100/50 shadow-sm flex flex-col items-center justify-center">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/icon-hero-3.webp' ); ?>" alt="10+ Pengajar" class="w-10 h-10 sm:w-12 sm:h-12 object-contain mb-3 select-none pointer-events-none" />
+						<span class="text-base sm:text-lg font-black text-[#3B6DBF] leading-none mb-1">10+</span>
+						<span class="text-[10px] sm:text-xs font-bold text-poppy-muted leading-tight">Pengajar<br class="hidden sm:inline"/>Profesional</span>
+					</div>
+
+				</div>
 				
 				<div class="flex flex-wrap gap-4">
 					<a href="#programs" class="inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-8 py-3.5 rounded-lg transition shadow-md shadow-poppy-accent/15">
