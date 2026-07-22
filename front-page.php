@@ -53,17 +53,17 @@ get_header();
 					<img 
 						src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/icon-hero-1.webp' ); ?>" 
 						alt="5000+ Alumni" 
-						class="h-20 sm:h-[96px] w-auto object-contain select-none pointer-events-none"
+						class="h-24 sm:h-28 w-auto object-contain select-none pointer-events-none"
 					/>
 					<img 
 						src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/icon-hero-2.webp' ); ?>" 
 						alt="17+ Mitra" 
-						class="h-20 sm:h-[96px] w-auto object-contain select-none pointer-events-none"
+						class="h-24 sm:h-28 w-auto object-contain select-none pointer-events-none"
 					/>
 					<img 
 						src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/icon-hero-3.webp' ); ?>" 
 						alt="10+ Pengajar Profesional" 
-						class="h-20 sm:h-[96px] w-auto object-contain select-none pointer-events-none"
+						class="h-24 sm:h-28 w-auto object-contain select-none pointer-events-none"
 					/>
 				</div>
 				
