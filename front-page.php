@@ -82,7 +82,7 @@ get_header();
 				<!-- Large Hero Image (Students) -->
 				<style>
 					/* High specificity rules to override theme constraints on hero pill badge */
-					main.site-main h1.hero-pill-badge {
+					h1.hero-pill-badge, .hero-pill-badge {
 						font-family: var(--font-family-body) !important;
 						font-weight: 800 !important;
 						line-height: 1 !important;
@@ -93,16 +93,16 @@ get_header();
 						display: inline-flex !important;
 						align-items: center !important;
 					}
-					main.site-main h1.hero-pill-badge .star-icon {
+					h1.hero-pill-badge .star-icon, .hero-pill-badge .star-icon {
 						font-size: 9.5px !important;
 						margin-right: 4px !important;
 					}
 					@media (min-width: 640px) {
-						main.site-main h1.hero-pill-badge {
+						h1.hero-pill-badge, .hero-pill-badge {
 							font-size: 12px !important;
 							padding: 8px 24px !important;
 						}
-						main.site-main h1.hero-pill-badge .star-icon {
+						h1.hero-pill-badge .star-icon, .hero-pill-badge .star-icon {
 							font-size: 15px !important;
 							margin-right: 8px !important;
 						}
