@@ -82,16 +82,16 @@ get_header();
 				<!-- Large Hero Image (Students) -->
 				<style>
 					.hero-student-image {
-						transform: translateY(80px) !important;
+						transform: translateY(55px) !important;
 					}
 					@media (min-width: 640px) {
 						.hero-student-image {
-							transform: translateY(130px) !important;
+							transform: translateY(95px) !important;
 						}
 					}
 					@media (min-width: 1024px) {
 						.hero-student-image {
-							transform: translateY(240px) !important;
+							transform: translateY(195px) !important;
 						}
 					}
 				</style>
