@@ -41,13 +41,13 @@ get_header();
 				</div>
 				
 				<div class="hero-text-wrapper w-full">
-					<h2 class="hero-heading font-black mb-6 text-poppy-ink">
+					<h2 class="hero-heading font-black mb-6 text-poppy-ink" style="font-size: clamp(1.875rem, 2.75vw, 3rem) !important; line-height: 1.08 !important;">
 						<span class="block">Belajar Lebih Seru,</span>
 						<span class="block">Raih <span class="text-poppy-accent">Sekolah &</span></span>
 						<span class="block text-poppy-accent">Kampus Impian</span>
 					</h2>
 					
-					<p class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed mb-8 font-medium w-full">
+					<p class="hero-description text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed mb-8 font-medium w-full">
 						Wujudkan impianmu masuk sekolah & kampus favorit bersama LKP Airlangga. Kami menggabungkan metode belajar adaptif dengan pengajar profesional untuk memastikan kamu paham setiap materi tanpa beban. Yuk, jadi bagian dari ribuan siswa berprestasi di seluruh Indonesia.
 					</p>
 				</div>
@@ -116,58 +116,39 @@ get_header();
 						}
 					}
 
-					/* Custom width limits for aligned hero text block wrapper */
+					/* Keep heading and description aligned at every breakpoint. */
 					main.site-main .hero-text-wrapper {
 						width: 100% !important;
-						max-width: 100% !important;
+						max-width: 42rem !important;
 					}
-					@media (min-width: 640px) {
+					main.site-main .hero-description {
+						width: min(100%, 32rem) !important;
+						max-width: 32rem !important;
+					}
+					@media (max-width: 639px) {
 						main.site-main .hero-text-wrapper {
-							max-width: 540px !important;
+							max-width: 100% !important;
 						}
-					}
-					@media (min-width: 768px) {
-						main.site-main .hero-text-wrapper {
-							max-width: 600px !important;
-						}
-					}
-					@media (min-width: 1024px) {
-						main.site-main .hero-text-wrapper {
-							max-width: 640px !important;
-						}
-					}
-					@media (min-width: 1280px) {
-						main.site-main .hero-text-wrapper {
-							max-width: 680px !important;
+						main.site-main .hero-description {
+							width: 100% !important;
+							max-width: 100% !important;
 						}
 					}
 
-					/* Custom typography sizing and line-height for main heading */
+					/* Fluid typography prevents breakpoint jumps and keeps wrapping predictable. */
 					main.site-main .hero-heading {
-						font-size: 42px !important;
-						line-height: 1.09 !important;
+						font-size: 1.875rem !important;
+						line-height: 1.08 !important;
 					}
 					main.site-main .hero-heading .block {
 						display: block !important;
 					}
+					main.site-main .hero-description {
+						line-height: 1.65 !important;
+					}
 					@media (min-width: 640px) {
 						main.site-main .hero-heading {
-							font-size: 50px !important;
-						}
-					}
-					@media (min-width: 768px) {
-						main.site-main .hero-heading {
-							font-size: 56px !important;
-						}
-					}
-					@media (min-width: 1024px) {
-						main.site-main .hero-heading {
-							font-size: 62px !important;
-						}
-					}
-					@media (min-width: 1280px) {
-						main.site-main .hero-heading {
-							font-size: 68px !important;
+							font-size: clamp(2rem, 2.75vw, 3rem) !important;
 						}
 					}
 
