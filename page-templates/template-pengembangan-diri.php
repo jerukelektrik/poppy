@@ -304,7 +304,7 @@ get_header();
 
 				</div>
 
-				<!-- Tab 2 Grid: Pengembangan Diri (Airlangga Consulting Packages) -->
+				<!-- Tab 2 Grid: Pengembangan Diri (Airlangga Consultant Center Packages) -->
 				<div id="tab-grid-pengembangan" class="hidden grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto relative z-10 transition-all duration-300">
 					
 					<!-- Card 1: Coaching Karier -->

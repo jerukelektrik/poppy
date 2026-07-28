@@ -105,7 +105,7 @@ function poppy_testimonial_metabox_callback( $post ): void {
 		</label><br />
 		<label>
 			<input type="checkbox" name="poppy_testimonial_show_on[]" value="pengembangan-diri" <?php checked( in_array( 'pengembangan-diri', $show_on_array, true ) ); ?> />
-			<?php esc_html_e( 'Airlangga Consulting', 'poppy' ); ?>
+			<?php esc_html_e( 'Airlangga Consultant Center', 'poppy' ); ?>
 		</label>
 	</p>
 	<?php
