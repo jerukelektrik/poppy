@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying the Clients section (Dipercaya oleh 100+ Instansi & Institusi)
+ * Template part for displaying the Clients section (Telah Sukses & Dipercaya oleh Banyak Mitra)
  *
  * @package POPPY
  */
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- Section Header -->
 		<div class="text-center max-w-3xl mx-auto mb-12">
 			<h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-poppy-ink inline-block relative">
-				Dipercaya oleh 100+ Instansi & Institusi
+				Telah Sukses & Dipercaya oleh Banyak Mitra
 				<!-- Decorative curved line under title (Terracotta) -->
 				<span class="absolute left-1/2 bottom-[-16px] transform -translate-x-1/2 w-64">
 					<svg viewBox="0 0 178 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
