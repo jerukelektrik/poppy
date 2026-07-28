@@ -125,6 +125,20 @@ if ( $testimonials_query->have_posts() ) :
 
 				</div>
 
+				<?php if ( $index > 1 ) : ?>
+					<!-- Desktop Slider Controls -->
+					<button type="button" class="testimonial-arrow testimonial-prev hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-30 w-12 h-12 items-center justify-center rounded-full bg-white text-poppy-ink shadow-lg border border-slate-100 hover:bg-poppy-ink hover:text-white transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-poppy-accent/20" aria-label="<?php esc_attr_e( 'Previous testimonial', 'poppy' ); ?>">
+						<svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+					<button type="button" class="testimonial-arrow testimonial-next hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-30 w-12 h-12 items-center justify-center rounded-full bg-poppy-accent text-white shadow-lg border border-poppy-accent hover:bg-poppy-ink hover:border-poppy-ink transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-poppy-accent/20" aria-label="<?php esc_attr_e( 'Next testimonial', 'poppy' ); ?>">
+						<svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+							<path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+				<?php endif; ?>
+
 				<!-- Pagination Dots -->
 				<div class="flex items-center justify-center gap-2 mt-4">
 					<?php for ( $i = 0; $i < $index; $i++ ) : ?>
@@ -145,29 +159,12 @@ if ( $testimonials_query->have_posts() ) :
 				const container = section.querySelector('.testimonials-scroll-container');
 				const cards = section.querySelectorAll('.testimonial-card');
 				const dots = section.querySelectorAll('.testimonial-dot');
+				const prevButton = section.querySelector('.testimonial-prev');
+				const nextButton = section.querySelector('.testimonial-next');
 
 				if (!container || cards.length <= 1) return;
 
-				// Scroll-to slide logic when clicking dots
-				dots.forEach((dot, index) => {
-					dot.addEventListener('click', () => {
-						const card = cards[index];
-						if (card) {
-							const containerWidth = container.clientWidth;
-							const cardWidth = card.clientWidth;
-							const cardLeft = card.offsetLeft;
-							// Center the active card in the scroll container view
-							const scrollTarget = cardLeft - (containerWidth / 2) + (cardWidth / 2);
-							container.scrollTo({
-								left: scrollTarget,
-								behavior: 'smooth'
-							});
-						}
-					});
-				});
-
-				// Active dot highlight logic on scroll
-				container.addEventListener('scroll', () => {
+				const getActiveIndex = () => {
 					let activeIndex = 0;
 					let minDiff = Infinity;
 					const containerCenter = container.getBoundingClientRect().left + container.clientWidth / 2;
@@ -180,6 +177,43 @@ if ( $testimonials_query->have_posts() ) :
 							activeIndex = idx;
 						}
 					});
+
+					return activeIndex;
+				};
+
+				const scrollToCard = index => {
+					const card = cards[index];
+					if (card) {
+						const containerWidth = container.clientWidth;
+						const cardWidth = card.clientWidth;
+						const cardLeft = card.offsetLeft;
+						// Center the active card in the scroll container view
+						const scrollTarget = cardLeft - (containerWidth / 2) + (cardWidth / 2);
+						container.scrollTo({
+							left: scrollTarget,
+							behavior: 'smooth'
+						});
+					}
+				};
+
+				// Scroll-to slide logic when clicking dots
+				dots.forEach((dot, index) => {
+					dot.addEventListener('click', () => scrollToCard(index));
+				});
+
+				prevButton?.addEventListener('click', () => {
+					const targetIndex = Math.max(getActiveIndex() - 1, 0);
+					scrollToCard(targetIndex);
+				});
+
+				nextButton?.addEventListener('click', () => {
+					const targetIndex = Math.min(getActiveIndex() + 1, cards.length - 1);
+					scrollToCard(targetIndex);
+				});
+
+				// Active dot highlight logic on scroll
+				container.addEventListener('scroll', () => {
+					const activeIndex = getActiveIndex();
 
 					dots.forEach((dot, idx) => {
 						if (idx === activeIndex) {
