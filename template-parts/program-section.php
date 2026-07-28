@@ -15,7 +15,7 @@ $title_color_class = 'text-poppy-accent';
 $underline_stroke  = '#132039';
 if ( 'english-kids' === $show_on || 'pengembangan-diri' === $show_on ) {
 	$title_color_class = 'text-poppy-ink';
-	$underline_stroke  = '#BD4B3B';
+	$underline_stroke  = '#e34a0d';
 }
 
 $all_cards = array(

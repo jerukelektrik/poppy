@@ -307,7 +307,10 @@ get_header();
 						SMA
 					</button>
 					<button data-program-tab="utbk" class="program-tab-btn bg-[#E2E8F0]/60 hover:bg-[#E2E8F0] text-poppy-muted font-bold text-xs sm:text-sm px-8 py-3 rounded-full transition transform hover:scale-[1.02] cursor-pointer">
-						UTBK
+						Kelas 12 + UTBK
+					</button>
+					<button data-program-tab="english" class="program-tab-btn bg-[#E2E8F0]/60 hover:bg-[#E2E8F0] text-poppy-muted font-bold text-xs sm:text-sm px-8 py-3 rounded-full transition transform hover:scale-[1.02] cursor-pointer">
+						Kursus Bahasa Inggris
 					</button>
 				</div>
 
@@ -317,29 +320,54 @@ get_header();
 					<!-- SD Program Content -->
 					<div data-program-content="sd" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
 						
-						<!-- Card 1: Kelas IV & V -->
+						<!-- Card 1: Excellent -->
 						<div class="bg-white rounded-[32px] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-full min-h-[460px] max-w-[360px] mx-auto w-full">
 							<div>
 								<!-- Card Header -->
-								<div class="flex items-center justify-between mb-8">
-									<div class="-ml-6 sm:-ml-8 bg-poppy-accent text-white py-3 pl-6 sm:pl-8 pr-8 rounded-r-full font-black text-base sm:text-lg font-serif leading-none">
-										Kelas IV & V
+								<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-3 sm:gap-2">
+									<div class="-ml-6 sm:-ml-8 bg-poppy-accent text-white py-3 pl-6 sm:pl-8 pr-6 rounded-r-full font-black text-sm sm:text-base font-serif leading-none shrink-0 self-start">
+										Excellent
 									</div>
-									<div class="flex flex-col text-right">
-										<span class="text-poppy-accent font-extrabold text-xs sm:text-sm">2 Sesi/minggu</span>
-										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold">10 Siswa/kelas</span>
+									<div class="flex flex-col text-left sm:text-right shrink-0 px-1">
+										<span class="text-poppy-accent font-extrabold text-xs sm:text-sm whitespace-nowrap">2 Sesi/minggu</span>
+										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold whitespace-nowrap">&plusmn; 17 Siswa/kelas</span>
 									</div>
 								</div>
 
 								<!-- Card Features -->
-								<ul class="space-y-2 mb-8 text-left text-[#2D3748] text-xs sm:text-sm font-medium">
-									<li>&bull; Modul</li>
-									<li>&bull; Try Out</li>
-									<li>&bull; Pendampingan PTS/PAS/US</li>
-									<li>&bull; Extra Hour</li>
-									<li class="leading-relaxed">&bull; Asesmen Minat Bakat (IQ, Kecenderungan minat, gaya belajar)</li>
-									<li>&bull; Pendampingan Psikologi</li>
-									<li>&bull; Extra Ordinary Class (Outdor Class)</li>
+								<ul class="space-y-3 mb-8 text-left text-[#4A5568] text-xs sm:text-sm font-medium">
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Untuk Kelas 4, 5, &amp; 6 SD</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Jumlah pertemuan 2x seminggu atau 4x tatap muka/sesi (1 sesi @60 menit, 1 mapel)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Jumlah siswa &plusmn; 17 siswa</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Pendampingan PAS/US</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Extra Hour/Jam tambahan (Kelompok)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Modul</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Try Out</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Materi yang diberikan: Matematika, IPA, IPS, PPKN, Bahasa Indonesia</span>
+									</li>
 								</ul>
 							</div>
 
@@ -347,36 +375,73 @@ get_header();
 							<div>
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="w-full">
-									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
+									<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20Bimbel%20SD%20Excellent." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
 										Konsultasi Sekarang
 									</a>
 								</div>
 							</div>
 						</div>
 
-						<!-- Card 2: Kelas VI -->
+						<!-- Card 2: Excellent Eksklusif -->
 						<div class="bg-white rounded-[32px] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-full min-h-[460px] max-w-[360px] mx-auto w-full">
 							<div>
 								<!-- Card Header -->
-								<div class="flex items-center justify-between mb-8">
-									<div class="-ml-6 sm:-ml-8 bg-poppy-ink text-white py-3 pl-6 sm:pl-8 pr-8 rounded-r-full font-black text-base sm:text-lg font-serif leading-none">
-										Kelas VI
+								<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-3 sm:gap-2">
+									<div class="-ml-6 sm:-ml-8 bg-poppy-ink text-white py-3 pl-6 sm:pl-8 pr-6 rounded-r-full font-black text-sm sm:text-base font-serif leading-none shrink-0 self-start">
+										Excellent Eksklusif
 									</div>
-									<div class="flex flex-col text-right">
-										<span class="text-poppy-ink font-extrabold text-xs sm:text-sm">3 Sesi/minggu</span>
-										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold">10 Siswa/kelas</span>
+									<div class="flex flex-col text-left sm:text-right shrink-0 px-1">
+										<span class="text-poppy-ink font-extrabold text-xs sm:text-sm whitespace-nowrap">2 - 3 Sesi/minggu</span>
+										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold whitespace-nowrap">&plusmn; 13 Siswa/kelas</span>
 									</div>
 								</div>
 
 								<!-- Card Features -->
-								<ul class="space-y-2 mb-8 text-left text-[#2D3748] text-xs sm:text-sm font-medium">
-									<li>&bull; Modul</li>
-									<li>&bull; Try Out</li>
-									<li>&bull; Pendampingan PTS/PAS/US</li>
-									<li>&bull; Extra Hour</li>
-									<li class="leading-relaxed">&bull; Asesmen Minat Bakat (IQ, Kecenderungan minat, gaya belajar)</li>
-									<li>&bull; Pendampingan Psikologi</li>
-									<li>&bull; Extra Ordinary Class (Outdor Class)</li>
+								<ul class="space-y-3 mb-8 text-left text-[#4A5568] text-xs sm:text-sm font-medium">
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Untuk Kelas 4, 5, &amp; 6 SD</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Jumlah pertemuan 2x seminggu atau 4x tatap muka/sesi (1 sesi @60 menit, 1 mapel) berlaku untuk kelas 4 dan 5</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Jumlah pertemuan 3x seminggu atau 6x tatap muka/sesi (1 sesi @60 menit, 1 mapel) berlaku untuk kelas 6</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Jumlah siswa &plusmn; 13 siswa</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Pendampingan PTS/PAS/US</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Extra Hours/Jam tambahan (Kelompok/Individu)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Modul</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Try Out</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Pendampingan psikologi</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Materi yang diberikan: Matematika, IPA, IPS, PPKN, Bahasa Indonesia</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Extra Ordinary Class (Kelas outdoor/seperti eksperimen/pembuktian teori) rencananya diadakan 2 bulan sekali</span>
+									</li>
 								</ul>
 							</div>
 
@@ -384,7 +449,7 @@ get_header();
 							<div>
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="w-full">
-									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
+									<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20Bimbel%20SD%20Excellent%20Eksklusif." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
 										Konsultasi Sekarang
 									</a>
 								</div>
@@ -396,29 +461,54 @@ get_header();
 					<!-- SMP Program Content -->
 					<div data-program-content="smp" class="hidden grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
 						
-						<!-- Card 1: SMP Kelas VII & VIII -->
+						<!-- Card 1: Excellent -->
 						<div class="bg-white rounded-[32px] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-full min-h-[460px] max-w-[360px] mx-auto w-full">
 							<div>
 								<!-- Card Header -->
-								<div class="flex items-center justify-between mb-8">
-									<div class="-ml-6 sm:-ml-8 bg-poppy-accent text-white py-3 pl-6 sm:pl-8 pr-8 rounded-r-full font-black text-base sm:text-lg font-serif leading-none">
-										Kelas VII & VIII
+								<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-3 sm:gap-2">
+									<div class="-ml-6 sm:-ml-8 bg-poppy-accent text-white py-3 pl-6 sm:pl-8 pr-6 rounded-r-full font-black text-sm sm:text-base font-serif leading-none shrink-0 self-start">
+										Excellent
 									</div>
-									<div class="flex flex-col text-right">
-										<span class="text-poppy-accent font-extrabold text-xs sm:text-sm">2 Sesi/minggu</span>
-										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold">10 Siswa/kelas</span>
+									<div class="flex flex-col text-left sm:text-right shrink-0 px-1">
+										<span class="text-poppy-accent font-extrabold text-xs sm:text-sm whitespace-nowrap">2 Sesi/minggu</span>
+										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold whitespace-nowrap">&plusmn; 17 Siswa/kelas</span>
 									</div>
 								</div>
 
 								<!-- Card Features -->
-								<ul class="space-y-2 mb-8 text-left text-[#2D3748] text-xs sm:text-sm font-medium">
-									<li>&bull; Modul</li>
-									<li>&bull; Try Out</li>
-									<li>&bull; Pendampingan PTS/PAS/US</li>
-									<li>&bull; Extra Hour Service</li>
-									<li class="leading-relaxed">&bull; Asesmen Minat Bakat (IQ, Kecenderungan minat, gaya belajar)</li>
-									<li>&bull; Pendampingan Psikologi</li>
-									<li>&bull; Extra Ordinary Class (Outdoor Class)</li>
+								<ul class="space-y-3 mb-8 text-left text-[#4A5568] text-xs sm:text-sm font-medium">
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Untuk Kelas 7, 8, &amp; 9 SMP</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Jumlah pertemuan 2x seminggu atau 4x tatap muka/sesi (1 sesi @60 menit, 1 mapel)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Jumlah siswa &plusmn; 17 siswa</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Pendampingan PAS/US</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Extra Hour/Jam tambahan (Kelompok)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Modul</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Try Out</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Materi yang diberikan: Matematika, IPA Fisika, IPA Biologi, B.Indonesia, dan B.Inggris.</span>
+									</li>
 								</ul>
 							</div>
 
@@ -426,36 +516,73 @@ get_header();
 							<div>
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="w-full">
-									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
+									<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20Bimbel%20SMP%20Excellent." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
 										Konsultasi Sekarang
 									</a>
 								</div>
 							</div>
 						</div>
 
-						<!-- Card 2: SMP Kelas IX -->
+						<!-- Card 2: Excellent Eksklusif -->
 						<div class="bg-white rounded-[32px] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-full min-h-[460px] max-w-[360px] mx-auto w-full">
 							<div>
 								<!-- Card Header -->
-								<div class="flex items-center justify-between mb-8">
-									<div class="-ml-6 sm:-ml-8 bg-poppy-ink text-white py-3 pl-6 sm:pl-8 pr-8 rounded-r-full font-black text-base sm:text-lg font-serif leading-none">
-										Kelas IX
+								<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-3 sm:gap-2">
+									<div class="-ml-6 sm:-ml-8 bg-poppy-ink text-white py-3 pl-6 sm:pl-8 pr-6 rounded-r-full font-black text-sm sm:text-base font-serif leading-none shrink-0 self-start">
+										Excellent Eksklusif
 									</div>
-									<div class="flex flex-col text-right">
-										<span class="text-poppy-ink font-extrabold text-xs sm:text-sm">3 Sesi/minggu</span>
-										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold">13 Siswa/kelas</span>
+									<div class="flex flex-col text-left sm:text-right shrink-0 px-1">
+										<span class="text-poppy-ink font-extrabold text-xs sm:text-sm whitespace-nowrap">2 - 3 Sesi/minggu</span>
+										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold whitespace-nowrap">&plusmn; 13 Siswa/kelas</span>
 									</div>
 								</div>
 
 								<!-- Card Features -->
-								<ul class="space-y-2 mb-8 text-left text-[#2D3748] text-xs sm:text-sm font-medium">
-									<li>&bull; Modul</li>
-									<li>&bull; Try Out</li>
-									<li>&bull; Pendampingan PTS/PAS/US</li>
-									<li>&bull; Extra Hour Service</li>
-									<li class="leading-relaxed">&bull; Asesmen Minat Bakat (IQ, Kecenderungan minat, gaya belajar)</li>
-									<li>&bull; Pendampingan Psikologi</li>
-									<li>&bull; Extra Ordinary Class (Outdoor Class)</li>
+								<ul class="space-y-3 mb-8 text-left text-[#4A5568] text-xs sm:text-sm font-medium">
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Untuk Kelas 7, 8, &amp; 9 SMP</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Jumlah pertemuan 2x seminggu atau 4x tatap muka/sesi (1 sesi @60 menit, 1 mapel) berlaku untuk kelas 7 dan 8</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Jumlah pertemuan 3x seminggu atau 6x tatap muka/sesi (1 sesi @60 menit, 1 mapel) berlaku untuk kelas 9</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Jumlah siswa &plusmn; 13 siswa</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Pendampingan PTS/PAS/US</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Extra Hours/Jam tambahan (Kelompok/Individu)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Try Out</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Modul</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Pendampingan Psikologi</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Materi yang diberikan: Matematika, IPA Fisika, IPA Biologi, B.Indonesia, dan B.Inggris.</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Extra Ordinary Class (Kelas outdoor/seperti eksperimen/pembuktian teori) rencananya diadakan 2 bulan sekali</span>
+									</li>
 								</ul>
 							</div>
 
@@ -463,7 +590,7 @@ get_header();
 							<div>
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="w-full">
-									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
+									<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20Bimbel%20SMP%20Excellent%20Eksklusif." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
 										Konsultasi Sekarang
 									</a>
 								</div>
@@ -475,31 +602,62 @@ get_header();
 					<!-- SMA Program Content -->
 					<div data-program-content="sma" class="hidden grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
 						
-						<!-- Card 1: SMA Kelas X & XI -->
+						<!-- Card 1: Excellent -->
 						<div class="bg-white rounded-[32px] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-full min-h-[460px] max-w-[360px] mx-auto w-full">
 							<div>
 								<!-- Card Header -->
-								<div class="flex items-center justify-between mb-8">
-									<div class="-ml-6 sm:-ml-8 bg-poppy-accent text-white py-3 pl-6 sm:pl-8 pr-8 rounded-r-full font-black text-base sm:text-lg font-serif leading-none">
-										Kelas X & XI
+								<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-3 sm:gap-2">
+									<div class="-ml-6 sm:-ml-8 bg-poppy-accent text-white py-3 pl-6 sm:pl-8 pr-6 rounded-r-full font-black text-sm sm:text-base font-serif leading-none shrink-0 self-start">
+										Excellent
 									</div>
-									<div class="flex flex-col text-right">
-										<span class="text-poppy-accent font-extrabold text-xs sm:text-sm">3 Sesi/minggu</span>
-										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold">13 Siswa/kelas</span>
+									<div class="flex flex-col text-left sm:text-right shrink-0 px-1">
+										<span class="text-poppy-accent font-extrabold text-xs sm:text-sm whitespace-nowrap">2 Sesi/minggu</span>
+										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold whitespace-nowrap">&plusmn; 17 Siswa/kelas</span>
 									</div>
 								</div>
 
 								<!-- Card Features -->
-								<ul class="space-y-2 mb-8 text-left text-[#2D3748] text-xs sm:text-sm font-medium">
-									<li>&bull; Modul</li>
-									<li>&bull; Coaching Karir</li>
-									<li>&bull; Try Out</li>
-									<li>&bull; Pendampingan PTS/PAS/US</li>
-									<li>&bull; Analisa SNBP</li>
-									<li>&bull; Extra Hour Service</li>
-									<li class="leading-relaxed">&bull; Asesmen Minat Bakat (IQ, Kecenderungan minat, gaya belajar)</li>
-									<li>&bull; Pendampingan Psikologi</li>
-									<li>&bull; Extra Ordinary Class (Outdoor Class)</li>
+								<ul class="space-y-3 mb-8 text-left text-[#4A5568] text-xs sm:text-sm font-medium">
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Untuk Kelas 10, 11, &amp; 12 SMA</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Jumlah pertemuan 2x seminggu atau 4x tatap muka/sesi (1 sesi @60 menit, 1 mapel)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Jumlah siswa &plusmn; 17 siswa</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Pendampingan Try Out PAS/US</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Extra Hours/Jam tambahan (Kelompok)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Try Out</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Modul</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Materi yang diberikan:</span>
+									</li>
+									<li class="pl-4 flex items-start gap-2">
+										<span class="text-poppy-accent/60 font-bold">-</span>
+										<span>Mapel Wajib: Matematika Wajib, Bahasa Indonesia, dan Bahasa Inggris</span>
+									</li>
+									<li class="pl-4 flex items-start gap-2">
+										<span class="text-poppy-accent/60 font-bold">-</span>
+										<span>Mapel Pilihan : Ekonomi, Biologi, Kimia, Fisika dan Matematika Lanjut</span>
+									</li>
 								</ul>
 							</div>
 
@@ -507,38 +665,89 @@ get_header();
 							<div>
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="w-full">
-									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
+									<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20Bimbel%20SMA%20Excellent." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
 										Konsultasi Sekarang
 									</a>
 								</div>
 							</div>
 						</div>
 
-						<!-- Card 2: SMA Kelas XII -->
+						<!-- Card 2: Excellent Eksklusif -->
 						<div class="bg-white rounded-[32px] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-full min-h-[460px] max-w-[360px] mx-auto w-full">
 							<div>
 								<!-- Card Header -->
-								<div class="flex items-center justify-between mb-8">
-									<div class="-ml-6 sm:-ml-8 bg-poppy-ink text-white py-3 pl-6 sm:pl-8 pr-8 rounded-r-full font-black text-base sm:text-lg font-serif leading-none">
-										Kelas XII
+								<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-3 sm:gap-2">
+									<div class="-ml-6 sm:-ml-8 bg-poppy-ink text-white py-3 pl-6 sm:pl-8 pr-6 rounded-r-full font-black text-sm sm:text-base font-serif leading-none shrink-0 self-start">
+										Excellent Eksklusif
 									</div>
-									<div class="flex flex-col text-right">
-										<span class="text-poppy-ink font-extrabold text-xs sm:text-sm">3 Sesi/minggu</span>
-										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold">13 Siswa/kelas</span>
+									<div class="flex flex-col text-left sm:text-right shrink-0 px-1">
+										<span class="text-poppy-ink font-extrabold text-xs sm:text-sm whitespace-nowrap">3 Sesi/minggu</span>
+										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold whitespace-nowrap">&plusmn; 13 Siswa/kelas</span>
 									</div>
 								</div>
 
 								<!-- Card Features -->
-								<ul class="space-y-2 mb-8 text-left text-[#2D3748] text-xs sm:text-sm font-medium">
-									<li>&bull; Modul</li>
-									<li>&bull; Coaching Karir</li>
-									<li>&bull; Try Out UTBK-SNBT</li>
-									<li>&bull; Pendampingan PTS/PAS/US</li>
-									<li>&bull; Analisa SNBP</li>
-									<li>&bull; Extra Hour Service</li>
-									<li class="leading-relaxed">&bull; Asesmen Minat Bakat (IQ, Kecenderungan minat, gaya belajar)</li>
-									<li>&bull; Pendampingan Psikologi</li>
-									<li>&bull; Extra Ordinary Class (Outdoor Class)</li>
+								<ul class="space-y-3 mb-8 text-left text-[#4A5568] text-xs sm:text-sm font-medium">
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Untuk Kelas 10, 11, &amp; 12 SMA</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Jumlah pertemuan 3x seminggu atau 6x tatap muka/sesi (1 sesi @60 menit, 1 mapel)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Jumlah siswa &plusmn; 13 siswa</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Pendampingan Try Out PTS/PAS/US</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Extra Hours/Jam tambahan (Kelompok/Individu)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Try Out</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Modul</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Pendampingan Psikologi</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Tes Minat Bakat</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Analisa SNBP</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Coaching Jurusan/PTN</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Materi yang diberikan:</span>
+									</li>
+									<li class="pl-4 flex items-start gap-2">
+										<span class="text-poppy-ink/60 font-bold">-</span>
+										<span>Mapel Wajib: Matematika Wajib, Bahasa Indonesia, dan Bahasa Inggris</span>
+									</li>
+									<li class="pl-4 flex items-start gap-2">
+										<span class="text-poppy-ink/60 font-bold">-</span>
+										<span>Mapel Pilihan : Ekonomi, Biologi, Kimia, Fisika dan Matematika Lanjut</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Extra Ordinary Class (Kelas outdoor/seperti eksperimen/ pembuktian teori) rencananya diadakan 2 bulan sekali</span>
+									</li>
 								</ul>
 							</div>
 
@@ -546,7 +755,7 @@ get_header();
 							<div>
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="w-full">
-									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
+									<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20Bimbel%20SMA%20Excellent%20Eksklusif." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
 										Konsultasi Sekarang
 									</a>
 								</div>
@@ -556,33 +765,72 @@ get_header();
 					</div>
 
 					<!-- UTBK Program Content -->
-					<div data-program-content="utbk" class="hidden grid-cols-1 gap-8 max-w-3xl mx-auto">
+					<div data-program-content="utbk" class="hidden grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
 						
-						<!-- Card 1: UTBK-SNBT -->
+						<!-- Card 1: Excellent -->
 						<div class="bg-white rounded-[32px] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-full min-h-[460px] max-w-[360px] mx-auto w-full">
 							<div>
 								<!-- Card Header -->
-								<div class="flex items-center justify-between mb-8">
-									<div class="-ml-6 sm:-ml-8 bg-poppy-accent text-white py-3 pl-6 sm:pl-8 pr-8 rounded-r-full font-black text-base sm:text-lg font-serif leading-none">
-										SNBT
+								<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-3 sm:gap-2">
+									<div class="-ml-6 sm:-ml-8 bg-poppy-accent text-white py-3 pl-6 sm:pl-8 pr-6 rounded-r-full font-black text-sm sm:text-base font-serif leading-none shrink-0 self-start">
+										Excellent
 									</div>
-									<div class="flex flex-col text-right">
-										<span class="text-poppy-accent font-extrabold text-xs sm:text-sm">3 Sesi/minggu</span>
-										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold">13 Siswa/kelas</span>
+									<div class="flex flex-col text-left sm:text-right shrink-0 px-1">
+										<span class="text-poppy-accent font-extrabold text-xs sm:text-sm whitespace-nowrap">2 Sesi/minggu</span>
+										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold whitespace-nowrap">&plusmn; 17 Siswa/kelas</span>
 									</div>
 								</div>
 
 								<!-- Card Features -->
-								<ul class="space-y-2 mb-8 text-left text-[#2D3748] text-xs sm:text-sm font-medium">
-									<li>&bull; Modul UTBK-SNBT</li>
-									<li>&bull; Try Out UTBK-SNBT</li>
-									<li>&bull; Pembahasan Soal</li>
-									<li>&bull; TPS Penalaran Umum</li>
-									<li>&bull; Literasi Bahasa Indonesia</li>
-									<li>&bull; Literasi Bahasa Inggris</li>
-									<li>&bull; Penalaran Matematika</li>
-									<li>&bull; Coaching Jurusan & Kampus</li>
-									<li>&bull; Extra Hour Service</li>
+								<ul class="space-y-3 mb-8 text-left text-[#4A5568] text-xs sm:text-sm font-medium">
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Untuk Persiapan UTBK-SNBT</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Jumlah pertemuan 2x seminggu atau 4x tatap muka/sesi (1 sesi @60 menit, 1 mapel)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Jumlah siswa &plusmn; 17 siswa</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Pendampingan Try Out PAS/US</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Extra Hour/Jam tambahan (Kelompok)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Modul</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Try Out 8x</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Coaching Jurusan/PTN</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Program Intensif (masuk setiap hari 1 month menjelang UTBK)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Materi yang diberikan:</span>
+									</li>
+									<li class="pl-4 flex items-start gap-2">
+										<span class="text-poppy-accent/60 font-bold">-</span>
+										<span>Mapel Wajib: Matematika Wajib, Bahasa Indonesia, dan Bahasa Inggris</span>
+									</li>
+									<li class="pl-4 flex items-start gap-2">
+										<span class="text-poppy-accent/60 font-bold">-</span>
+										<span>Mapel Pilihan : Ekonomi, Biologi, Kimia, Fisika dan Matematika Lanjut</span>
+									</li>
 								</ul>
 							</div>
 
@@ -590,7 +838,172 @@ get_header();
 							<div>
 								<hr class="border-poppy-line/50 mb-6" />
 								<div class="w-full">
-									<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
+									<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20Bimbel%20Kelas%2012%20%2B%20UTBK%20Excellent." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
+										Konsultasi Sekarang
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Card 2: Excellent Eksklusif -->
+						<div class="bg-white rounded-[32px] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-full min-h-[460px] max-w-[360px] mx-auto w-full">
+							<div>
+								<!-- Card Header -->
+								<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-3 sm:gap-2">
+									<div class="-ml-6 sm:-ml-8 bg-poppy-ink text-white py-3 pl-6 sm:pl-8 pr-6 rounded-r-full font-black text-sm sm:text-base font-serif leading-none shrink-0 self-start">
+										Excellent Eksklusif
+									</div>
+									<div class="flex flex-col text-left sm:text-right shrink-0 px-1">
+										<span class="text-poppy-ink font-extrabold text-xs sm:text-sm whitespace-nowrap">3 Sesi/minggu</span>
+										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold whitespace-nowrap">&plusmn; 13 Siswa/kelas</span>
+									</div>
+								</div>
+
+								<!-- Card Features -->
+								<ul class="space-y-3 mb-8 text-left text-[#4A5568] text-xs sm:text-sm font-medium">
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Untuk Persiapan UTBK-SNBT</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Jumlah pertemuan 3x seminggu atau 6x tatap muka/sesi (1 sesi @60 menit, 1 mapel)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Jumlah siswa &plusmn; 13 siswa</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Pendampingan Try Out PTS/PAS/US</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Extra Hours/Jam tambahan (Kelompok/Individu)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Modul</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Try Out 12x</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Coaching Jurusan/PTN</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Program Intensif (masuk setiap hari 1 month menjelang UTBK)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Pendampingan Psikologi</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Tes Minat Bakat</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Analisa SNBP</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Materi yang diberikan:</span>
+									</li>
+									<li class="pl-4 flex items-start gap-2">
+										<span class="text-poppy-ink/60 font-bold">-</span>
+										<span>Mapel Wajib: Matematika Wajib, Bahasa Indonesia, dan Bahasa Inggris</span>
+									</li>
+									<li class="pl-4 flex items-start gap-2">
+										<span class="text-poppy-ink/60 font-bold">-</span>
+										<span>Mapel Pilihan : Ekonomi, Biologi, Kimia, Fisika dan Matematika Lanjut</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-ink font-bold">&bull;</span>
+										<span>Extra Ordinary Class (Kelas outdoor/seperti eksperimen/pembuktian teori) rencananya diadakan 2 bulan sekali</span>
+									</li>
+								</ul>
+							</div>
+
+							<!-- Card Footer -->
+							<div>
+								<hr class="border-poppy-line/50 mb-6" />
+								<div class="w-full">
+									<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20Bimbel%20Kelas%2012%20%2B%20UTBK%20Excellent%20Eksklusif." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-ink hover:bg-poppy-ink/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
+										Konsultasi Sekarang
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- English Course Program Content -->
+					<div data-program-content="english" class="hidden grid-cols-1 gap-8 max-w-3xl mx-auto">
+						
+						<!-- Card 1: Kursus Bahasa Inggris -->
+						<div class="bg-white rounded-[32px] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-full min-h-[460px] max-w-[360px] mx-auto w-full">
+							<div>
+								<!-- Card Header -->
+								<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-3 sm:gap-2">
+									<div class="-ml-6 sm:-ml-8 bg-poppy-accent text-white py-3 pl-6 sm:pl-8 pr-6 rounded-r-full font-black text-sm sm:text-base font-serif leading-none shrink-0 self-start">
+										English Course
+									</div>
+									<div class="flex flex-col text-left sm:text-right shrink-0 px-1">
+										<span class="text-poppy-accent font-extrabold text-xs sm:text-sm whitespace-nowrap">2 Sesi/minggu</span>
+										<span class="text-poppy-muted text-[10px] sm:text-xs font-semibold whitespace-nowrap">&plusmn; 6-8 Siswa/kelas</span>
+									</div>
+								</div>
+
+								<!-- Card Features -->
+								<ul class="space-y-3 mb-8 text-left text-[#4A5568] text-xs sm:text-sm font-medium">
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Terdapat 6 tingkatan level: Beginner 1; Beginner 2; Beginner 3; Conversation 1; Conversation 2 &amp; Conversation 3 (Program 3 bulan)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Jumlah pertemuan 2x seminggu atau 2x tatap muka/sesi (1 sesi @90 menit)</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Jumlah siswa &plusmn; 6-8 siswa</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Evaluasi bulanan</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Final Report</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Perform saat kenaikan level</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Metode fun learning</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Menggunakan Real Media</span>
+									</li>
+									<li class="flex items-start gap-2">
+										<span class="text-poppy-accent font-bold">&bull;</span>
+										<span>Interact dengan Turis / Native Speaker</span>
+									</li>
+								</ul>
+							</div>
+
+							<!-- Card Footer -->
+							<div>
+								<hr class="border-poppy-line/50 mb-6" />
+								<div class="w-full">
+									<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20Kursus%20Bahasa%20Inggris." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-poppy-accent hover:bg-poppy-accent/90 text-white font-extrabold text-xs sm:text-sm px-6 py-3 rounded-xl transition shadow-sm text-center">
 										Konsultasi Sekarang
 									</a>
 								</div>

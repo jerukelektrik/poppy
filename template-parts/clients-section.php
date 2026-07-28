@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- Decorative curved line under title (Terracotta) -->
 				<span class="absolute left-1/2 bottom-[-16px] transform -translate-x-1/2 w-64">
 					<svg viewBox="0 0 178 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
-						<path d="M2 10C35 4 143 4 176 10" stroke="#BD4B3B" stroke-width="6" stroke-linecap="round"/>
+						<path d="M2 10C35 4 143 4 176 10" stroke="#e34a0d" stroke-width="6" stroke-linecap="round"/>
 					</svg>
 				</span>
 			</h2>

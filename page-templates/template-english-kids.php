@@ -66,7 +66,7 @@ get_header();
 						<!-- Decorative curved line under the highlighted phrase (red) -->
 						<span class="absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full">
 							<svg viewBox="0 0 178 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
-								<path d="M2 10C35 4 143 4 176 10" stroke="#BD4B3B" stroke-width="4" stroke-linecap="round"/>
+								<path d="M2 10C35 4 143 4 176 10" stroke="#e34a0d" stroke-width="4" stroke-linecap="round"/>
 							</svg>
 						</span>LKP Airlangga</span>?
 				</h2>
@@ -152,7 +152,7 @@ get_header();
 							<!-- Decorative curved line under the highlighted phrase (red) -->
 							<span class="absolute left-1/2 top-full mt-1.5 transform -translate-x-1/2 w-full">
 								<svg viewBox="0 0 178 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
-									<path d="M2 10C35 4 143 4 176 10" stroke="#BD4B3B" stroke-width="4" stroke-linecap="round"/>
+									<path d="M2 10C35 4 143 4 176 10" stroke="#e34a0d" stroke-width="4" stroke-linecap="round"/>
 								</svg>
 							</span>Anak</span>
 					</h2>
@@ -182,7 +182,7 @@ get_header();
 						</div>
 						<!-- Footer/Price -->
 						<div class="px-6 pb-6 text-left">
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3B6DBF] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+							<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20English%20for%20Kids%20Children%20One." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3B6DBF] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
 						</div>
@@ -206,7 +206,7 @@ get_header();
 						</div>
 						<!-- Footer/Price -->
 						<div class="px-6 pb-6 text-left">
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3A96B7] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+							<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20English%20for%20Kids%20Children%20Two." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3A96B7] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
 						</div>
@@ -230,7 +230,7 @@ get_header();
 						</div>
 						<!-- Footer/Price -->
 						<div class="px-6 pb-6 text-left">
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3BA7AA] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+							<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20English%20for%20Kids%20Children%20Three." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3BA7AA] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
 						</div>
@@ -254,7 +254,7 @@ get_header();
 						</div>
 						<!-- Footer/Price -->
 						<div class="px-6 pb-6 text-left">
-							<a href="https://wa.me/6282371966568?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20untuk%20kebutuhan%20belajar" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3CA986] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
+							<a href="https://wa.me/6282371966568?text=Halo%20Airlangga%20Consultant%20Center%2C%20saya%20tertarik%20dengan%20program%20English%20for%20Kids%20Conversation%20Junior." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3CA986] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
 						</div>

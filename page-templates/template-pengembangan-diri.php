@@ -66,7 +66,7 @@ get_header();
 						<!-- Decorative curved line under the highlighted phrase (red) -->
 						<span class="absolute left-1/2 top-full mt-2 transform -translate-x-1/2 w-full">
 							<svg viewBox="0 0 178 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
-								<path d="M2 10C35 4 143 4 176 10" stroke="#BD4B3B" stroke-width="4" stroke-linecap="round"/>
+								<path d="M2 10C35 4 143 4 176 10" stroke="#e34a0d" stroke-width="4" stroke-linecap="round"/>
 							</svg>
 						</span>LKP Airlangga</span>?
 				</h2>

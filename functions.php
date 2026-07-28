@@ -30,3 +30,27 @@ $poppy_includes = array(
 foreach ( $poppy_includes as $poppy_include ) {
 	require_once POPPY_DIR . '/' . $poppy_include;
 }
+
+/**
+ * Programmatically create Gallery page if it doesn't exist to prevent 404
+ */
+add_action( 'init', function() {
+	if ( class_exists( 'WP_CLI' ) ) {
+		return;
+	}
+	$slug = 'gallery';
+	$page = get_page_by_path( $slug );
+	if ( ! $page ) {
+		$page_id = wp_insert_post( array(
+			'post_title'     => 'Gallery Photo',
+			'post_name'      => $slug,
+			'post_status'    => 'publish',
+			'post_type'      => 'page',
+			'post_author'    => 1,
+		) );
+		if ( $page_id && ! is_wp_error( $page_id ) ) {
+			update_post_meta( $page_id, '_wp_page_template', 'page-templates/template-gallery.php' );
+			flush_rewrite_rules();
+		}
+	}
+} );
