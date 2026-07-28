@@ -20,9 +20,13 @@ get_header();
 			<!-- Left Column: Hero Text Content -->
 			<div class="lg:col-span-7 flex flex-col justify-center text-left">
 				<?php poppy_breadcrumbs( 'text-poppy-ink/70 justify-start', 'text-poppy-ink', 'text-poppy-ink/40' ); ?>
-				<h1 class="seo-heading text-xs sm:text-sm font-extrabold uppercase tracking-wide text-poppy-ink mb-3 sm:mb-4 block">
-					Pengembangan Diri
-				</h1>
+				<!-- Pill Badge -->
+				<div class="mb-4">
+					<div class="hero-pill-badge bg-[#E1F6FF] border border-[#A5E3FD] text-poppy-ink font-extrabold rounded-full select-none" style="padding: clamp(4px, 0.8vw, 8px) clamp(10px, 1.8vw, 24px) !important; display: inline-flex !important; align-items: center !important; white-space: nowrap !important;">
+						<span class="star-icon leading-none text-poppy-ink" style="font-size: clamp(9.5px, 1.2vw, 15px) !important; margin-right: clamp(4px, 0.8vw, 8px) !important;">★</span>
+						<h1 class="seo-heading text-poppy-ink" style="font-size: clamp(8.5px, 1vw, 12px) !important; font-family: var(--font-family-body) !important; font-weight: 800 !important; line-height: 1 !important; letter-spacing: 0.025em !important; text-transform: none !important; margin: 0 !important; display: inline !important;">Pengembangan Diri</h1>
+					</div>
+				</div>
 				
 				<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-black leading-[1.15] mb-6 text-poppy-ink">
 					Kembangkan Potensi Terbaik Dirimu untuk Raih Masa Depan Cemerlang
