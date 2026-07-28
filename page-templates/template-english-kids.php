@@ -28,9 +28,10 @@ get_header();
 					</div>
 				</div>
 				
-				<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-black leading-[1.15] mb-6 text-poppy-ink">
+				<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-black leading-[1.15] mb-6 text-poppy-ink max-w-[640px]">
 					<span class="block">Bikin Si Kecil Jago Bahasa Inggris</span>
-					<span class="block">Lewat Metode Bermain yang Super Seru</span>
+					<span class="block">Lewat Metode Bermain yang Super</span>
+					<span class="block">Seru</span>
 				</h2>
 				
 				<p class="text-xs sm:text-sm md:text-base text-poppy-muted leading-relaxed max-w-xl mb-8 sm:mb-10 font-medium">
