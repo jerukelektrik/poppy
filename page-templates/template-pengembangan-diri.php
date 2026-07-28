@@ -175,17 +175,17 @@ get_header();
 				<!-- Section Header -->
 				<div class="text-center max-w-4xl mx-auto mb-12">
 					<h2 class="text-2xl sm:text-3xl md:text-4xl font-black font-serif text-poppy-ink inline-block relative mb-4">
-						Dipercaya oleh Ratusan Peserta dari Berbagai
+						730+ Peserta Telah Mengikuti Asesmen TalentDNA Bersama
 						<span class="relative inline-block text-poppy-ink">
 							<!-- Decorative curved line under the highlighted phrase (yellow/orange) -->
 							<span class="absolute left-1/2 top-full mt-1.5 transform -translate-x-1/2 w-full">
 								<svg viewBox="0 0 178 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
 									<path d="M2 10C35 4 143 4 176 10" stroke="#F5A623" stroke-width="4" stroke-linecap="round"/>
 								</svg>
-							</span>Latar Belakang</span>
+							</span>Airlangga Consultant Center</span>
 					</h2>
 					<p class="text-xs sm:text-sm text-poppy-muted font-semibold leading-relaxed mt-6">
-						650+ peserta telah mengikuti asesmen TalentDNA bersama Airlangga Consulting. Mulai dari siswa, mahasiswa, guru, tenaga pendidik, orang tua, dan professional. Setiap asesmen menjadi langkah awal untuk memahami potensi diri, meningkatkan kualitas pengembangan, dan mengambil keputusan yang lebih terarah.
+						Mulai dari siswa, mahasiswa, guru, tenaga pendidik, orang tua, dan professional. Setiap asesmen menjadi langkah awal untuk memahami potensi diri, meningkatkan kualitas pengembangan, dan mengambil keputusan yang lebih terarah.
 					</p>
 				</div>
 
