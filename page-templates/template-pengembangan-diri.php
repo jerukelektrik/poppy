@@ -217,6 +217,14 @@ get_header();
 					<!-- Card 1: Asesmen Psikologi -->
 					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
 						<div>
+							<!-- Image -->
+							<div class="h-44 overflow-hidden relative">
+								<img 
+									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_Asesmen Psikologi.jpg' ); ?>" 
+									alt="Asesmen Psikologi" 
+									class="w-full h-full object-cover"
+								/>
+							</div>
 							<!-- Header -->
 							<div class="bg-[#3B6DBF] py-4 px-6 text-left">
 								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
@@ -240,6 +248,14 @@ get_header();
 					<!-- Card 2: Talent DNA -->
 					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
 						<div>
+							<!-- Image -->
+							<div class="h-44 overflow-hidden relative">
+								<img 
+									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_TalentDNA.jpg' ); ?>" 
+									alt="Talent DNA" 
+									class="w-full h-full object-cover"
+								/>
+							</div>
 							<!-- Header -->
 							<div class="bg-[#3A96B7] py-4 px-6 text-left">
 								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
@@ -263,6 +279,14 @@ get_header();
 					<!-- Card 3: Test Kesiapan Belajar -->
 					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
 						<div>
+							<!-- Image -->
+							<div class="h-44 overflow-hidden relative">
+								<img 
+									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_Tes Kesiapan Belajar.jpg' ); ?>" 
+									alt="Test Kesiapan Belajar" 
+									class="w-full h-full object-cover"
+								/>
+							</div>
 							<!-- Header -->
 							<div class="bg-[#3BA7AA] py-4 px-6 text-left">
 								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
@@ -286,6 +310,14 @@ get_header();
 					<!-- Card 4: Pemetaan SDM -->
 					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
 						<div>
+							<!-- Image -->
+							<div class="h-44 overflow-hidden relative">
+								<img 
+									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_Pemetaan SDM.jpg' ); ?>" 
+									alt="Pemetaan SDM" 
+									class="w-full h-full object-cover"
+								/>
+							</div>
 							<!-- Header -->
 							<div class="bg-[#3CA986] py-4 px-6 text-left">
 								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
@@ -314,6 +346,14 @@ get_header();
 					<!-- Card 1: Coaching Karier -->
 					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
 						<div>
+							<!-- Image -->
+							<div class="h-44 overflow-hidden relative">
+								<img 
+									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_Coaching.jpg' ); ?>" 
+									alt="Coaching Karier" 
+									class="w-full h-full object-cover"
+								/>
+							</div>
 							<!-- Header -->
 							<div class="bg-[#3B6DBF] py-4 px-6 text-left">
 								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
@@ -338,6 +378,14 @@ get_header();
 					<!-- Card 2: Konseling -->
 					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
 						<div>
+							<!-- Image -->
+							<div class="h-44 overflow-hidden relative">
+								<img 
+									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_Konseling.jpg' ); ?>" 
+									alt="Konseling" 
+									class="w-full h-full object-cover"
+								/>
+							</div>
 							<!-- Header -->
 							<div class="bg-[#3BA7AA] py-4 px-6 text-left">
 								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
