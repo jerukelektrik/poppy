@@ -14,49 +14,85 @@ get_header();
 // Gallery items configuration
 $gallery_items = array(
 	array(
-		'title'    => 'Gedung Utama LKP Airlangga',
-		'category' => 'fasilitas',
-		'image'    => 'gedung.jpg',
-		'desc'     => 'Fasilitas gedung utama LKP Airlangga yang modern dan nyaman untuk kegiatan belajar mengajar.',
+		'title'    => 'Asesmen Karyawan Oemar Bakery',
+		'category' => 'asesmen',
+		'image'    => 'gp_Asesmen Oemar Bakery.jpg',
+		'desc'     => 'Layanan asesmen profesional untuk pemetaan potensi dan kompetensi karyawan Oemar Bakery.',
 	),
 	array(
-		'title'    => 'Kegiatan Belajar Intensif UTBK',
+		'title'    => 'Asesmen Siswa SMA Yos Sudarso',
+		'category' => 'asesmen',
+		'image'    => 'gp_Asesmen SMA Yos Sudarso.jpg',
+		'desc'     => 'Pelaksanaan psikotes dan pemetaan minat bakat untuk siswa-siswi SMA Yos Sudarso.',
+	),
+	array(
+		'title'    => 'Asesmen Siswa SMP Yos Sudarso',
+		'category' => 'asesmen',
+		'image'    => 'gp_Asesmen SMP Yos Sudarso.jpg',
+		'desc'     => 'Tes minat bakat dan asesmen akademik untuk siswa-siswi SMP Yos Sudarso.',
+	),
+	array(
+		'title'    => 'Asesmen Surya Tsabat Mandiri',
+		'category' => 'asesmen',
+		'image'    => 'gp_Asesmen Surya Tsabat Mandiri.jpg',
+		'desc'     => 'Evaluasi psikologis dan asesmen kompetensi untuk institusi Surya Tsabat Mandiri.',
+	),
+	array(
+		'title'    => 'Asesmen TalentDNA SD WU',
+		'category' => 'asesmen',
+		'image'    => 'gp_Asesmen TalentDNA SD WU.jpg',
+		'desc'     => 'Analisis potensi diri anak melalui metode TalentDNA di SD WU.',
+	),
+	array(
+		'title'    => 'Graduation English Course Photo',
 		'category' => 'belajar',
-		'image'    => 'classroom_learning.jpg',
-		'desc'     => 'Suasana kelas persiapan UTBK yang fokus, kondusif, dan interaktif bersama tutor pendamping.',
+		'image'    => 'gp_Graduation English Course Photo.jpg',
+		'desc'     => 'Pelepasan siswa berprestasi yang telah menyelesaikan tingkat pembelajaran Kursus Bahasa Inggris.',
 	),
 	array(
-		'title'    => 'Interactive English Kids Class',
+		'title'    => 'IHT SMAN 3 Metro',
+		'category' => 'kemitraan',
+		'image'    => 'gp_IHT SMAN 3 Metro.jpg',
+		'desc'     => 'Pelatihan pengembangan kompetensi pendidik (guru) di SMAN 3 Metro.',
+	),
+	array(
+		'title'    => 'MoU Airlangga & ESQ',
+		'category' => 'kemitraan',
+		'image'    => 'gp_MoU Airlangga & ESQ.jpg',
+		'desc'     => 'Penandatanganan nota kesepahaman (MoU) kemitraan program antara LKP Airlangga dan ESQ.',
+	),
+	array(
+		'title'    => 'Ramadhan SDN 1 Metro Pusat',
 		'category' => 'belajar',
-		'image'    => 'english_kids_class.jpg',
-		'desc'     => 'Anak-anak belajar bahasa Inggris dengan gembira melalui metode interaktif dan menyenangkan.',
+		'image'    => 'gp_Ramadhan SDN 1 Metro Pusat.jpg',
+		'desc'     => 'Kegiatan bakti sosial dan pesantren kilat Ramadhan di SDN 1 Metro Pusat.',
 	),
 	array(
-		'title'    => 'Kelas Outdoor & Teori Eksperimen',
-		'category' => 'outdoor',
-		'image'    => 'outdoor_experiment.jpg',
-		'desc'     => 'Extra Ordinary Class di luar ruangan untuk membuktikan teori sains secara langsung.',
+		'title'    => 'Sharing Bersama Aburizal Bakrie',
+		'category' => 'kemitraan',
+		'image'    => 'gp_Sharing Aburizal Bakrie.jpg',
+		'desc'     => 'Sesi diskusi dan berbagi inspirasi wirausaha bersama tokoh nasional Aburizal Bakrie.',
 	),
 	array(
-		'title'    => 'Corporate Training & Pelatihan',
-		'category' => 'fasilitas',
-		'image'    => 'training.webp',
-		'desc'     => 'Program pelatihan dan kemitraan LKP Airlangga bersama institusi dan dunia usaha.',
+		'title'    => 'Sharing Session Asrama Leo Dehon',
+		'category' => 'kemitraan',
+		'image'    => 'gp_Sharing Session Asrama Leo Dehon.jpg',
+		'desc'     => 'Sesi konseling kelompok dan pembekalan motivasi belajar di Asrama Leo Dehon.',
 	),
 	array(
-		'title'    => 'Workshop & Pengembangan Diri',
-		'category' => 'outdoor',
-		'image'    => 'hero image pengembangan.webp',
-		'desc'     => 'Sesi coaching dan pembekalan minat bakat peserta didik untuk meraih masa depan.',
+		'title'    => 'Tes Kesiapan Belajar Anak',
+		'category' => 'belajar',
+		'image'    => 'gp_Tes Kesiapan Belajar.jpg',
+		'desc'     => 'Pengujian kesiapan psikologis dan kognitif anak untuk memasuki jenjang sekolah dasar.',
 	),
 );
 
 // Map categories to labels
 $categories = array(
-	'all'      => 'Semua',
-	'belajar'  => 'Kegiatan Belajar',
-	'fasilitas'=> 'Fasilitas',
-	'outdoor'  => 'Kelas Outdoor',
+	'all'       => 'Semua',
+	'belajar'   => 'Belajar & Event',
+	'asesmen'   => 'Asesmen & Psikotes',
+	'kemitraan' => 'Pelatihan & Kemitraan',
 );
 ?>
 
