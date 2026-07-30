@@ -49,7 +49,7 @@ $testimonials_query = new WP_Query( array(
 if ( $testimonials_query->have_posts() ) :
 	?>
 	<section id="cerita-alumni" class="poppy-section bg-white pb-20 relative z-20 testimonials-section-wrapper">
-		<div class="poppy-container">
+		<div class="w-full px-4 sm:px-6 lg:px-8">
 			
 			<!-- Section Header -->
 			<div class="text-center max-w-3xl mx-auto mb-12">
@@ -78,7 +78,7 @@ if ( $testimonials_query->have_posts() ) :
 						$stars = get_post_meta( get_the_ID(), '_testimonial_stars', true ) ?: 5;
 						?>
 						<!-- Testimonial Card -->
-						<div class="testimonial-card snap-center flex-shrink-0 w-full max-w-[290px] sm:max-w-[360px] md:max-w-[400px] bg-white rounded-[32px] p-6 sm:p-8 border border-slate-100/80 shadow-sm relative flex flex-col justify-between min-h-[300px]">
+						<div class="testimonial-card snap-center flex-shrink-0 w-full max-w-[290px] sm:max-w-[360px] md:w-[calc(50%-12px)] md:max-w-none bg-white rounded-[32px] p-6 sm:p-8 border border-slate-100/80 shadow-sm relative flex flex-col justify-between min-h-[300px]">
 							<div>
 								<!-- Quote Mark Icon -->
 								<img 
@@ -127,12 +127,12 @@ if ( $testimonials_query->have_posts() ) :
 
 				<?php if ( $index > 1 ) : ?>
 					<!-- Desktop Slider Controls -->
-					<button type="button" class="testimonial-arrow testimonial-prev hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-30 w-12 h-12 items-center justify-center rounded-full bg-white text-poppy-ink shadow-lg border border-slate-100 hover:bg-poppy-ink hover:text-white transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-poppy-accent/20" aria-label="<?php esc_attr_e( 'Previous testimonial', 'poppy' ); ?>">
+					<button type="button" class="testimonial-arrow testimonial-prev hidden md:flex absolute left-3 top-1/2 -translate-y-1/2 z-30 w-12 h-12 items-center justify-center rounded-full bg-white text-poppy-ink shadow-lg border border-slate-100 hover:bg-poppy-ink hover:text-white transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-poppy-accent/20" style="left: 24px !important;" aria-label="<?php esc_attr_e( 'Previous testimonial', 'poppy' ); ?>">
 						<svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
 							<path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
 					</button>
-					<button type="button" class="testimonial-arrow testimonial-next hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-30 w-12 h-12 items-center justify-center rounded-full bg-poppy-accent text-white shadow-lg border border-poppy-accent hover:bg-poppy-ink hover:border-poppy-ink transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-poppy-accent/20" aria-label="<?php esc_attr_e( 'Next testimonial', 'poppy' ); ?>">
+					<button type="button" class="testimonial-arrow testimonial-next hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-30 w-12 h-12 items-center justify-center rounded-full bg-poppy-accent text-white shadow-lg border border-poppy-accent hover:bg-poppy-ink hover:border-poppy-ink transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-poppy-accent/20" style="right: 24px !important;" aria-label="<?php esc_attr_e( 'Next testimonial', 'poppy' ); ?>">
 						<svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
 							<path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
@@ -149,6 +149,15 @@ if ( $testimonials_query->have_posts() ) :
 			</div>
 		</div>
 	</section>
+
+	<style>
+		@media (min-width: 768px) {
+			.testimonials-section-wrapper .testimonial-card {
+				width: calc(50% - 12px) !important;
+				max-width: none !important;
+			}
+		}
+	</style>
 
 	<!-- Scoped Testimonial Slider Script -->
 	<script>

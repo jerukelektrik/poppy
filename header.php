@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- Site Branding & Custom Logo -->
 			<div class="site-branding">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="flex items-center select-none">
-					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/Logo.webp" alt="<?php bloginfo( 'name' ); ?>" class="h-10 sm:h-12 w-auto object-contain">
+					<img src="<?php echo esc_url( add_query_arg( 'ver', poppy_asset_version( 'assets/images/Logo.webp' ), get_template_directory_uri() . '/assets/images/Logo.webp' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>" width="328" height="83" class="h-10 sm:h-12 w-auto object-contain">
 				</a>
 			</div><!-- .site-branding -->
 

@@ -17,7 +17,7 @@ get_header();
 <main id="primary" class="site-main front-page-content">
 
 	<!-- Hero Section -->
-	<section class="relative overflow-hidden bg-poppy-paper pt-24 pb-0 md:pt-32 md:pb-16 lg:pt-36 lg:pb-24 rounded-b-[32px] md:rounded-b-[48px] lg:rounded-b-[60px]">
+	<section class="relative overflow-hidden bg-poppy-paper pt-24 pb-0 md:pt-28 md:pb-14 lg:pt-32 lg:pb-18 rounded-b-[32px] md:rounded-b-[48px] lg:rounded-b-[60px]">
 		
 		<!-- Large watermark pattern positioned absolute to the section (top-right) -->
 		<div class="absolute top-0 right-0 w-[75%] sm:w-[60%] lg:w-[50%] max-w-[850px] h-[110%] opacity-85 pointer-events-none select-none z-0">

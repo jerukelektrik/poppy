@@ -174,7 +174,7 @@ get_header();
 	<!-- Featured Programs Section (Landing Page) -->
 	<section id="featured-programs" class="poppy-section bg-white pt-8 pb-16 relative z-20">
 		<div class="poppy-container">
-			<div class="bg-[linear-gradient(135deg,#A5E3FD_0%,#C4F8DD_50%,#FFF6E0_100%)] rounded-[32px] md:rounded-[48px] lg:rounded-[60px] py-16 px-6 sm:px-12 md:px-16 lg:px-20 relative overflow-hidden">
+			<div class="bg-[linear-gradient(135deg,#A5E3FD_0%,#C4F8DD_50%,#FFF6E0_100%)] rounded-[32px] md:rounded-[48px] lg:rounded-[60px] py-16 md:py-20 px-4 sm:px-8 md:px-10 lg:px-12 relative overflow-hidden -mx-6 sm:-mx-8 lg:-mx-12">
 				
 				<!-- Section Header -->
 				<div class="text-center max-w-4xl mx-auto mb-12">
@@ -212,13 +212,13 @@ get_header();
 				</div>
 
 				<!-- Tab 1 Grid: Asesmen -->
-				<div id="tab-grid-asesmen" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10 transition-all duration-300">
+				<div id="tab-grid-asesmen" class="grid w-full max-w-none grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8 relative z-10 transition-all duration-300">
 					
 					<!-- Card 1: Asesmen Psikologi -->
 					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
 						<div>
 							<!-- Image -->
-							<div class="h-44 overflow-hidden relative">
+							<div class="h-36 sm:h-40 overflow-hidden relative" style="height: 180px !important;">
 								<img 
 									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_Asesmen Psikologi.jpg' ); ?>" 
 									alt="Asesmen Psikologi" 
@@ -226,19 +226,19 @@ get_header();
 								/>
 							</div>
 							<!-- Header -->
-							<div class="bg-[#3B6DBF] py-4 px-6 text-left">
+							<div class="bg-[#3B6DBF] py-3 px-4 text-left">
 								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
 									Asesmen Psikologi
 								</h3>
 							</div>
 							<!-- Body -->
-							<div class="p-6 text-left">
+							<div class="p-4 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
 									Kenali potensi, kemampuan, dan karakter secara menyeluruh melalui asesmen psikologi yang valid dan profesional. Cocok untuk seleksi, pengembangan individu, pendidikan, maupun kebutuhan organisasi dalam mengambil keputusan yang lebih tepat.
 								</p>
 							</div>
 						</div>
-						<div class="px-6 pb-6 text-left">
+						<div class="px-4 pb-4 text-left">
 							<a href="https://wa.me/6282371966568?text=saya%20mau%20konsultasi%20bimbingan%20belajar%2C%20jadi%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20program%20asesmen%20psikologi." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3B6DBF] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
@@ -248,28 +248,28 @@ get_header();
 					<!-- Card 2: Talent DNA -->
 					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
 						<div>
-							<!-- Image -->
-							<div class="h-44 overflow-hidden relative">
+					<!-- Image -->
+							<div class="h-36 sm:h-40 overflow-hidden relative" style="height: 180px !important;">
 								<img 
-									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_TalentDNA.jpg' ); ?>" 
+									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_TalentDNA.webp' ); ?>" 
 									alt="Talent DNA" 
 									class="w-full h-full object-cover"
 								/>
 							</div>
 							<!-- Header -->
-							<div class="bg-[#3A96B7] py-4 px-6 text-left">
+							<div class="bg-[#3A96B7] py-3 px-4 text-left">
 								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
 									Talent DNA
 								</h3>
 							</div>
 							<!-- Body -->
-							<div class="p-6 text-left">
+							<div class="p-4 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
 									Temukan potensi yang menjadi kekuatan utama Anda. Talent DNA membantu mengenali kecenderungan berpikir, bekerja, dan berinteraksi sehingga pengembangan diri, karier, pendidikan maupun kehidupan menjadi lebih terarah.
 								</p>
 							</div>
 						</div>
-						<div class="px-6 pb-6 text-left">
+						<div class="px-4 pb-4 text-left">
 							<a href="https://wa.me/6282371966568?text=saya%20mau%20konsultasi%20bimbingan%20belajar%2C%20jadi%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20program%20talent%20dna." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3A96B7] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
@@ -280,7 +280,8 @@ get_header();
 					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
 						<div>
 							<!-- Image -->
-							<div class="h-44 overflow-hidden relative">
+							<div class="h-36 sm:h-40 overflow-hidden relative" style="height: clamp(140px, 14vw, 180px) !important;">
+								
 								<img 
 									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_Tes Kesiapan Belajar.jpg' ); ?>" 
 									alt="Test Kesiapan Belajar" 
@@ -288,19 +289,19 @@ get_header();
 								/>
 							</div>
 							<!-- Header -->
-							<div class="bg-[#3BA7AA] py-4 px-6 text-left">
+							<div class="bg-[#3BA7AA] py-3 px-4 text-left">
 								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
 									Test Kesiapan Belajar
 								</h3>
 							</div>
 							<!-- Body -->
-							<div class="p-6 text-left">
+							<div class="p-4 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
 									Tes Kesiapan Masuk SD membantu mengukur kesiapan anak sebelum memasuki jenjang sekolah dasar. Asesmen meliputi aspek kognitif, bahasa, motorik, sosial-emosional, serta kemampuan mengikuti instruksi sehingga orang tua dan sekolah memperoleh gambaran objektif mengenai kesiapan belajar anak.
 								</p>
 							</div>
 						</div>
-						<div class="px-6 pb-6 text-left">
+						<div class="px-4 pb-4 text-left">
 							<a href="https://wa.me/6282371966568?text=saya%20mau%20konsultasi%20bimbingan%20belajar%2C%20jadi%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20program%20tes%20kesiapan%20belajar." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3BA7AA] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
@@ -311,7 +312,7 @@ get_header();
 					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
 						<div>
 							<!-- Image -->
-							<div class="h-44 overflow-hidden relative">
+							<div class="h-36 sm:h-40 overflow-hidden relative" style="height: clamp(140px, 14vw, 180px) !important;">
 								<img 
 									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_Pemetaan SDM.jpg' ); ?>" 
 									alt="Pemetaan SDM" 
@@ -319,19 +320,19 @@ get_header();
 								/>
 							</div>
 							<!-- Header -->
-							<div class="bg-[#3CA986] py-4 px-6 text-left">
+							<div class="bg-[#3CA986] py-3 px-4 text-left">
 								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
 									Pemetaan SDM
 								</h3>
 							</div>
 							<!-- Body -->
-							<div class="p-6 text-left">
+							<div class="p-4 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
 									Petakan potensi, kompetensi, dan karakter setiap individu untuk membangun tim yang lebih produktif. Solusi tepat bagi sekolah, perusahaan, maupun organisasi dalam rekrutmen, promosi, pengembangan, dan penempatan SDM.
 								</p>
 							</div>
 						</div>
-						<div class="px-6 pb-6 text-left">
+						<div class="px-4 pb-4 text-left">
 							<a href="https://wa.me/6282371966568?text=saya%20mau%20konsultasi%20bimbingan%20belajar%2C%20jadi%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20program%20pemetaan%20sdm." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3CA986] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
@@ -341,34 +342,35 @@ get_header();
 				</div>
 
 				<!-- Tab 2 Grid: Pengembangan Diri (Airlangga Consultant Center Packages) -->
-				<div id="tab-grid-pengembangan" class="hidden grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto relative z-10 transition-all duration-300">
+				<div id="tab-grid-pengembangan" class="hidden grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto relative z-10 transition-all duration-300">
 					
 					<!-- Card 1: Coaching Karier -->
 					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
 						<div>
 							<!-- Image -->
-							<div class="h-44 overflow-hidden relative">
+							<div class="h-36 sm:h-40 overflow-hidden relative" style="height: 180px !important;">
 								<img 
-									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_Coaching.jpg' ); ?>" 
+									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_Coaching.webp' ); ?>" 
 									alt="Coaching Karier" 
 									class="w-full h-full object-cover"
+									style="object-fit: cover !important; object-position: center bottom !important;"
 								/>
 							</div>
 							<!-- Header -->
-							<div class="bg-[#3B6DBF] py-4 px-6 text-left">
+							<div class="bg-[#3B6DBF] py-3 px-4 text-left">
 								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
 									Coaching Karier
 								</h3>
 							</div>
 							<!-- Body -->
-							<div class="p-6 text-left">
+							<div class="p-4 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
 									Pendampingan untuk membantu menentukan arah pendidikan dan karier berdasarkan potensi, minat, dan tujuan hidup.
 								</p>
 							</div>
 						</div>
 						<!-- Footer -->
-						<div class="px-6 pb-6 text-left">
+						<div class="px-4 pb-4 text-left">
 							<a href="https://wa.me/6282371966568?text=saya%20mau%20konsultasi%20bimbingan%20belajar%2C%20jadi%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20program%20coaching%20karier." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3B6DBF] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
@@ -379,7 +381,7 @@ get_header();
 					<div class="bg-white rounded-[24px] overflow-hidden shadow-md flex flex-col justify-between border-b-[8px] border-poppy-ink">
 						<div>
 							<!-- Image -->
-							<div class="h-44 overflow-hidden relative">
+							<div class="h-36 sm:h-40 overflow-hidden relative" style="height: clamp(140px, 14vw, 180px) !important;">
 								<img 
 									src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img_cards_Konseling.jpg' ); ?>" 
 									alt="Konseling" 
@@ -387,20 +389,20 @@ get_header();
 								/>
 							</div>
 							<!-- Header -->
-							<div class="bg-[#3BA7AA] py-4 px-6 text-left">
+							<div class="bg-[#3BA7AA] py-3 px-4 text-left">
 								<h3 class="text-base sm:text-lg font-black text-white leading-tight">
 									Konseling
 								</h3>
 							</div>
 							<!-- Body -->
-							<div class="p-6 text-left">
+							<div class="p-4 text-left">
 								<p class="text-xs text-poppy-muted leading-relaxed mb-6 font-medium">
 									Layanan profesional untuk membantu mengatasi tantangan pribadi, akademik, maupun pekerjaan sehingga mampu berkembang secara optimal.
 								</p>
 							</div>
 						</div>
 						<!-- Footer -->
-						<div class="px-6 pb-6 text-left">
+						<div class="px-4 pb-4 text-left">
 							<a href="https://wa.me/6282371966568?text=saya%20mau%20konsultasi%20bimbingan%20belajar%2C%20jadi%20saya%20ingin%20info%20lebih%20lanjut%20tentang%20program%20konseling." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-[#3BA7AA] hover:opacity-90 text-white font-extrabold text-xs px-6 py-2.5 rounded-lg transition text-center">
 								Konsultasi Sekarang
 							</a>
