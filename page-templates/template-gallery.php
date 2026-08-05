@@ -85,6 +85,42 @@ $gallery_items = array(
 		'image'    => 'gp_Tes Kesiapan Belajar.jpg',
 		'desc'     => 'Pengujian kesiapan psikologis dan kognitif anak untuk memasuki jenjang sekolah dasar.',
 	),
+	array(
+		'title'    => 'Pottery Class LKP Airlangga',
+		'category' => 'belajar',
+		'image'    => 'gp_Pottery Class.webp',
+		'desc'     => 'Kegiatan kelas membuat tembikar interaktif untuk melatih kreativitas dan motorik siswa.',
+	),
+	array(
+		'title'    => 'Outing Class LKP Airlangga',
+		'category' => 'belajar',
+		'image'    => 'gp_Outing Class.webp',
+		'desc'     => 'Kegiatan belajar menyenangkan di luar kelas untuk memperluas wawasan praktis peserta didik.',
+	),
+	array(
+		'title'    => 'Graduation English Course (Sesi A)',
+		'category' => 'belajar',
+		'image'    => 'gp_Graduation English Course_a.webp',
+		'desc'     => 'Momen kelulusan dan penyerahan sertifikat bagi siswa program Kursus Bahasa Inggris.',
+	),
+	array(
+		'title'    => 'Graduation English Course (Sesi B)',
+		'category' => 'belajar',
+		'image'    => 'gp_Graduation English Course_b.webp',
+		'desc'     => 'Kemeriahan perayaan kelulusan siswa-siswi berprestasi Kursus Bahasa Inggris.',
+	),
+	array(
+		'title'    => 'Gardening Class English Course',
+		'category' => 'belajar',
+		'image'    => 'gp_Gardening English Course_c.webp',
+		'desc'     => 'Aktivitas berkebun praktis yang dipadukan dengan pembelajaran kosakata Bahasa Inggris secara interaktif.',
+	),
+	array(
+		'title'    => 'Family Gathering SMPN 1 Metro',
+		'category' => 'kemitraan',
+		'image'    => 'Family Gathering SMPN 1 Metro.webp',
+		'desc'     => 'Penyelenggaraan kegiatan gathering dan team building kemitraan LKP Airlangga bersama SMPN 1 Metro.',
+	),
 );
 
 // Map categories to labels
