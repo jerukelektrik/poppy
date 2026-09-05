@@ -65,6 +65,12 @@ function poppy_get_theme_options() {
 		// Third-party Integrations
 		'gtm_id'                     => '',
 		'meta_pixel_id'              => '',
+		// Maintenance Mode
+		'maintenance_mode_enabled'    => 0,
+		'maintenance_message'          => 'Website sementara offline. Harap melakukan pembayaran atau pelunasan agar layanan dapat kembali diakses.',
+		'maintenance_contact_enabled' => 0,
+		'maintenance_contact_label'   => 'Hubungi pengelola website',
+		'maintenance_contact_url'     => '',
 	);
 
 	$saved = get_option( 'poppy_theme_options', array() );
@@ -123,6 +129,12 @@ function poppy_theme_options_page() {
 				// Sanitize Third-party Integrations
 				$options['gtm_id']                = sanitize_text_field( $_POST['gtm_id'] );
 				$options['meta_pixel_id']         = sanitize_text_field( $_POST['meta_pixel_id'] );
+			} elseif ( 'maintenance' === $active_tab ) {
+				$options['maintenance_mode_enabled']    = isset( $_POST['maintenance_mode_enabled'] ) ? 1 : 0;
+				$options['maintenance_message']         = sanitize_textarea_field( wp_unslash( $_POST['maintenance_message'] ?? '' ) );
+				$options['maintenance_contact_enabled'] = isset( $_POST['maintenance_contact_enabled'] ) ? 1 : 0;
+				$options['maintenance_contact_label']   = sanitize_text_field( wp_unslash( $_POST['maintenance_contact_label'] ?? '' ) );
+				$options['maintenance_contact_url']     = esc_url_raw( wp_unslash( $_POST['maintenance_contact_url'] ?? '' ) );
 			}
 
 			update_option( 'poppy_theme_options', $options );
@@ -148,6 +160,9 @@ function poppy_theme_options_page() {
 			</a>
 			<a href="?page=poppy-options&tab=integrations" class="nav-tab <?php echo $current_tab === 'integrations' ? 'nav-tab-active' : ''; ?>">
 				<?php esc_html_e( 'Third-Party Integrations', 'poppy' ); ?>
+			</a>
+			<a href="?page=poppy-options&tab=maintenance" class="nav-tab <?php echo $current_tab === 'maintenance' ? 'nav-tab-active' : ''; ?>">
+				<?php esc_html_e( 'Maintenance Mode', 'poppy' ); ?>
 			</a>
 		</h2>
 
@@ -408,6 +423,50 @@ function poppy_theme_options_page() {
 						<td>
 							<input type="text" id="meta_pixel_id" name="meta_pixel_id" value="<?php echo esc_attr( $options['meta_pixel_id'] ); ?>" class="regular-text" placeholder="15 Digit Pixel ID" />
 							<p class="description"><?php esc_html_e( 'Input Meta Pixel ID.', 'poppy' ); ?></p>
+						</td>
+					</tr>
+				</table>
+			<?php elseif ( $current_tab === 'maintenance' ) : ?>
+				<!-- MAINTENANCE MODE TAB -->
+				<h2 style="border-bottom: 1px solid #eee; padding-bottom: 10px; font-weight: 700; margin-top: 0;"><?php esc_html_e( 'Maintenance Mode', 'poppy' ); ?></h2>
+				<p class="description" style="margin-bottom: 15px;"><?php esc_html_e( 'Pengunjung publik akan melihat halaman offline saat mode ini aktif. Administrator yang login tetap dapat melihat website normal.', 'poppy' ); ?></p>
+				<table class="form-table">
+					<tr>
+						<th scope="row"><?php esc_html_e( 'Status', 'poppy' ); ?></th>
+						<td>
+							<label>
+								<input type="checkbox" name="maintenance_mode_enabled" value="1" <?php checked( $options['maintenance_mode_enabled'], 1 ); ?> />
+								<?php esc_html_e( 'Aktifkan maintenance mode', 'poppy' ); ?>
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="maintenance_message"><?php esc_html_e( 'Pesan Maintenance', 'poppy' ); ?></label></th>
+						<td>
+							<textarea id="maintenance_message" name="maintenance_message" rows="4" class="large-text"><?php echo esc_textarea( $options['maintenance_message'] ); ?></textarea>
+							<p class="description"><?php esc_html_e( 'Pesan yang ditampilkan kepada pengunjung publik.', 'poppy' ); ?></p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><?php esc_html_e( 'Tombol Kontak', 'poppy' ); ?></th>
+						<td>
+							<label>
+								<input type="checkbox" name="maintenance_contact_enabled" value="1" <?php checked( $options['maintenance_contact_enabled'], 1 ); ?> />
+								<?php esc_html_e( 'Tampilkan tombol kontak', 'poppy' ); ?>
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="maintenance_contact_label"><?php esc_html_e( 'Label Tombol', 'poppy' ); ?></label></th>
+						<td>
+							<input type="text" id="maintenance_contact_label" name="maintenance_contact_label" value="<?php echo esc_attr( $options['maintenance_contact_label'] ); ?>" class="regular-text" />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="maintenance_contact_url"><?php esc_html_e( 'URL Kontak', 'poppy' ); ?></label></th>
+						<td>
+							<input type="url" id="maintenance_contact_url" name="maintenance_contact_url" value="<?php echo esc_attr( $options['maintenance_contact_url'] ); ?>" class="large-text" placeholder="https://wa.me/..." />
+							<p class="description"><?php esc_html_e( 'Contoh: tautan WhatsApp atau email mailto:.', 'poppy' ); ?></p>
 						</td>
 					</tr>
 				</table>

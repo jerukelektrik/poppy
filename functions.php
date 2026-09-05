@@ -24,6 +24,7 @@ $poppy_includes = array(
 	'inc/customizer.php',
 	'inc/seo.php',
 	'inc/theme-options.php',
+	'inc/maintenance.php',
 	'inc/html-minify.php',
 );
 
